@@ -1,4 +1,15 @@
 class Users::PasswordsController < Devise::PasswordsController
+
+  def create
+
+    message = User.reset_password(resource_params)
+
+    flash[:notice] = message
+
+    redirect_to new_user_session_path
+
+  end
+
   # GET /resource/password/new
   # def new
   #   super
