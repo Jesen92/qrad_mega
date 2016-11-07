@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  picture_path: MyString
+  description: 
+  price: 9.99
+  VM_price: 9.99
+  RAM_price: 9.99
+  VM_default: MyString
+  RAM_default: MyString
+
+two:
+  name: MyString
+  picture_path: MyString
+  description: 
+  price: 9.99
+  VM_price: 9.99
+  RAM_price: 9.99
+  VM_default: MyString
+  RAM_default: MyString
