@@ -14,4 +14,8 @@ class UserMailer < ApplicationMailer
 
     mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'reset_password')
   end
+
+  def send_calculated_services(user)
+    #TODO slanje mail-a kalkulacije
+  end
 end

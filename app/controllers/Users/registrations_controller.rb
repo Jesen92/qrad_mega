@@ -1,4 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
+  prepend_before_action :check_captcha, only: [:create]
 # before_action :configure_sign_up_params, only: [:create]
 # before_action :configure_account_update_params, only: [:update]
 
@@ -8,6 +9,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     #resource.save
 
     yield resource if block_given?
+
 =begin
     if resource.persisted?
       if resource.active_for_authentication?
@@ -26,6 +28,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       respond_with resource
     #end
 =end
+
 flash[:notice] = "Check your e-mail for your password!"
 redirect_to new_user_session_path
   end
@@ -88,6 +91,13 @@ redirect_to new_user_session_path
 
 
   private
+
+  def check_captcha
+    unless verify_recaptcha
+      self.resource = resource_class.new sign_up_params
+      respond_with_navigational(resource) { render :new }
+    end
+  end
 
   def sign_up_params
     params.require(:user).permit(:first_name, :last_name, :email, :phone, :country, :city, :address, :company, :cin)

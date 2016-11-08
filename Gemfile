@@ -27,7 +27,12 @@ gem 'devise'
 gem 'country_select'
 gem 'simple_form'
 
+gem 'activeadmin', '~> 1.0.0.pre4'
+gem 'cancancan'
+
 gem 'delayed_job_active_record'
+gem "recaptcha", require: "recaptcha/rails"
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -16,6 +16,8 @@
       <%= f.input :company, required: true %>
       <%= f.input :cin, label: "Company Identification number", required: true %> -->
     </div>
+    <%= flash[:recaptcha_error] %>
+    <%= recaptcha_tags %>
 
     <div class="form-actions">
       <%= f.button :submit, "Sign up" %>

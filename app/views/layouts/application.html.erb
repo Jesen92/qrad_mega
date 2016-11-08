@@ -7,13 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if !notice.nil? %>
+
 <p><%= notice %></p>
-<% end %>
+<p><%= alert %></p>
 <% if user_signed_in? %>
   <%= "Bok "+current_user.email %>
 <p>
-  <%= link_to "Odjavi se", destroy_user_session_path, :method => :delete %>
+  <%= link_to "Odjavi se", destroy_user_session_path %>
 </p>
 <% else %>
   <%= link_to "Login", new_user_session_path %>
@@ -22,4 +22,9 @@
 <%= yield %>
 
 </body>
+<% if user_signed_in? %>
+  <% if current_user.admin? %>
+    <%= link_to "Admin", admin_root_path %>
+  <% end %>
+<% end %>
 </html>
