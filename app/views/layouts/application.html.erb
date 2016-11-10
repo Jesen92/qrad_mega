@@ -10,13 +10,15 @@
 
 <p><%= notice %></p>
 <p><%= alert %></p>
+<%= link_to_unless_current "English", locale: "en" %>
+<%= link_to_unless_current "Hrvatski", locale: "hr" %>
 <% if user_signed_in? %>
-  <%= "Bok "+current_user.email %>
+  <%= t ".welcome_text"+current_user.email %>
 <p>
-  <%= link_to "Odjavi se", destroy_user_session_path %>
+  <%= link_to t(".sign_out"), destroy_user_session_path %>
 </p>
 <% else %>
-  <%= link_to "Login", new_user_session_path %>
+  <%= link_to t(".sign_in"), new_user_session_path %>
 <% end %>
 
 <%= yield %>

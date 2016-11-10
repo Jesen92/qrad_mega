@@ -5,16 +5,21 @@ Rails.application.routes.draw do
 
   get 'services/show'
 
-  devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}.merge(ActiveAdmin::Devise.config)
 
-  #devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'services#index'
 
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    resources :services
+    root 'services#index'
+    devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}.merge(ActiveAdmin::Devise.config)
+    ActiveAdmin.routes(self)
+  end
+
+  match '*path', to: redirect("/#{I18n.locale}/%{path}"), :via => [:get]
+  match '', to: redirect("/#{I18n.locale}"), :via => [:get]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

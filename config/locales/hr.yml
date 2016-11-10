@@ -1,0 +1,58 @@
+hr:
+  controllers:
+    registrations:
+      notice: "Provjerite svoj e-mail za lozinku!"
+  model:
+    user:
+      reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
+      new_password: "Poslana vam je nova lozinka"
+      email_doesnt_exist: "E-mail ne postoji!"
+  layouts:
+    application:
+      sign_in: "Prijavi se"
+      sign_out: "Odjavi se"
+      welcome_text: "Bok"
+  services:
+    index:
+      title: "Naslov"
+      subheading: "Podnaslov"
+  simple_form:
+    "yes": 'Da'
+    "no": 'Ne'
+    required:
+      text: 'neophodan'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please review the problems below:"
+    # Examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'
+  errors:
+    messages:
+      expired: "je istekao, molimo zatražite novi"
+      not_found: "nije pronađeno"
+      already_confirmed: "je već potvrđen, molimo pokušajte se prijaviti"
+      not_locked: "nije zaključan"
+      not_saved:
+        one: "1 greška sprečava snimanje %{resource}:"
+        few: "%{count} greške sprečavaju snimanje %{resource}:"
+        other: "%{count} grešaka sprečavaju snimanje %{resource}:"

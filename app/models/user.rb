@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
     generated_password = Devise.friendly_token.first(14)
     user = self.create(attr.merge(password: generated_password, password_confirmation: generated_password))
 
-    UserMailer.generated_password(user, generated_password).deliver_now
+    UserMailer.generated_password(user, generated_password, I18n.locale.to_s).deliver_now
 
     user
   end
@@ -22,23 +22,23 @@ class User < ActiveRecord::Base
     message = nil
 
     if !user.nil?
-      if user.reset_password_sent_at.to_date != DateTime.now.to_date
+      if !user.reset_password_sent_at.today?
         user.update(password: generated_password, password_confirmation: generated_password)
         user.reset_password_sent_at = DateTime.now
         user.save
-        UserMailer.reset_password(user, generated_password).deliver_now
+        UserMailer.reset_password(user, generated_password, I18n.locale.to_s).deliver_now
       else
-        message = "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
+        message = I18n.t('model.user.reset_password')
       end
     end
 
     if message != nil
       message
     elsif !user.nil?
-      message = "Poslana vam je nova lozinka"
+      message = I18n.t('model.user.new_password')
       message
     else
-      message = "E-mail ne postoji!"
+      message = I18n.t('model.user.email_doesnt_exist')
       message
     end
   end

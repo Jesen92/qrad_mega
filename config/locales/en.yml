@@ -21,3 +21,20 @@
 
 en:
   hello: "Hello world"
+  controllers:
+    registrations:
+      notice: "Check your e-mail for your password!"
+  model:
+    user:
+      reset_password: "Password has not been reset! You can only reset your password once per day!"
+      new_password: "New password has been sent to your e-mail!"
+      email_doesnt_exist: "Entered e-mail doesn't exist!"
+  layouts:
+    application:
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+      welcome_text: "Hi"
+  services:
+    index:
+      title: "Title"
+      subheading: "Subheading"
