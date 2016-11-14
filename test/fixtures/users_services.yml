@@ -1,19 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user_id: 1
-  service_id: 1
-  veeam: false
-  back_up: false
-  DR: false
-  VM: 1
-  RAM: 1
+  veeam_user_id: 1
+  vm_server_id: 1
+  services_id: 1
+  vm_extra: 1
+  storage_extra: 1
 
 two:
-  user_id: 1
-  service_id: 1
-  veeam: false
-  back_up: false
-  DR: false
-  VM: 1
-  RAM: 1
+  veeam_user_id: 1
+  vm_server_id: 1
+  services_id: 1
+  vm_extra: 1
+  storage_extra: 1

@@ -23,7 +23,7 @@ class UserMailer < ApplicationMailer
     end
   end
 
-  def send_calculated_services(user)
+  def send_calculated_services(user, locale)
     #TODO slanje mail-a kalkulacije
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108122011) do
+ActiveRecord::Schema.define(version: 20161111104619) do
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   limit: 4,     default: 0, null: false
@@ -30,16 +30,16 @@ ActiveRecord::Schema.define(version: 20161108122011) do
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "services", force: :cascade do |t|
-    t.string   "name",         limit: 255
-    t.string   "picture_path", limit: 255
-    t.string   "description",  limit: 255
-    t.decimal  "price",                    precision: 10, scale: 2
-    t.decimal  "VM_price",                 precision: 10, scale: 2
-    t.decimal  "RAM_price",                precision: 10, scale: 2
-    t.string   "VM_default",   limit: 255
-    t.string   "RAM_default",  limit: 255
-    t.datetime "created_at",                                        null: false
-    t.datetime "updated_at",                                        null: false
+    t.string   "name",            limit: 255
+    t.string   "picture_path",    limit: 255
+    t.string   "description",     limit: 255
+    t.decimal  "price",                       precision: 10, scale: 2
+    t.decimal  "VM_price",                    precision: 10, scale: 2
+    t.decimal  "storage_price",               precision: 10, scale: 2
+    t.string   "VM_default",      limit: 255
+    t.string   "storage_default", limit: 255
+    t.datetime "created_at",                                           null: false
+    t.datetime "updated_at",                                           null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -70,15 +70,26 @@ ActiveRecord::Schema.define(version: 20161108122011) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "users_services", force: :cascade do |t|
-    t.integer  "user_id",    limit: 4
-    t.integer  "service_id", limit: 4
-    t.boolean  "veeam"
-    t.boolean  "back_up"
-    t.boolean  "DR"
-    t.integer  "VM",         limit: 4
-    t.integer  "RAM",        limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.integer  "veeam_user_id", limit: 4
+    t.integer  "vm_server_id",  limit: 4
+    t.integer  "services_id",   limit: 4
+    t.integer  "vm_extra",      limit: 4
+    t.integer  "storage_extra", limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "veeam_users", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.decimal  "price",                  precision: 10, scale: 2
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+  end
+
+  create_table "vm_servers", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end

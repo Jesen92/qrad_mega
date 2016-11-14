@@ -1,6 +1,6 @@
-ActiveAdmin.register Service do
+ActiveAdmin.register VeeamUser do
 
-  permit_params :name, :description, :picture_path, :price, :vm_price, :storage_price, :vm_default, :storage_default
+  permit_params :title, :price
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -16,4 +16,3 @@ ActiveAdmin.register Service do
 
 
 end
-

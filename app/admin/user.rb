@@ -37,6 +37,7 @@ ActiveAdmin.register User do
       f.input :password
       f.input :password_confirmation
       f.input :admin
+      f.input :service
     end
     f.actions
   end

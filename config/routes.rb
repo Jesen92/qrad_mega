@@ -10,16 +10,18 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-
+  ActiveAdmin.routes(self)
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
     resources :services
     root 'services#index'
     devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}.merge(ActiveAdmin::Devise.config)
-    ActiveAdmin.routes(self)
+
   end
 
   match '*path', to: redirect("/#{I18n.locale}/%{path}"), :via => [:get]
   match '', to: redirect("/#{I18n.locale}"), :via => [:get]
+  #match '*/admin', to: redirect("/admin"), :via => [:get]
+  #match '*/admin/*path', to: redirect("/admin/%{path}"), :via => [:get]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

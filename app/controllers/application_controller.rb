@@ -15,12 +15,16 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     #puts params[:locale]
+
+    I18n.locale = params[:locale] || I18n.default_locale
+=begin
     if params[:locale].present?
       I18n.locale = params[:locale]
     else
       puts "postavio sam locale iz browsera!"
-      I18n.locale = extract_locale_from_accept_language_header.include? "hr" ? "hr" : "en"
+      I18n.locale = extract_locale_from_accept_language_header
     end
+=end
   end
 
   def default_url_options(options = {})

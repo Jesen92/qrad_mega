@@ -6,8 +6,8 @@ class CreateServices < ActiveRecord::Migration
       t.string :description
       t.decimal :price, precision: 10, scale: 2
       t.decimal :VM_price, precision: 10, scale: 2
-      t.decimal :RAM_price, precision: 10, scale: 2
-      t.string :VM_default
+      t.decimal :storage_price, precision: 10, scale: 2
+      t.string :storage_default
       t.string :RAM_default
 
       t.timestamps null: false

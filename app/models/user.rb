@@ -4,9 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, stretches: 14
 
-  has_many :users_services
-  has_many :services, :through => :users_services
-
   def self.create_with_password(attr={})
     generated_password = Devise.friendly_token.first(14)
     user = self.create(attr.merge(password: generated_password, password_confirmation: generated_password))
