@@ -2,6 +2,7 @@ hr:
   controllers:
     registrations:
       notice: "Provjerite svoj e-mail za lozinku!"
+      error: "Registracija nije uspješna: e-mail već postoji!"
   model:
     user:
       reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"

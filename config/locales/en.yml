@@ -24,6 +24,7 @@ en:
   controllers:
     registrations:
       notice: "Check your e-mail for your password!"
+      error: "Registration failed: e-mail already exists!"
   model:
     user:
       reset_password: "Password has not been reset! You can only reset your password once per day!"

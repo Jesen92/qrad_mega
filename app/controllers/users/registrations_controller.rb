@@ -4,13 +4,19 @@ class Users::RegistrationsController < Devise::RegistrationsController
 # before_action :configure_account_update_params, only: [:update]
 
   def create
+    resource = nil
+    unless User.exists?(email: params[:email])
     resource = User.create_with_password(sign_up_params)
-
+    end
     #resource.save
 
-    yield resource if block_given?
+    #yield resource if block_given?
 
-    flash[:notice] = I18n.t('controllers.registrations.notice')
+    if resource.nil?
+      flash[:notice] = I18n.t('controllers.registrations.error')
+    else
+      flash[:notice] = I18n.t('controllers.registrations.notice')
+    end
 
     redirect_to new_user_session_path
   end
