@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <div class="container" style="margin-top: 30px">
+    <div class="row" >
+      <div class="col-md-5">
+        <%= image_tag "mpr_logo.png" %>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "veeam_logo.png" %>
+      </div>
+    </div>
+  </div>
+</head>
+<body>
+<div class="container" style="margin-top: 15px; margin-bottom: 35px">
+  <div class="page-header">
+    <h1><span style="color: #A9CC2D; ">CloudConnect</span> <small>Cijena usluge</small></h1>
+  </div>
+
+  <div class="container" >
+    <table border="1">
+      <tr>
+        <th style="border-left: 0;"></th>
+        <th style="border-left: 0; border-right: 0;"></th>
+        <th style="border-right: 0;">Cijena</th>
+      </tr>
+      <tr>
+        <td style="border-left: 0;"><%= @veeam_user %></td>
+        <td style="border-left: 0; border-right: 0;"></td>
+        <td align="right" style="border-right: 0;"><%= number_to_currency("0", :unit => "€" ) %></td>
+      </tr>
+      <tr>
+        <td style="border-left: 0;"><%= @service %></td>
+        <td style="border-left: 0; border-right: 0;"></td>
+        <td align="right" style="border-right: 0;"><%= number_to_currency(@service_price, :unit => "€" ) %></td>
+      </tr>
+      <tr>
+        <td style="border-left: 0;"><%= @platform %></td>
+        <td style="border-left: 0; border-right: 0;"></td>
+        <td align="right" style="border-right: 0;"><%= number_to_currency("0", :unit => "€" ) %></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td style="border-left: 0;">Extra VM</td>
+        <td><%= @extra_vm %></td>
+        <td align="right" style="border-right: 0;"><%= number_to_currency(@extra_vm_price, :unit => "€" ) %></td>
+      </tr>
+      <tr>
+        <td style="border-left: 0;">Extra Storage</td>
+        <td><%= @extra_storage %></td>
+        <td align="right" style="border-right: 0;"><%= number_to_currency(@extra_storage_price, :unit => "€" ) %></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td style="border-left: 0;"></td>
+        <td></td>
+        <td align="right" style="border-right: 0;"><%= number_to_currency(@sum_price, :unit => "€" ) %></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>

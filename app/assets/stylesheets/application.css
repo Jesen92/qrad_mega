@@ -13,4 +13,16 @@
  *= require_self
  *= require services
  *= require bootstrap.min
+ *= require animate
+ *= require bootstrap-spinner
+ *= require flag-icon.min
+ *= require font-awesome
+ *= require owl.carousel
+ *= require owl.theme
+ *= require Pe-icon-7-stroke
+ *= require prettyPhoto
+ *= require responsive
+ *= require sky-forms
+ *= require sky-forms-green
+ *= require style
  */

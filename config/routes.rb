@@ -5,14 +5,16 @@ Rails.application.routes.draw do
 
   get 'services/show'
 
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   ActiveAdmin.routes(self)
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
-    resources :services
+    resources :services do
+      post :calculator, on: :collection
+      post :contact_us, on: :collection
+    end
     root 'services#index'
     devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}.merge(ActiveAdmin::Devise.config)
 

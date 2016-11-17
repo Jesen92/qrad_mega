@@ -10,7 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require services.coffee
+//= require jquery-3.1.1.min
+//= require bootstrap.min
+//= require smoothscroll
+//= require jquery.ajaxchimp.langs
+//= require_tree .

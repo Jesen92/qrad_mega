@@ -25,6 +25,9 @@ en:
     registrations:
       notice: "Check your e-mail for your password!"
       error: "Registration failed: e-mail already exists!"
+    services:
+      contact_us: "Thank you for contacting us!"
+      claculator: "Your inquiry has been sent! We will contact you with additional information!"
   model:
     user:
       reset_password: "Password has not been reset! You can only reset your password once per day!"
@@ -39,3 +42,47 @@ en:
     index:
       title: "Title"
       subheading: "Subheading"
+      about: "ABOUT "
+      trial: "TRIAL/PRICES "
+      contact: "CONTACT "
+      sign_in: "SIGN IN "
+      sign_out: "SIGN OUT "
+      sign_up: "SIGN UP "
+      tour: "TAKE A TOUR "
+      start_trial: "START FREE TRIAL"
+      trial_: "FREE TRIAL"
+      register_now: "REGISTER NOW"
+      inquiry: "SEND AN INQUIRY"
+      get_in_touch: "GET IN TOUCH"
+      trial_title: "CALCULATOR & FREE TRIAL REQUEST"
+      about_title: "ABOUT"
+      contact_us_name: "Name"
+      contact_us_email: "e-mail"
+      contact_us_subject: "Subject"
+      contact_us_body: "  Message Text..."
+      contact_us_send: "SEND MESSAGE"
+  users:
+    sessions:
+      new:
+        login: "Sign In form"
+        password: "Password"
+        remember: "Remember me"
+        login_button: "Log in"
+        email: "user@example.com"
+    registrations:
+      new:
+        form: "Sign up form"
+        fname: "First name"
+        lname: "Last name"
+        country: "Country/State"
+        city: "City"
+        address: "Address"
+        cin: "Company identification number"
+        company: "Company"
+        phone: "Telephone number"
+        postal: "Postal code"
+        signup: "Sign Up"
+    shared:
+      links:
+        signup: "Sign Up"
+        forgot: "Forgot your password?"

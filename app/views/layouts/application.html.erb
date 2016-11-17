@@ -2,16 +2,13 @@
 <html>
 <head>
   <title>CloudConnect</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic',media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<p><%= notice %></p>
-<p><%= alert %></p>
-<%= link_to_unless_current "English", locale: "en" %>
-<%= link_to_unless_current "Hrvatski", locale: "hr" %>
+<!--
 <% if user_signed_in? %>
   <%= t ".welcome_text"+current_user.email %>
 <p>
@@ -20,13 +17,9 @@
 <% else %>
   <%= link_to t(".sign_in"), new_user_session_path %>
 <% end %>
-
+-->
 <%= yield %>
 
 </body>
-<% if user_signed_in? %>
-  <% if current_user.admin? %>
-    <%= link_to "Admin", admin_root_path %>
-  <% end %>
-<% end %>
+
 </html>

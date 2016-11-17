@@ -19,11 +19,22 @@ class UserMailer < ApplicationMailer
     if locale == "hr"
       mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'reset_password_hr')
     else
-      mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'user_mailer/reset_password')
+      mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'reset_password')
     end
   end
 
   def send_calculated_services(user, locale)
     #TODO slanje mail-a kalkulacije
+  end
+
+  def send_contact_us(locale, name, email, subject, body)
+
+    @name = name
+    @email = email
+    @subject = subject
+    @body = body
+
+    mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
+    #TODO slanje mail-a contact_us
   end
 end

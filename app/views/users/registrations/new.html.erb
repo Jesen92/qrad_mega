@@ -1,27 +1,131 @@
-<h2>Sign up</h2>
+<section class="header parallax home-parallax page" id="HOME">
+  <h2></h2>
+  <div class="section_overlay">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= f.error_notification %>
+    <div class="container home-container">
 
-    <div class="form-inputs">
-      <%= f.input :email, required: true, autofocus: true %>
+      <div class="row">
+        <div class="col-md-12" style="padding-top: 15px;">
 
-      <!--
-      <%= f.input :first_name, required: true %>
-      <%= f.input :last_name, required: true %>
-      <%= f.input :phone, required: false %>
-      <%= f.input :country, as: :country, :priority => ["HR"], label: "Country" %>
-      <%= f.input :city, required: true %>
-      <%= f.input :address, required: true %>
-      <%= f.input :company, required: true %>
-      <%= f.input :cin, label: "Company Identification number", required: true %> -->
+          <div class="logo text-center">
+            <!-- LOGO -->
+            <%= image_tag("logo.png", width: "250") %>
+            <%= image_tag("veeam.png", :alt => "veeam", width: "180", style: "padding-left: 10px") %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12" style="padding-bottom: 20px;">
+
+
+            <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "sky-form"}) do |f| %>
+                <header><%= t(".form") %></header>
+
+                <fieldset>
+
+                  <section class="row">
+                    <section class="col col-6">
+                      <%= f.error_notification %>
+                      <label class="input">
+                        <i class="icon-append icon-user"></i>
+                        <%= f.input :first_name, placeholder: t(".fname"),label: false, required: true %>
+                      </label>
+                    </section>
+                    <section class="col col-6">
+                      <label class="input">
+                        <i class="icon-append icon-user"></i>
+                        <%= f.input :last_name, placeholder: t(".lname"), label: false, required: true %>
+                      </label>
+                    </section>
+                  </section>
+
+                  <section class="row">
+                    <section class="col col-6">
+                      <label class="input">
+                        <i class="icon-append icon-building"></i>
+                        <%= f.input :company, placeholder: t(".company"), label: false, required: true %>
+                      </label>
+                    </section>
+                    <section class="col col-6">
+                      <label class="input">
+                        <i class="icon-append icon-legal"></i>
+                        <%= f.input :cin, placeholder: t(".cin"), label: false, required: true %>
+                      </label>
+                    </section>
+                  </section>
+
+                  <section>
+
+                    <label class="input">
+                      <i class="icon-append icon-envelope-alt"></i>
+                      <%= f.input :email, placeholder: "E-mail", label: false, required: true %>
+                    </label>
+                  </section>
+
+                  <section>
+
+                    <label class="input">
+                      <i class="icon-append icon-phone"></i>
+                      <%= f.input :phone, placeholder: t(".phone"), label: false, required: true %>
+                    </label>
+                  </section>
+
+                </fieldset>
+
+                <fieldset>
+
+
+                  <div class="row">
+                    <section class="col col-4">
+                      <label class="select">
+                        <%= f.input :country, placeholder: t(".country"), as: :country,:priority => ["HR"], label: false %>
+                        <i></i>
+                      </label>
+                    </section>
+
+                    <section class="col col-4">
+                      <label class="input">
+                        <%= f.input :city, placeholder: t(".city"), label: false, required: true %>
+                      </label>
+                    </section>
+
+                    <section class="col col-4">
+                      <label class="input">
+                        <%= f.input :postal_code, placeholder: t(".postal"), label: false, required: true %>
+                      </label>
+                    </section>
+                  </div>
+
+                  <section>
+                    <label for="file" class="input">
+                      <%= f.input :address, placeholder: t(".address"), label: false, required: true %>
+                    </label>
+                  </section>
+                  <%= flash[:recaptcha_error] %>
+                  <%= recaptcha_tags %>
+                </fieldset>
+                <footer>
+                  <div class="form-actions">
+                    <%= f.button :submit, "Sign up" , class: "button"%>
+                  </div>
+                  <%= render "devise/shared/links" %>
+                </footer>
+            <% end %>
+
+
+
+        </div>
+
+      </div>
     </div>
-    <%= flash[:recaptcha_error] %>
-    <%= recaptcha_tags %>
+  </div>
+</section>
+    <!-- Modal content -->
 
-    <div class="form-actions">
-      <%= f.button :submit, "Sign up" %>
-    </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+
+
+
+
+
+

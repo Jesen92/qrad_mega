@@ -1,2 +1,931 @@
-<h1><%= t(".title") %></h1>
-<p><%= t(".subheading") %></p>
+<div class="spn_hol">
+  <div class="spinner2">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+
+<!-- END PRELOADER -->
+
+<!-- =========================
+ START ABOUT US SECTION
+============================== -->
+<section class="header parallax home-parallax page" id="HOME">
+  <h2></h2>
+  <div class="section_overlay">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <%= link_to image_tag("logo.png", :alt => "Logo"), "http://www.megatrend.com", target: '_blank', class: "navbar-brand" %>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- NAV -->
+            <li><a href="#HOME">HOME</a> </li>
+            <li><a href="#ABOUT"><%= t(".about") %></a> </li>
+            <li><a href="#BUAAS">BUaaS</a></li>
+            <li><a href="#DRAAS">DRaaS</a> </li>
+            <% if user_signed_in? %>
+            <li><a href="#CALC"><%= t(".trial") %></a> </li>
+            <% else %>
+            <li><a href="#REGISTER"><%= t(".trial") %></a> </li>
+            <% end %>
+            <li><a href="#CONTACT"><%= t(".contact") %></a> </li>
+            <% if user_signed_in? %>
+            <li><%= link_to t(".sign_out"), destroy_user_session_path, :method => :delete %></li>
+            <% else %>
+            <li><a href="#REGISTER"><%= t(".sign_in") %></a> </li>
+            <% end %>
+            <% if I18n.locale == :hr %>
+            <li><%= link_to "EN ", locale: "en" %></li>
+            <% else %>
+            <li><%= link_to "HR ", locale: "hr" %></li>
+            <% end %>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container- -->
+    </nav>
+    <% if notice %>
+        <div class="container" style="padding-top: 15px;">
+        <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= notice %></div>
+        </div>
+    <% elsif alert %>
+        <div class="container" style="padding-top: 15px;">
+        <div class="alert alert-danger" role="alert"><%= alert %></div>
+        </div>
+    <% end %>
+    <div class="container home-container">
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="logo text-center">
+            <!-- LOGO -->
+            <%= image_tag("logo.png", width: "250") %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <div class="home_text">
+            <!-- TITLE AND DESC -->
+            <h1>Veeam CloudConnect Backup i Disaster Recovery Usluga</h1>
+            <p>Iskoristite i Vi mogućnosti tehnologije i postanite „Always On” tvrtka</p>
+
+            <div class="download-btn">
+              <!-- BUTTON -->
+              <% if user_signed_in? %>
+              <a class="btn home-btn wow fadeInLeft" href="#CALC"><%= t(".start_trial") %></a>
+              <% else %>
+              <a class="btn home-btn wow fadeInLeft" href="#REGISTER"><%= t(".start_trial") %></a>
+              <% end %>
+              <a class="tuor btn wow fadeInRight" href="#ABOUT"><%= t(".tour") %><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-offset-1 col-sm-4">
+          <div class="home-iphone">
+            <%= image_tag("veeam.png", :alt => "veeam") %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- END HEADER SECTION -->
+
+
+
+
+<!-- =========================
+ START ABOUT US SECTION
+============================== -->
+
+
+<section class="about page" id="ABOUT">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <!-- ABOUT US SECTION TITLE-->
+        <div class="section_title">
+          <h2><%= t(".about_title") %></h2>
+          <p>Veeam backup i replikacijske tehnologije zaštićuju više od 10.5 miliona virtualnih računala kod više od 200 000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="inner_about_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about_phone wow bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
+            <!-- PHONE -->
+            <%= image_tag("evolution.png", width: "700", alt: "data protection evolution") %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+<!-- End About Us -->
+
+<!-- =========================
+ START CALL TO ACTION
+============================== -->
+<div class="call_to_action">
+  <div class="container">
+    <div class="row wow fadeInLeftBig" data-wow-duration="1s">
+      <div class="col-md-9">
+        <p>Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku</p>
+      </div>
+      <div class="col-md-3">
+        <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END CALL TO ACTION -->
+
+
+
+
+
+<!-- =========================
+ START FEATURES
+============================== -->
+<section id="BUAAS" class="features page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <!-- FEATURES SECTION TITLE -->
+        <div class="section_title wow fadeIn" data-wow-duration="1s">
+          <h2>Backup as a Service - <span style="text-transform: none;">BUaaS</span></h2>
+          <p>Podaci se repliciraju sa Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaki pojedini file ili cijelu virtualnu mašinu.
+          </p>
+        </div>
+        <!-- END FEATURES SECTION TITLE -->
+      </div>
+    </div>
+  </div>
+
+  <div class="feature_inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+          <!-- FEATURE -->
+
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-cloud-upload"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>3-2-1 backup pravilo<span> :</span></h3>
+            <p> za kvalitetan backup potrebno je imati tri kopije podataka, spremljene na dva različita medija i jedna od kopija mora biti na drugoj lokaciji. Spremanje backupa na udaljenu lokaciju postavlja izazov na mrežne komunikacije, rastuće količine podataka, resurse potrebne za izgradnju i održavanje udaljene lokacije.
+            </p>
+          </div>
+
+          <!-- END SINGLE FEATURE -->
+
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-network"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>Hosting udaljenog backupa<span> :</span></h3>
+            <p>spremite podatek u udaljeni repozitorij pomoću sigurne SSL konekcije i bez dodatnih Veeam licenci
+            </p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-look"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>Kompletan nadzor i kontrola<span> :</span></h3>
+            <p>pristup podacima i restore ravno iz Vaše Veeam konzole</p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+
+
+        </div>
+        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-diamond"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>Moderna backup arhitektura<span> :</span></h3>
+            <p>iskoristite naprednu Veeam backup tehnologiju korištenjem WAN ubrzanja, zauvijek incremental backup, GFS (grandfather-father-son), pravilima retencije podataka i još puno toga – sve ugrađeno u jedan produkt</p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-key"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>End-to-end enkripcija<span> :</span></h3>
+            <p>podaci se enkriptiraju na izvoru - prije nego napuste Vašu mrežu i kriptirani su u prijenosu i na udaljenoj lokaciji, bez negativnih utjecaja na kompresiju i ubrzanje WAN komunikacija</p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+        </div>
+        <!--  <div class="col-md-4">
+            <div class="feature_iphone">
+                <img class="wow bounceIn" data-wow-duration="1s" src="images/flow.png" alt="">
+            </div>
+        </div>-->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END FEATURES SECTION -->
+
+
+
+<!-- =========================
+ START CALL TO ACTION
+============================== -->
+<div class="call_to_action">
+  <div class="container">
+    <div class="row wow fadeInLeftBig" data-wow-duration="1s">
+      <div class="col-md-9">
+        <p>Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku</p>
+      </div>
+      <div class="col-md-3">
+        <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END CALL TO ACTION -->
+
+
+
+<!-- =========================
+ START FEATURES
+============================== -->
+<section id="DRAAS" class="features page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <!-- FEATURES SECTION TITLE -->
+        <div class="section_title wow fadeIn" data-wow-duration="1s">
+          <h2>Disaster recovery as a Service - <span style="text-transform: none;">DRaaS</span></h2>
+          <p>Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostana za uspostavu i korištenje. Usluga uključuje: Cloud računalo za DR pogon sa procesorskim, memorijskim, disk i mrežnim resursima</p>
+        </div>
+        <!-- END FEATURES SECTION TITLE -->
+      </div>
+    </div>
+  </div>
+
+  <div class="feature_inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+          <!-- FEATURE -->
+
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-repeat"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>Full / partial - site failover <span> :</span></h3>
+            <p> Full-site failover za rad sa DR lokacije ili partial-site failover za trenutno aktiviranje samo pojedinih VM replikat a sve preko sigurnog portala sa minimalnim brojem koraka
+
+            </p>
+          </div>
+
+          <!-- END SINGLE FEATURE -->
+
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-home"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>Full and partial failback <span> :</span></h3>
+            <p>povratak na rad sa Vaše lokacije Ugrađeni virtualni mrežni uređaji za pojednostavljenu mrežnu infrastrukturu i sigurnu komunikaciju.</p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+
+
+
+
+
+        </div>
+        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-magic-wand"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>1-click failover <span> :</span></h3>
+            <p>brzo izvođenje DR procedure ili testiranje failover simulacije bez prekida produkcije</p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+          <!-- FEATURE -->
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-lock"></span></div>
+
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>TLS/SSL veza<span> :</span></h3>
+            <p>Sigurna i pouzdana TLS/SSL (Transport Layer Security/Secure Sockets Layer) veza između lokacija sa enkripcijomo podataka Višestruke tehnologije smanjenja mrežnog prometa, uključivo WAN acceleration, BitLooker™ i replika seeding</p>
+          </div>
+          <!-- END SINGLE FEATURE -->
+
+        </div>
+        <!--  <div class="col-md-4">
+            <div class="feature_iphone">
+                <img class="wow bounceIn" data-wow-duration="1s" src="images/flow.png" alt="">
+            </div>
+        </div>-->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END FEATURES SECTION -->
+
+
+
+
+
+<!-- =========================
+ Start FUN FACTS
+============================== -->
+
+
+<section class="fun_facts parallax">
+  <div class="available_store">
+    <div class="container  wow bounceInRight" data-wow-duration="1s">
+      <div class="col-md-6">
+        <div class="available_title">
+          <h2>Više o usluzi</h2>
+          <p>Neki opis </p>
+        </div>
+      </div>
+
+      <!-- DOWNLOADABLE STORE -->
+      <div class="col-md-6">
+        <div class="row">
+          <a href="http://www.megatrend.com/ " target="_blank">
+            <div class="col-md-4 no_padding">
+              <div class="single_store">
+                <i class="fa fa-home"></i>
+                <div class="store_inner">
+                  <h2>MEGATREND</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="col-md-4 no_padding">
+            <a href="https://www.veeam.com/vm-backup-recovery-replication-software.html" target="_blank">
+              <div class="single_store">
+                <i class="fa fa-cogs"></i>
+                <div class="store_inner">
+                  <h2>VEEAM</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 no_padding">
+            <a href="http://www.vmware.com/" target="_blank">
+              <div class="single_store last">
+                <i class="fa fa-magic"></i>
+                <div class="store_inner">
+                  <h2>VMware</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END DOWNLOADABLE STORE -->
+    </div>
+  </div>
+</section>
+
+<!-- END FUN FACTS -->
+
+<!-- =========================
+ START KALKULATOR - ovo se prikazuje ako je korisnik logiran
+============================== -->
+
+
+<% if user_signed_in? %>
+
+<section id="CALC" class="features page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <!-- FEATURES SECTION TITLE -->
+        <div class="section_title wow fadeIn" data-wow-duration="1s">
+          <h2><%= t(".trial_title") %></h2>
+          <p>5VM + 500 GB prostora / kratki opis upotrebe kalkulatora i zajtjeva free trial-a</p>
+
+        </div>
+        <div class="centered">
+
+          <a class="btn btn-primary btn-action" href="#" role="button">Free Trial</a>
+
+
+        </div>
+        <!-- END FEATURES SECTION TITLE -->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row margin">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+            <!-- FEATURE -->
+            <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
+                <%= f.input :veeam_user ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamUser"} %>
+                <%= f.input :service ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamService"} %>
+                <%= f.input :vm_server ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamServer"} %>
+                <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
+                <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
+                <div class="kalkulator ">
+                  <h3>Veam license<span> :</span></h3>
+                  <div class="dropdown">
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
+                      User Type <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="license" >
+                      <li><a value="0">Veeam user</a></li>
+                      <li><a value="40">non Veeam user</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+
+            <!-- END SINGLE FEATURE -->
+
+          </div>
+
+
+          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+            <div class="kalkulator ">
+              <h3>Service<span> :</span></h3>
+              <div class="dropdown ">
+                <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
+                  Service Type <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="service" onchange="calculateTotal()">
+                  <li><a space="500" vm="5" value="120">BUaaS</a></li>
+                  <li><a space="1000" vm="5" value="250">DRaaS</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+            <div class="kalkulator ">
+              <h3>PLATFORM<span> :</span></h3>
+              <div class="dropdown ">
+                <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                  Platform <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="platform" onchange="calculateTotal()">
+                  <li><a value="0">VMware</a></li>
+                  <li><a value="0">HyperV</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4 col-md-offset-2 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+            <!-- FEATURE -->
+
+            <div class="kalkulator ">
+              <h3>Extra VM<span> :</span></h3>
+
+
+              <div class="input-group spinner" data-trigger="spinner" id="spinner">
+                <input id="extraVm" type="text" class="form-control text-center" value="0" data-rule="quantity" >
+                <div class="input-group-addon">
+                  <a  onclick="extraVmPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+                  <a onclick="extraVmMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+                </div>
+              </div>
+
+
+              <!--<div id="extraVm" class="input-group">
+                  <span class="input-group-btn">
+<button type="button" class="btn btn-default" data-value="decrease" data-target="#spinner" data-toggle="spinner">
+<span class="glyphicon glyphicon-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" data-ride="spinner" id="spinner" class="form-control input-number" value="0">
+                  <span class="input-group-btn">
+<button type="button" class="btn btn-default" data-value="increase" data-target="#spinner" data-toggle="spinner">
+<span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                  </span>
+              </div>-->
+            </div>
+
+            <!-- END SINGLE FEATURE -->
+
+          </div>
+
+
+          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+            <div class="kalkulator ">
+              <h3>Extra 100GB<span> :</span></h3>
+
+              <div class="input-group spinner" data-trigger="spinner" id="spinner2">
+                <input id="extraRam" type="text" class="form-control text-center" value="0" data-rule="quantity" >
+                <div class="input-group-addon">
+                  <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+                  <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+                </div>
+              </div>
+              <!--  <div class="input-group">
+                    <span class="input-group-btn">
+<button type="button" class="btn btn-default" data-value="decrease" data-target="#spinner2" data-toggle="spinner">
+<span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                    </span>
+                    <input type="text" data-ride="spinner" id="spinner2" class="form-control input-number" value="0" >
+                    <span class="input-group-btn">
+<button type="button" class="btn btn-default" data-value="increase" data-target="#spinner2" data-toggle="spinner">
+<span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                    </span>
+                </div>-->
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+        <!-- FEATURE -->
+
+        <div class="price">
+
+          <!-- FEATURE HEADING AND DESCRIPTION -->
+          <h3>Cjena odabranih usluga <span> :</span></h3>
+          <h2> <span id="cijena">0</span>,00 &euro;</h2>
+          <p> U cijenu je uključeno <span id="vm">0</span> VM i <span id="space">0</span> GB
+
+          </p>
+
+
+        </div>
+
+        <!-- END SINGLE FEATURE -->
+        <div class="centered">
+          <%= f.button :submit, t(".inquiry"), class: "btn home-btn wow fadeInLeft" %>
+
+        </div>
+      </div>
+    </div>
+
+            <% end %>
+
+
+  </div>
+
+
+</section>
+<!-- END KALKULATOR SECTION -->
+
+<% end %>
+<!-- =========================
+ START SIGNIN SIGNUP - ovo se prikazuje ako je korisnik nije logiran
+============================== -->
+<% if !user_signed_in? %>
+<section id="REGISTER" class="features page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <!-- FEATURES SECTION TITLE -->
+        <div class="section_title wow fadeIn" data-wow-duration="1s">
+          <h2>Caclulator &amp; free trial request </h2>
+          <p>Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate </p>
+
+        </div>
+
+        <div class="centered margin-btm">
+
+          <%= link_to t(".sign_up"), new_user_registration_path, class: "btn btn-primary btn-action" %>
+          <%= link_to t(".sign_in"), new_user_session_path, class: "btn btn-primary btn-action " %>
+
+
+        </div>
+        <!-- END FEATURES SECTION TITLE -->
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- END SIGNIN SIGNUP SECTION -->
+<% end %>
+
+<!-- =========================
+ START CONTCT FORM AREA
+============================== -->
+<section class="contact page" id="CONTACT">
+  <div class="section_overlay">
+    <div class="container">
+      <div class="col-md-10 col-md-offset-1 wow bounceIn">
+        <!-- Start Contact Section Title-->
+        <div class="section_title">
+          <h2><%= t(".get_in_touch") %></h2>
+          <p>neki tekst za opis</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact_form wow bounceIn">
+      <div class="container">
+
+        <!-- START ERROR AND SUCCESS MESSAGE -->
+        <div class="form_error text-center">
+          <div class="name_error hide error">Please Enter your name</div>
+          <div class="email_error hide error">Please Enter your Email</div>
+          <div class="email_val_error hide error">Please Enter a Valid Email Address</div>
+          <div class="message_error hide error">Please Enter Your Message</div>
+        </div>
+        <div class="Sucess"></div>
+        <!-- END ERROR AND SUCCESS MESSAGE -->
+
+        <!-- FORM -->
+        <%= simple_form_for(:email_form, url: contact_us_services_path ,class: "form-control") do |f|%>
+          <div class="row">
+            <div class="col-md-4">
+              <%= f.input :name,label:false, input_html: {class: "form-control", id: "name"}, required: true, placeholder: t(".contact_us_name") %>
+              <%= f.input :email,label:false, input_html: {class: "form-control", id: "email"},required: true , placeholder: t(".contact_us_email")%>
+              <%= f.input :subject,label:false, input_html: {class: "form-control", id: "subject"},required: true, placeholder: t(".contact_us_subject") %>
+            </div>
+
+
+            <div class="col-md-8">
+              <%= f.input :body ,required: true, label: false, input_html: { id: "message", rows: "25", cols: "10", class: "form-control"}, placeholder: t(".contact_us_body"), :as => :text %>
+              <%= f.button :submit, t(".contact_us_send"), class: "btn btn-default submit-btn" %>
+            </div>
+          </div>
+        <% end %>
+        <!-- END FORM -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 wow bounceInLeft">
+          <div class="social_icons">
+            <ul>
+              <li><a href="https://www.facebook.com/mprdoo" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/company/megatrend" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END CONTACT -->
+
+
+<!-- =========================
+ FOOTER
+============================== -->
+
+<section class="copyright">
+  <h2></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="copy_right_text">
+          <!-- COPYRIGHT TEXT -->
+          <p>Copyright &copy; 2016.</p>
+          <p><a href="http://www.megatrend.com/" target="_blank">Megatrend Poslovna Rješenja</a></p>
+          <p><% if user_signed_in? %>
+                <% if current_user.admin? %>
+                    <%= link_to "Admin", admin_root_path %>
+                <% end %>
+            <% end %></p>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="scroll_top">
+          <a href="#HOME"><i class="fa fa-angle-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END FOOTER -->
+
+
+<!--Registration Form dialog-->
+
+<!--Registration Form dialog end -->
+
+<!--Login Form dialog-->
+
+
+
+
+<script>
+  //KALKULATOR SELECT VALUE
+  var License=0;
+  var Service=0;
+  var Platform=0;
+  var ExtraVm=0;
+  var ExtraGb=0;
+  var Space=0;
+  var Vm=0;
+  var AddSpace=0;
+  var AddVm=0;
+  var TempText = "";
+
+
+
+  $(".dropdown-menu li a").click(function(){
+    var selText = $(this).text();
+    TempText = selText
+    $(this).parents('.dropdown').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+  });
+
+  $("#license li a").click(function(){
+    License = $(this).attr("value");
+    calculate();
+    setVeaamUser();
+  });
+
+  $("#service li a").click(function(){
+    Service = $(this).attr("value");
+    Space=parseInt($(this).attr("space"));
+    Vm=parseInt($(this).attr("vm"));
+    calculate();
+    setVeeamService();
+  });
+
+  $("#platform li a").click(function(){
+    Platform = $(this).attr("value");
+    calculate();
+    setVeeamServer();
+  });
+
+  $("#extraVm").click(function(){
+    ExtraVm = 15 * parseInt($(this).attr("value"));
+    /*alert($("#spinner").attr("value"));*/
+    /*calculate();*/
+  });
+
+  $("#spiner2").click(function(){
+    ExtraGb = $(this).attr("value");
+    calculate();
+  });
+
+  function extraVmPlus(){
+    var result =0;
+    if(parseInt(document.getElementById("extraVm").value) < 30){
+      result = parseInt(document.getElementById("extraVm").value) + 1;
+    }
+    else{
+      result=30;
+      AddVm=30;
+    }
+
+    ExtraVm = result * 15;
+    AddVm =result;
+    calculate();
+    setExtraVm()
+  }
+
+  function extraVmMinus(){
+    var result =0;
+    if(parseInt(document.getElementById("extraVm").value) > 0){
+      result = parseInt(document.getElementById("extraVm").value) - 1;
+    }
+    else{
+      result=0;
+      AddVm=0;
+    }
+    ExtraVm = result * 15;
+    AddVm =result;
+    calculate();
+    setExtraVm()
+  }
+
+  function extraRamPlus(){
+    var result = 0;
+    if(parseInt(document.getElementById("extraRam").value) < 30){
+      result = parseInt(document.getElementById("extraRam").value) + 1;
+    }
+    else{
+      result=30;
+      AddSpace=30*100;
+    }
+    ExtraGb = result * 10;
+    AddSpace =result * 100;
+    calculate();
+    setExtraStorage()
+  }
+
+  function extraRamMinus(){
+    var result =0;
+    if(parseInt(document.getElementById("extraRam").value) > 0){
+      result = parseInt(document.getElementById("extraRam").value) - 1;
+    }
+    else{
+      result=0;
+      AddSpace=0;
+    }
+    ExtraGb = result * 10;
+    AddSpace =result * 100;
+    calculate();
+    setExtraStorage()
+  }
+
+
+  function calculate (){
+    var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);
+    document.getElementById("cijena").innerHTML = result;
+    document.getElementById("vm").innerHTML = Vm + AddVm;
+    document.getElementById("space").innerHTML = Space + AddSpace;
+
+  }
+
+  function setVeaamUser(){
+    document.getElementById("veeamUser").value = TempText.toString();
+  }
+
+  function setVeeamService(){
+    document.getElementById("veeamService").value = TempText.toString();
+  }
+
+  function setVeeamServer(){
+    document.getElementById("veeamServer").value = TempText.toString();
+  }
+
+  function setExtraVm(){
+    document.getElementById("veeamVmExtra").value = AddVm;
+  }
+
+  function setExtraStorage(){
+    document.getElementById("veeamStorageExtra").value = AddSpace;
+  }
+</script>

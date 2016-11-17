@@ -3,6 +3,9 @@ hr:
     registrations:
       notice: "Provjerite svoj e-mail za lozinku!"
       error: "Registracija nije uspješna: e-mail već postoji!"
+    services:
+      contact_us: "Hvala što ste nas kontaktirali!"
+      claculator: "Vaš upit je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
   model:
     user:
       reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
@@ -17,6 +20,25 @@ hr:
     index:
       title: "Naslov"
       subheading: "Podnaslov"
+      about: "O NAMA "
+      trial: "PROBA/CIJENE "
+      contact: "KONTAKT "
+      sign_in: "PRIJAVI SE "
+      sign_out: "ODJAVI SE "
+      sign_up: "REGISTRIRAJ SE"
+      tour: "ZAPOČNITE RAZGLEDAVANJE "
+      start_trial: "ZAPOČNI BESPLATNU PROBU"
+      trial_: "BESPLATNA PROBA"
+      register_now: "REGISTRIRAJ SE"
+      inquiry: "POŠALJI UPIT"
+      get_in_touch: "KONTAKTIRAJTE NAS"
+      trial_title: "KALKULATOR I ZAHTJEV ZA BESPLATNOM PROBOM"
+      about_title: "O USLUZI"
+      contact_us_name: "Ime i prezime"
+      contact_us_email: "e-mail"
+      contact_us_subject: "Naslov"
+      contact_us_body: "  Tekst poruke..."
+      contact_us_send: "POŠALJI PORUKU"
   simple_form:
     "yes": 'Da'
     "no": 'Ne'
@@ -57,3 +79,28 @@ hr:
         one: "1 greška sprečava snimanje %{resource}:"
         few: "%{count} greške sprečavaju snimanje %{resource}:"
         other: "%{count} grešaka sprečavaju snimanje %{resource}:"
+  users:
+    sessions:
+      new:
+        login: "Prijava"
+        password: "Lozinka"
+        remember: "Zapamti me"
+        login_button: "Prijavi se"
+        email: "user@example.com"
+    registrations:
+      new:
+        form: "Registracija"
+        fname: "Ime"
+        lname: "Prezime"
+        country: "Država"
+        city: "Grad"
+        address: "Adresa"
+        cin: "OIB tvrtke"
+        company: "Kompanija"
+        phone: "Telefonski broj"
+        postal: "Poštanski broj"
+        signup: "Registriraj se"
+    shared:
+      links:
+        signup: "Registriraj se"
+        forgot: "Zaboravili ste lozinku?"
