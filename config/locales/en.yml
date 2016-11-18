@@ -27,7 +27,8 @@ en:
       error: "Registration failed: e-mail already exists!"
     services:
       contact_us: "Thank you for contacting us!"
-      claculator: "Your inquiry has been sent! We will contact you with additional information!"
+      calculator: "Your inquiry has been sent! We will contact you with additional information!"
+      calc_error: "All required fields must be seleceted before sending an inquiry!"
   model:
     user:
       reset_password: "Password has not been reset! You can only reset your password once per day!"

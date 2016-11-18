@@ -476,6 +476,15 @@
 
   <div class="container">
     <div class="row margin">
+      <% if calc_alert %>
+        <div class="container" style="padding-top: 10px;">
+          <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
+        </div>
+      <% elsif calc_success %>
+        <div class="container" style="padding-top: 10px;">
+          <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
+        </div>
+      <% end %>
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s">
@@ -487,7 +496,7 @@
                 <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
                 <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
                 <div class="kalkulator ">
-                  <h3>Veam license<span> :</span></h3>
+                  <h3>Veam license *<span> :</span></h3>
                   <div class="dropdown">
                     <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
                       User Type <span class="caret"></span>
@@ -509,7 +518,7 @@
 
 
             <div class="kalkulator ">
-              <h3>Service<span> :</span></h3>
+              <h3>Service *<span> :</span></h3>
               <div class="dropdown ">
                 <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
                   Service Type <span class="caret"></span>
@@ -528,7 +537,7 @@
 
 
             <div class="kalkulator ">
-              <h3>PLATFORM<span> :</span></h3>
+              <h3>PLATFORM *<span> :</span></h3>
               <div class="dropdown ">
                 <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
                   Platform <span class="caret"></span>
@@ -657,7 +666,7 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2>Caclulator &amp; free trial request </h2>
+          <h2><%= t(".trial_title") %></h2>
           <p>Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate </p>
 
         </div>

@@ -274,4 +274,10 @@ ActiveAdmin.setup do |config|
   # of those filters by default here.
   #
   # config.include_default_association_filters = true
+
+  ActiveAdmin.setup do |config|
+    config.view_factory.footer = MyFooter
+  end
+
+
 end

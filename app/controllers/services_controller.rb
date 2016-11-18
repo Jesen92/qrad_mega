@@ -8,7 +8,14 @@ class ServicesController < ApplicationController
   end
 
   def calculator
-    redirect_to :back
+    if params[:users_service][:veeam_user].empty? || params[:users_service][:service].empty? || params[:users_service][:vm_server].empty?
+      flash[:calc_alert] = I18n.t("controllers.services.calc_error")
+    else
+      UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
+      flash[:calc_success] = I18n.t("controllers.services.calculator")
+    end
+
+    redirect_to services_index_path(anchor: 'CALC')
     #TODO poziv funkcije za slanje kalkulacije
   end
 

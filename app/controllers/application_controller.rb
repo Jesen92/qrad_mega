@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  add_flash_types :calc_alert, :calc_success
   #before_action :authenticate_user!
   before_filter :set_locale
   # Prevent CSRF attacks by raising an exception.

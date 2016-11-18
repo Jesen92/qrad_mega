@@ -661,10 +661,10 @@ div.carousel-inner .item img {
    SECTION FUN FACTS              
 -----------------------------------------*/
 
-.fun_facts {
+/*.fun_facts {
     background: url(../images/fun_bg.jpg) no-repeat center;
     background-size: cover;
-}
+}*/
 .fun_facts .section_overlay {
     padding-top: 120px;
     padding-bottom: 120px;

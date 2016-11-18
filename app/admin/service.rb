@@ -1,6 +1,6 @@
 ActiveAdmin.register Service do
 
-  permit_params :name, :description, :picture_path, :price, :vm_price, :storage_price, :vm_default, :storage_default
+  permit_params :name, :description, :picture_path, :price, :VM_price, :storage_price, :vm_default, :storage_default
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

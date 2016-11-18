@@ -5,7 +5,8 @@ hr:
       error: "Registracija nije uspješna: e-mail već postoji!"
     services:
       contact_us: "Hvala što ste nas kontaktirali!"
-      claculator: "Vaš upit je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
+      calculator: "Vaš upit je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
+      calc_error: "Sva obavezna polja moraju biti odabrana prije slanja upita!"
   model:
     user:
       reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
