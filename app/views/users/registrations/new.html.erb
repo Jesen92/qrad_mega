@@ -106,7 +106,8 @@
                 </fieldset>
                 <footer>
                   <div class="form-actions">
-                    <%= f.button :submit, "Sign up" , class: "button"%>
+                    <%= f.button :submit, t(".signup") , class: "button"%>
+                    <%= link_to t(".back"), root_path, class: "button" %>
                   </div>
                   <%= render "devise/shared/links" %>
                 </footer>

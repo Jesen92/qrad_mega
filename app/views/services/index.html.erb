@@ -32,7 +32,7 @@
             <!-- NAV -->
             <li><a href="#HOME">HOME</a> </li>
             <li><a href="#ABOUT"><%= t(".about") %></a> </li>
-            <li><a href="#BUAAS">BUaaS</a></li>
+            <li><a href="#BAAS">BaaS</a></li>
             <li><a href="#DRAAS">DRaaS</a> </li>
             <% if user_signed_in? %>
             <li><a href="#CALC"><%= t(".trial") %></a> </li>
@@ -121,7 +121,7 @@
         <!-- ABOUT US SECTION TITLE-->
         <div class="section_title">
           <h2><%= t(".about_title") %></h2>
-          <p>Veeam backup i replikacijske tehnologije zaštićuju više od 10.5 miliona virtualnih računala kod više od 200 000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu.
+          <p><%= t(".texts.about") %>
           </p>
         </div>
       </div>
@@ -171,14 +171,14 @@
 <!-- =========================
  START FEATURES
 ============================== -->
-<section id="BUAAS" class="features page">
+<section id="BAAS" class="features page">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2>Backup as a Service - <span style="text-transform: none;">BUaaS</span></h2>
-          <p>Podaci se repliciraju sa Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaki pojedini file ili cijelu virtualnu mašinu.
+          <h2>Backup <span style="text-transform: none;">as a </span>Service - <span style="text-transform: none;">BaaS</span></h2>
+          <p><%= t(".baas.texts.baas") %>
           </p>
         </div>
         <!-- END FEATURES SECTION TITLE -->
@@ -197,8 +197,8 @@
             <div><span class="pe-7s-cloud-upload"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>3-2-1 backup pravilo<span> :</span></h3>
-            <p> za kvalitetan backup potrebno je imati tri kopije podataka, spremljene na dva različita medija i jedna od kopija mora biti na drugoj lokaciji. Spremanje backupa na udaljenu lokaciju postavlja izazov na mrežne komunikacije, rastuće količine podataka, resurse potrebne za izgradnju i održavanje udaljene lokacije.
+            <h3><%= t(".baas.backup_rule") %><span> :</span></h3>
+            <p><%= t(".baas.texts.backup_rule") %>
             </p>
           </div>
 
@@ -211,8 +211,8 @@
             <div><span class="pe-7s-network"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>Hosting udaljenog backupa<span> :</span></h3>
-            <p>spremite podatek u udaljeni repozitorij pomoću sigurne SSL konekcije i bez dodatnih Veeam licenci
+            <h3><%= t(".baas.hosting") %><span> :</span></h3>
+            <p><%= t(".baas.texts.hosting") %>
             </p>
           </div>
           <!-- END SINGLE FEATURE -->
@@ -224,8 +224,8 @@
             <div><span class="pe-7s-look"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>Kompletan nadzor i kontrola<span> :</span></h3>
-            <p>pristup podacima i restore ravno iz Vaše Veeam konzole</p>
+            <h3><%= t(".baas.supervision") %><span> :</span></h3>
+            <p><%= t(".baas.texts.supervision") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
 
@@ -241,8 +241,8 @@
             <div><span class="pe-7s-diamond"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>Moderna backup arhitektura<span> :</span></h3>
-            <p>iskoristite naprednu Veeam backup tehnologiju korištenjem WAN ubrzanja, zauvijek incremental backup, GFS (grandfather-father-son), pravilima retencije podataka i još puno toga – sve ugrađeno u jedan produkt</p>
+            <h3><%= t(".baas.architecture") %><span> :</span></h3>
+            <p><%= t(".baas.texts.architecture") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
 
@@ -252,8 +252,8 @@
             <div><span class="pe-7s-key"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>End-to-end enkripcija<span> :</span></h3>
-            <p>podaci se enkriptiraju na izvoru - prije nego napuste Vašu mrežu i kriptirani su u prijenosu i na udaljenoj lokaciji, bez negativnih utjecaja na kompresiju i ubrzanje WAN komunikacija</p>
+            <h3><%= t(".baas.end_to_end") %><span> :</span></h3>
+            <p><%= t(".baas.texts.end_to_end") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
 
@@ -301,8 +301,8 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2>Disaster recovery as a Service - <span style="text-transform: none;">DRaaS</span></h2>
-          <p>Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostana za uspostavu i korištenje. Usluga uključuje: Cloud računalo za DR pogon sa procesorskim, memorijskim, disk i mrežnim resursima</p>
+          <h2>Disaster recovery <span style="text-transform: none;">as a </span>Service - <span style="text-transform: none;">DRaaS</span></h2>
+          <p><%= t(".draas.texts.draas") %></p>
         </div>
         <!-- END FEATURES SECTION TITLE -->
       </div>
@@ -320,8 +320,8 @@
             <div><span class="pe-7s-repeat"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>Full / partial - site failover <span> :</span></h3>
-            <p> Full-site failover za rad sa DR lokacije ili partial-site failover za trenutno aktiviranje samo pojedinih VM replikat a sve preko sigurnog portala sa minimalnim brojem koraka
+            <h3><%= t(".draas.failover") %><span> :</span></h3>
+            <p><%= t(".draas.texts.failover") %>
 
             </p>
           </div>
@@ -335,8 +335,8 @@
             <div><span class="pe-7s-home"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>Full and partial failback <span> :</span></h3>
-            <p>povratak na rad sa Vaše lokacije Ugrađeni virtualni mrežni uređaji za pojednostavljenu mrežnu infrastrukturu i sigurnu komunikaciju.</p>
+            <h3><%= t(".draas.failback") %><span> :</span></h3>
+            <p><%= t(".draas.texts.failback") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
 
@@ -355,8 +355,8 @@
             <div><span class="pe-7s-magic-wand"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>1-click failover <span> :</span></h3>
-            <p>brzo izvođenje DR procedure ili testiranje failover simulacije bez prekida produkcije</p>
+            <h3><%= t(".draas.1_click") %><span> :</span></h3>
+            <p><%= t(".draas.texts.1_click") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
 
@@ -366,8 +366,8 @@
             <div><span class="pe-7s-lock"></span></div>
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>TLS/SSL veza<span> :</span></h3>
-            <p>Sigurna i pouzdana TLS/SSL (Transport Layer Security/Secure Sockets Layer) veza između lokacija sa enkripcijomo podataka Višestruke tehnologije smanjenja mrežnog prometa, uključivo WAN acceleration, BitLooker™ i replika seeding</p>
+            <h3><%= t(".draas.tls_ssl") %><span> :</span></h3>
+            <p><%= t(".draas.texts.tls_ssl") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
 
@@ -399,7 +399,6 @@
       <div class="col-md-6">
         <div class="available_title">
           <h2>Više o usluzi</h2>
-          <p>Neki opis </p>
         </div>
       </div>
 
@@ -496,7 +495,7 @@
                 <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
                 <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
                 <div class="kalkulator ">
-                  <h3>Veam license *<span> :</span></h3>
+                  <h3>Veeam license *<span> :</span></h3>
                   <div class="dropdown">
                     <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
                       User Type <span class="caret"></span>
@@ -524,7 +523,7 @@
                   Service Type <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" id="service" onchange="calculateTotal()">
-                  <li><a space="500" vm="5" value="120">BUaaS</a></li>
+                  <li><a space="500" vm="5" value="120">BaaS</a></li>
                   <li><a space="1000" vm="5" value="250">DRaaS</a></li>
                 </ul>
               </div>
@@ -697,7 +696,6 @@
         <!-- Start Contact Section Title-->
         <div class="section_title">
           <h2><%= t(".get_in_touch") %></h2>
-          <p>neki tekst za opis</p>
         </div>
       </div>
     </div>

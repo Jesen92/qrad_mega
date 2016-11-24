@@ -37,8 +37,11 @@ class UserMailer < ApplicationMailer
     @extra_storage_price = (params[:storage_extra].to_i/100) * service.storage_price
     @sum_price = @veeam_user_price + @service_price + @extra_vm_price + @extra_storage_price
 
-    mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator')
-    #TODO slanje mail-a kalkulacije
+    if locale == "hr"
+      mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator')
+    else
+      mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator')
+    end
   end
 
   def send_contact_us(locale, name, email, subject, body)
@@ -48,7 +51,10 @@ class UserMailer < ApplicationMailer
     @subject = subject
     @body = body
 
-    mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
-    #TODO slanje mail-a contact_us
+    if locale == "hr"
+      mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+    else
+      mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
+    end
   end
 end
