@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161117105959) do
+ActiveRecord::Schema.define(version: 20161125112833) do
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   limit: 4,     default: 0, null: false
@@ -33,9 +33,9 @@ ActiveRecord::Schema.define(version: 20161117105959) do
     t.string   "name",       limit: 255
     t.string   "email",      limit: 255
     t.string   "subject",    limit: 255
-    t.string   "body",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.text     "body",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "services", force: :cascade do |t|
@@ -49,6 +49,17 @@ ActiveRecord::Schema.define(version: 20161117105959) do
     t.string   "storage_default", limit: 255
     t.datetime "created_at",                                           null: false
     t.datetime "updated_at",                                           null: false
+  end
+
+  create_table "subscribers", force: :cascade do |t|
+    t.string   "email",         limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "veeam_user_id", limit: 4
+    t.integer  "service_id",    limit: 4
+    t.integer  "vm_server_id",  limit: 4
+    t.integer  "vm_extra",      limit: 4
+    t.integer  "storage_extra", limit: 4
   end
 
   create_table "users", force: :cascade do |t|

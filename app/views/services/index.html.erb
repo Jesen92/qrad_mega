@@ -34,11 +34,7 @@
             <li><a href="#ABOUT"><%= t(".about") %></a> </li>
             <li><a href="#BAAS">BaaS</a></li>
             <li><a href="#DRAAS">DRaaS</a> </li>
-            <% if user_signed_in? %>
             <li><a href="#CALC"><%= t(".trial") %></a> </li>
-            <% else %>
-            <li><a href="#REGISTER"><%= t(".trial") %></a> </li>
-            <% end %>
             <li><a href="#CONTACT"><%= t(".contact") %></a> </li>
             <% if user_signed_in? %>
             <li><%= link_to t(".sign_out"), destroy_user_session_path, :method => :delete %></li>
@@ -449,7 +445,7 @@
 ============================== -->
 
 
-<% if user_signed_in? %>
+
 
 <section id="CALC" class="features page">
   <div class="container">
@@ -458,13 +454,16 @@
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
           <h2><%= t(".trial_title") %></h2>
-          <p>5VM + 500 GB prostora / kratki opis upotrebe kalkulatora i zajtjeva free trial-a</p>
+          <p>5VM + 500 GB prostora / kratki opis upotrebe kalkulatora i zahtjeva free trial-a</p>
 
         </div>
         <div class="centered">
 
-          <a class="btn btn-primary btn-action" href="#" role="button">Free Trial</a>
-
+          <% if user_signed_in? %>
+            <a class="btn btn-primary btn-action" href="#" role="button">Free Trial</a>
+          <% else %>
+             <a class="btn btn-primary btn-action" href="#REGISTER" role="button">Free Trial</a>
+          <% end %>
 
         </div>
         <!-- END FEATURES SECTION TITLE -->
@@ -622,30 +621,54 @@
 
         </div>
       </div>
-      <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-        <!-- FEATURE -->
+      <% if user_signed_in? %>
+        <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+          <!-- FEATURE -->
 
-        <div class="price">
+          <div class="price">
 
-          <!-- FEATURE HEADING AND DESCRIPTION -->
-          <h3>Cjena odabranih usluga <span> :</span></h3>
-          <h2> <span id="cijena">0</span>,00 &euro;</h2>
-          <p> U cijenu je uključeno <span id="vm">0</span> VM i <span id="space">0</span> GB
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>Cijena odabranih usluga<span>:</span></h3>
+            <h2> <span id="cijena">0</span>,00 &euro;</h2>
+            <p> U cijenu je uključeno <span id="vm">0</span> VM i <span id="space">0</span> GB
 
-          </p>
+            </p>
 
 
+          </div>
+
+          <!-- END SINGLE FEATURE -->
+          <div class="centered">
+            <%= f.button :submit, t(".inquiry"), class: "btn home-btn wow fadeInLeft" %>
+
+          </div>
         </div>
+        <% else %>
+          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+            <!-- FEATURE -->
 
-        <!-- END SINGLE FEATURE -->
-        <div class="centered">
-          <%= f.button :submit, t(".inquiry"), class: "btn home-btn wow fadeInLeft" %>
+            <div class="price">
 
-        </div>
-      </div>
+              <!-- FEATURE HEADING AND DESCRIPTION -->
+              <h3><%= t(".inquiry_not_registered") %></h3>
+              <p> U cijenu je uključeno <span id="vm">0</span> VM i <span id="space">0</span> GB
+
+              </p>
+
+
+            </div>
+
+            <!-- END SINGLE FEATURE -->
+            <div class="centered">
+              <a type="button" class="btn home-btn wow fadeInLeft btn-action btnlogin" href="#" role="button" data-toggle="modal" data-target="#LoginForm"><%= t(".inquiry") %></a>
+
+            </div>
+          </div>
+       <% end %>
+
     </div>
 
-            <% end %>
+
 
 
   </div>
@@ -791,7 +814,47 @@
 
 <!--Login Form dialog-->
 
+            <div class="closewnd modal fade" id="LoginForm" role="dialog">
+              <div class="modal-dialog">
 
+                <!-- Modal content -->
+
+                <div class="modal-content">
+                  <% unless user_signed_in? %>
+                      <%= simple_form_for(@subscriber, url: subscriber_create_services_path, method: :post, html: {class: "sky-form"}) do |f| %>
+                          <%= f.input :veeam_user,:as => :hidden , :include_blank => true,:input_html => { id: "temp_veeamUser"} %>
+                          <%= f.input :service ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamService"} %>
+                          <%= f.input :vm_server ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamServer"} %>
+                          <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamVmExtra"}, default: 0 %>
+                          <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamStorageExtra"}, default: 0 %>
+
+                    <header><%= t(".inquiry_modal.inquiry_email") %></header>
+
+                    <fieldset>
+                      <section>
+                        <div class="row">
+                          <label class="label col col-4 skylabel">E-mail</label>
+                          <div class="col col-8">
+                            <label class="input">
+                              <i class="icon-append icon-user"></i>
+                              <%= f.input :email, required: true, label: false %>
+                            </label>
+                          </div>
+                        </div>
+                      </section>
+
+
+                    </fieldset>
+                    <footer>
+                      <%= f.button :submit, t(".inquiry_modal.send_button"), class: "button" %>
+                    </footer>
+
+                      <% end %>
+                  <% end %>
+                </div>
+
+              </div>
+            </div>
 
 
 <script>
@@ -910,29 +973,34 @@
 
   function calculate (){
     var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);
-    document.getElementById("cijena").innerHTML = result;
+    if (document.getElementById("cijena") != null) document.getElementById("cijena").innerHTML = result;
     document.getElementById("vm").innerHTML = Vm + AddVm;
     document.getElementById("space").innerHTML = Space + AddSpace;
 
   }
 
   function setVeaamUser(){
-    document.getElementById("veeamUser").value = TempText.toString();
+    if (document.getElementById("veeamUser") != null) document.getElementById("veeamUser").value = TempText.toString();
+    document.getElementById("temp_veeamUser").value = TempText.toString();
   }
 
   function setVeeamService(){
-    document.getElementById("veeamService").value = TempText.toString();
+    if (document.getElementById("veeamService") != null) document.getElementById("veeamService").value = TempText.toString();
+    document.getElementById("temp_veeamService").value = TempText.toString();
   }
 
   function setVeeamServer(){
-    document.getElementById("veeamServer").value = TempText.toString();
+    if (document.getElementById("veeamServer") != null) document.getElementById("veeamServer").value = TempText.toString();
+    document.getElementById("temp_veeamServer").value = TempText.toString();
   }
 
   function setExtraVm(){
-    document.getElementById("veeamVmExtra").value = AddVm;
+    if (document.getElementById("veeamVmExtra") != null) document.getElementById("veeamVmExtra").value = AddVm;
+    document.getElementById("temp_veeamVmExtra").value = AddVm;
   }
 
   function setExtraStorage(){
-    document.getElementById("veeamStorageExtra").value = AddSpace;
+    if (document.getElementById("veeamStorageExtra") != null) document.getElementById("veeamStorageExtra").value = AddSpace;
+    document.getElementById("temp_veeamStorageExtra").value = AddSpace;
   }
 </script>

@@ -38,7 +38,7 @@ class UserMailer < ApplicationMailer
     @sum_price = @veeam_user_price + @service_price + @extra_vm_price + @extra_storage_price
 
     if locale == "hr"
-      mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator')
+      mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
       mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator')
     end

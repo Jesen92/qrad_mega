@@ -2,6 +2,7 @@ class ServicesController < ApplicationController
   #before_filter :authenticate_active_admin_user!
 
   def index
+    @subscriber = Subscriber.new unless user_signed_in?
   end
 
   def show
@@ -26,4 +27,24 @@ class ServicesController < ApplicationController
     redirect_to :back
     #TODO poziv funkcije za slanje mail-a upita
   end
+
+  def subscriber_create
+    if params[:subscriber][:veeam_user].empty? || params[:subscriber][:service].empty? || params[:subscriber][:vm_server].empty?
+      flash[:calc_alert] = I18n.t("controllers.services.calc_error")
+    else
+      @subscriber = Subscriber.new(subscriber_params)
+      @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil?
+      UserMailer.send_calculated_services(@subscriber, I18n.locale.to_s, params[:subscriber]).deliver_now
+      flash[:calc_success] = I18n.t("controllers.services.calculator")
+    end
+
+    redirect_to services_index_path(anchor: 'CALC')
+  end
+
+  private
+
+    def subscriber_params
+      params.require(:subscriber).permit( :email)
+    end
+
 end

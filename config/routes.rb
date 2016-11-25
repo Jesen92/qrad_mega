@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     resources :services do
       post :calculator, on: :collection
       post :contact_us, on: :collection
+      post :subscriber_create, on: :collection
     end
     root 'services#index'
     devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}.merge(ActiveAdmin::Devise.config)

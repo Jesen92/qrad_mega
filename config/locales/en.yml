@@ -62,6 +62,10 @@ en:
       contact_us_subject: "Subject"
       contact_us_body: "  Message Text..."
       contact_us_send: "SEND MESSAGE"
+      inquiry_not_registered: "Register to view service price"
+      inquiry_modal:
+        inquiry_email: "Enter the e-mail you want the offer to be delivered"
+        send_button: "Submit"
       baas:
         backup_rule: "3-2-1 Backup rule"
         hosting: "Hosting udaljenog backupa"

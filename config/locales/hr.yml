@@ -40,6 +40,10 @@ hr:
       contact_us_subject: "Naslov"
       contact_us_body: "  Tekst poruke..."
       contact_us_send: "POŠALJI PORUKU"
+      inquiry_not_registered: "Registrirajte se kako bi cijena bila prikazana na stranici"
+      inquiry_modal:
+        inquiry_email: "Upišite e-mail na koji želite da Vam dostavimo ponudu"
+        send_button: "Potvrdi"
       baas:
         backup_rule: "3-2-1 Backup pravilo"
         hosting: "Hosting udaljenog backupa"

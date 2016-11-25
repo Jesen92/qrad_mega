@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   def self.create_with_password(attr={})
     generated_password = Devise.friendly_token.first(14)
     user = self.create(attr.merge(password: generated_password, password_confirmation: generated_password))
+    Subscriber.find_by(email: user.email).destroy unless Subscriber.find_by(email: user.email).nil?
 
     UserMailer.generated_password(user, generated_password, I18n.locale.to_s).deliver_now
 
