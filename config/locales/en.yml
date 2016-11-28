@@ -29,6 +29,8 @@ en:
       contact_us: "Thank you for contacting us!"
       calculator: "Your inquiry has been sent! We will contact you with additional information!"
       calc_error: "All required fields must be seleceted before sending an inquiry!"
+      free_trial_error: "Your request for free trial has already been sent! You can send max. 1 request for free trial."
+      free_trial: "Your request for free trial has been sent!"
   model:
     user:
       reset_password: "Password has not been reset! You can only reset your password once per day!"
@@ -41,6 +43,10 @@ en:
       welcome_text: "Hi"
   services:
     index:
+      free_trial_confirm: "Are you sure you want to send a request for a free trial?"
+      free_trial_yes: "Yes"
+      free_trial_no: "No"
+      free_trial: "Free trial"
       title: "Title"
       subheading: "Subheading"
       about: "ABOUT "

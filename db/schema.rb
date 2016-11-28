@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161125112833) do
+ActiveRecord::Schema.define(version: 20161128092114) do
 
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   limit: 4,     default: 0, null: false
@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 20161125112833) do
     t.string   "phone",                  limit: 255
     t.boolean  "admin"
     t.string   "postal_code",            limit: 255
+    t.boolean  "free_trial_requested"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

@@ -149,7 +149,7 @@
   <div class="container">
     <div class="row wow fadeInLeftBig" data-wow-duration="1s">
       <div class="col-md-9">
-        <p>Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku</p>
+        <p class="nomargin">Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku</p>
       </div>
       <div class="col-md-3">
         <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
@@ -460,9 +460,9 @@
         <div class="centered">
 
           <% if user_signed_in? %>
-            <a class="btn btn-primary btn-action" href="#" role="button">Free Trial</a>
+              <a type="button" class="btn home-btn wow fadeInLeft btn-action btnlogin" href="#" role="button" data-toggle="modal" data-target="#FreeTrialConfirmForm"><%= t(".free_trial") %></a>
           <% else %>
-             <a class="btn btn-primary btn-action" href="#REGISTER" role="button">Free Trial</a>
+             <a class="btn btn-primary btn-action" href="#REGISTER" role="button"><%= t(".free_trial") %></a>
           <% end %>
 
         </div>
@@ -856,6 +856,38 @@
               </div>
             </div>
 
+<!--Free trial confirm box-->
+            <div class="closewnd modal fade" id="FreeTrialConfirmForm" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content -->
+
+                <div class="modal-content">
+                  <% if user_signed_in? %>
+                      <form action="" class="sky-form">
+                          <header><%= t(".free_trial_confirm") %></header>
+
+                          <fieldset>
+                            <section>
+                              <div class="row">
+                                <div class="col col-10">
+                                  <%= link_to t(".free_trial_yes"), free_trial_path, class: "button" %>
+                                </div>
+                                <div class="col col-2"%>
+                                  <button type="button" class="button" data-dismiss="modal"><%= t(".free_trial_no") %></button>
+                                </div>
+                              </div>
+                            </section>
+
+
+                          </fieldset>
+                      </form>
+
+                  <% end %>
+                </div>
+
+              </div>
+            </div>
 
 <script>
   //KALKULATOR SELECT VALUE

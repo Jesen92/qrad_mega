@@ -36,8 +36,17 @@ ActiveAdmin.register User do
       f.input :email
       f.input :password
       f.input :password_confirmation
+      f.input :first_name
+      f.input :last_name
+      f.input :country
+      f.input :city
+      f.input :address
+      f.input :postal_code
+      f.input :company
+      f.input :cin, label: "Company identification number / OIB"
+      f.input :phone
+      f.input :free_trial_requested, label: "Poslan upit za probom"
       f.input :admin
-      f.input :service
     end
     f.actions
   end

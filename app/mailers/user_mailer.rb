@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
     @generated_password = generated_password
 
     if locale == "hr"
-      mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'generated_password_hr')
+      mail(to: @user.email, subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'generated_password_hr')
     else
       mail(to: @user.email, subject: "Account Details")
     end
@@ -17,7 +17,7 @@ class UserMailer < ApplicationMailer
     @generated_password = generated_password
 
     if locale == "hr"
-      mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'reset_password_hr')
+      mail(to: @user.email, subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'reset_password_hr')
     else
       mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'reset_password')
     end
@@ -40,7 +40,7 @@ class UserMailer < ApplicationMailer
     if locale == "hr"
       mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
-      mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator')
+      mail(to: user.email, subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
     end
   end
 
@@ -55,6 +55,16 @@ class UserMailer < ApplicationMailer
       mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
     else
       mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
+    end
+  end
+
+  def send_free_trial_request(user, locale)
+    @email = user.email
+
+    if locale == "hr"
+      mail(to: @email, subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+    else
+      mail(to: @email, subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
     end
   end
 end

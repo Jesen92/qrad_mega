@@ -7,6 +7,8 @@ hr:
       contact_us: "Hvala što ste nas kontaktirali!"
       calculator: "Vaš upit je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
       calc_error: "Sva obavezna polja moraju biti odabrana prije slanja upita!"
+      free_trial_error: "Već ste poslali upit za besplatnom probom! Možete poslati max. 1 upit za besplatnom probom"
+      free_trial: "Vaš upit za besplatnom probom je poslan!"
   model:
     user:
       reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
@@ -19,6 +21,10 @@ hr:
       welcome_text: "Bok"
   services:
     index:
+      free_trial_confirm: "Da li ste sigurni da želite poslati upit za besplatnom probom?"
+      free_trial_yes: "Da"
+      free_trial_no: "Ne"
+      free_trial: "Besplatna proba"
       title: "Naslov"
       subheading: "Podnaslov"
       about: "O NAMA "

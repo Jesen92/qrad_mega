@@ -1,4 +1,5 @@
 ActiveAdmin.register VeeamUser do
+  menu false
 
   permit_params :title, :price
 # See permitted parameters documentation:

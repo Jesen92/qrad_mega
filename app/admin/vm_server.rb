@@ -1,4 +1,5 @@
 ActiveAdmin.register VmServer do
+  menu false
 
   permit_params :title
 # See permitted parameters documentation:

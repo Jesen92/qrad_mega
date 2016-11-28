@@ -22,6 +22,13 @@ URL: http://designscrazed.org/
   13. SECTION FOOTER 
 
 */
+.nomargin {
+    height: 52px;
+    line-height: 52px;
+    margin: 0;
+    padding: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -598,14 +605,9 @@ div.carousel-inner .item img {
 
 .call_to_action {
     background-color: #1a1a1a;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-
-
-
-
 
 .call_to_action p {
     color: #dfdfdf;

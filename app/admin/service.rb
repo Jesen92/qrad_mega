@@ -1,4 +1,5 @@
 ActiveAdmin.register Service do
+  menu false
 
   permit_params :name, :description, :picture_path, :price, :VM_price, :storage_price, :vm_default, :storage_default
 # See permitted parameters documentation:

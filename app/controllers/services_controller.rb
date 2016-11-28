@@ -8,7 +8,7 @@ class ServicesController < ApplicationController
   def show
   end
 
-  def calculator
+  def calculator #slanje mail-a za kalkulator - registrirani korisnik
     if params[:users_service][:veeam_user].empty? || params[:users_service][:service].empty? || params[:users_service][:vm_server].empty?
       flash[:calc_alert] = I18n.t("controllers.services.calc_error")
     else
@@ -17,7 +17,6 @@ class ServicesController < ApplicationController
     end
 
     redirect_to services_index_path(anchor: 'CALC')
-    #TODO poziv funkcije za slanje kalkulacije
   end
 
   def contact_us
@@ -25,10 +24,9 @@ class ServicesController < ApplicationController
 
     flash[:notice] = I18n.t("controllers.services.contact_us")
     redirect_to :back
-    #TODO poziv funkcije za slanje mail-a upita
   end
 
-  def subscriber_create
+  def subscriber_create #slanje mail-a za kalkulator - neregistrirani korisnik
     if params[:subscriber][:veeam_user].empty? || params[:subscriber][:service].empty? || params[:subscriber][:vm_server].empty?
       flash[:calc_alert] = I18n.t("controllers.services.calc_error")
     else
@@ -39,6 +37,19 @@ class ServicesController < ApplicationController
     end
 
     redirect_to services_index_path(anchor: 'CALC')
+  end
+
+  def free_trial_request
+    if current_user.free_trial_requested
+      flash[:alert] = I18n.t("controllers.services.free_trial_error")
+    else
+      UserMailer.send_free_trial_request(current_user, I18n.locale.to_s).deliver_now
+      flash[:notice] = I18n.t("controllers.services.free_trial")
+      current_user.free_trial_requested = true
+      current_user.save(validate: false)
+    end
+
+    redirect_to root_path
   end
 
   private

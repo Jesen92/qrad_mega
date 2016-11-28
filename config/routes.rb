@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'services/show'
 
+  get 'services/free_trial_request' => "services#free_trial_request", :as => 'free_trial'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -15,12 +17,14 @@ Rails.application.routes.draw do
       post :calculator, on: :collection
       post :contact_us, on: :collection
       post :subscriber_create, on: :collection
+      get :free_trial_request, on: :collection
     end
     root 'services#index'
-    devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}.merge(ActiveAdmin::Devise.config)
+    devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}
 
   end
 
+  match "/javascripts/active_admin", to: redirect("/javascripts/active_admin"), :via => [:get]
   match '*path', to: redirect("/#{I18n.locale}/%{path}"), :via => [:get]
   match '', to: redirect("/#{I18n.locale}"), :via => [:get]
   #match '*/admin', to: redirect("/admin"), :via => [:get]
