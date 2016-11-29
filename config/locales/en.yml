@@ -112,8 +112,8 @@ en:
           draas: "Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostavna za uspostavu i korištenje. Usluga uključuje:"
           cloud_host: "Cloud host za DR pogon sa procesorskim, memorijskim, diskovnim i mrežnim resursima"
           failover: "Full-site failover za rad sa DR lokacije ili partial-site failover za trenutno aktiviranje samo pojedinih VM replikaa, sve preko sigurnog portala sa minimalnim brojem koraka."
-          failback: "povratak na rad sa Vaše lokacije."
-          1_click: "brzo izvođenje DR procedure ili testiranje (simulacija failovera) bez prekida produkcije"
+          failback: "Povratak na rad sa Vaše lokacije."
+          1_click: "Brzo izvođenje DR procedure ili testiranje (simulacija failovera) bez prekida produkcije"
           virtual: "Ugrađeni virtualni mrežni uređaji za pojednostavljenu mrežnu infrastrukturu i sigurnu komunikaciju."
           tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija sa enkripcijom podataka a koristi i višestruke tehnologije smanjenja mrežnog prometa, uključivo WAN acceleration, BitLocker™ i replica seeding."
       texts:
