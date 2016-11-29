@@ -19,8 +19,8 @@ class User < ActiveRecord::Base
     user = self.find_by(email: attr[:email])
     message = nil
 
-    if !user.nil?
-      if !user.reset_password_sent_at.today?
+    unless user.nil?
+      if user.reset_password_sent_at.nil? || !user.reset_password_sent_at.today?
         user.update(password: generated_password, password_confirmation: generated_password)
         user.reset_password_sent_at = DateTime.now
         user.save

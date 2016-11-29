@@ -9,6 +9,8 @@ hr:
       invalid_token: 'Neispravan token za prijavu.'
       timeout: 'Vrijeme trajanja Vaše sesije je isteklo. Za nastavak se prijavite ponovno.'
       inactive: 'Vaš račun još nije aktiviran.'
+      user:
+        not_found_in_database: 'Upisani e-mail ne postoji!'
     sessions:
       signed_in: 'Uspješno ste se prijavili.'
       signed_out: 'Uspješno ste se odjavili.'

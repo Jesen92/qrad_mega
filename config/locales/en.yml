@@ -120,6 +120,12 @@ en:
         about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200 000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu."
         calculator: "Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate"
   users:
+    passwords:
+      new:
+        email: "user@example.com"
+        reset: "Enter a e-mail you want your new password to be delivered"
+        reset_password_button: "Reset my password"
+        back: "Back"
     sessions:
       new:
         login: "Sign In form"

@@ -13,7 +13,7 @@ hr:
     user:
       reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
       new_password: "Poslana vam je nova lozinka"
-      email_doesnt_exist: "E-mail ne postoji!"
+      email_doesnt_exist: "Upisani e-mail ne postoji!"
   layouts:
     application:
       sign_in: "Prijavi se"
@@ -138,6 +138,12 @@ hr:
         few: "%{count} greške sprečavaju snimanje %{resource}:"
         other: "%{count} grešaka sprečavaju snimanje %{resource}:"
   users:
+    passwords:
+      new:
+        email: "user@example.com"
+        reset: "Upišite e-mail na koji želite da vam je dostavljena nova lozinka"
+        reset_password_button: "Resetiraj mi šifru"
+        back: "Nazad"
     sessions:
       new:
         login: "Prijava"
