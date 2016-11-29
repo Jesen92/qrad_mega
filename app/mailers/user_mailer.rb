@@ -27,7 +27,7 @@ class UserMailer < ApplicationMailer
     service = Service.find_by(name: params[:service])
 
     @veeam_user = params[:veeam_user]
-    @veeam_user_price = params[:veeam_user].include?("non") ||  params[:veeam_user].include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
+    @veeam_user_price = params[:veeam_user].downcase.include?("non") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
     @service = service.name
     @service_price = service.price
     @platform = params[:vm_server]

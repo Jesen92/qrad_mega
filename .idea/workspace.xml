@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91271e7c-fd97-4029-a4da-c2035c462ecb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/services_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/services_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/user_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/services/index.html.erb" afterPath="$PROJECT_DIR$/app/views/services/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" />
     </list>
     <ignored path="CloudConnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,24 +36,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/services/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
+            <state relative-caret-position="437">
+              <caret line="504" column="15" selection-start-line="504" selection-start-column="15" selection-end-line="504" selection-end-column="15" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#5;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#section#5;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="en.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="112" column="106" selection-start-line="112" selection-start-column="106" selection-end-line="112" selection-end-column="106" />
+            <state relative-caret-position="345">
+              <caret line="98" column="118" selection-start-line="98" selection-start-column="118" selection-end-line="98" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -69,8 +73,8 @@
       <file leaf-file-name="services_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/services_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+            <state relative-caret-position="465">
+              <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -79,8 +83,18 @@
       <file leaf-file-name="user_mailer.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="293">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculator_hr.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -140,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/views/user_mailer/reset_password.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/reset_password_hr.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/calculator.erb" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/contact_us_erb.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/contact_us_hr.erb" />
         <option value="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" />
@@ -154,7 +167,6 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/free_trial.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/free_trial_hr.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/services_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app/admin/user.rb" />
@@ -163,10 +175,12 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/app/admin/service.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
-        <option value="$PROJECT_DIR$/app/views/services/index.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/hr.yml" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
+        <option value="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" />
+        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/services_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/services/index.html.erb" />
       </list>
     </option>
   </component>
@@ -232,6 +246,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user_mailer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -709,12 +763,12 @@
       <workItem from="1480331240495" duration="177000" />
       <workItem from="1480331496792" duration="1326000" />
       <workItem from="1480366193837" duration="2165000" />
-      <workItem from="1480407316632" duration="2573000" />
+      <workItem from="1480407316632" duration="3634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127875000" />
+    <option name="totallyTimeSpent" value="128936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -833,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1084,38 +1131,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/services_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/service.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/services/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#section#5;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,9 +1149,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="112" column="106" selection-start-line="112" selection-start-column="106" selection-end-line="112" selection-end-column="106" />
+        <state relative-caret-position="345">
+          <caret line="98" column="118" selection-start-line="98" selection-start-column="118" selection-end-line="98" selection-end-column="118" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/services_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="34" column="103" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/services/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="504" column="15" selection-start-line="504" selection-start-column="15" selection-end-line="504" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#section#5;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

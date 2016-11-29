@@ -16,7 +16,7 @@ class ServicesController < ApplicationController
       flash[:calc_success] = I18n.t("controllers.services.calculator")
     end
 
-    redirect_to services_index_path(anchor: 'CALC')
+    redirect_to services_index_path(anchor: 'CALCULATOR_SERVICES')
   end
 
   def contact_us

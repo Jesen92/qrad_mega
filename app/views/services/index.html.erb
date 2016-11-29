@@ -492,16 +492,16 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="CALCULATOR_SERVICES">
     <div class="row margin">
       <% if calc_alert %>
-        <div class="container" style="padding-top: 10px;">
-          <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
-        </div>
+          <div class="container" style="padding-top: 10px;">
+            <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
+          </div>
       <% elsif calc_success %>
-        <div class="container" style="padding-top: 10px;">
-          <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
-        </div>
+          <div class="container" style="padding-top: 10px;">
+            <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
+          </div>
       <% end %>
       <div class="col-md-8">
         <div class="row">
