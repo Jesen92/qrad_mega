@@ -454,8 +454,20 @@
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
           <h2><%= t(".trial_title") %></h2>
-          <p>5VM + 500 GB prostora / kratki opis upotrebe kalkulatora i zahtjeva free trial-a</p>
-
+          <div class="row" style="margin-top: 55px">
+            <div class="col-md-4">
+              <h2>Baas</h2>
+              <p><%= t(".calculator.texts.baas") %></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Baas & DRaas</h2>
+              <p><%= t(".calculator.texts.baas_draas") %></p>
+            </div>
+            <div class="col-md-4">
+              <h2>DRaaS</h2>
+              <p><%= t(".calculator.texts.draas") %></p>
+            </div>
+          </div>
         </div>
         <div class="centered">
 
@@ -494,14 +506,14 @@
                 <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
                 <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
                 <div class="kalkulator ">
-                  <h3>Veeam license *<span> :</span></h3>
+                  <h3><%= t(".calculator.veeam_licence") %> *<span> :</span></h3>
                   <div class="dropdown">
                     <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
-                      User Type <span class="caret"></span>
+                      <%= t(".calculator.veeam_licence_placeholder") %> <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" id="license" >
-                      <li><a value="0">Veeam user</a></li>
-                      <li><a value="40">non Veeam user</a></li>
+                      <li><a value="0"><%= t(".calculator.veeam_licence_yes") %></a></li>
+                      <li><a value="40"><%= t(".calculator.veeam_licence_no") %></a></li>
                     </ul>
                   </div>
                 </div>
@@ -516,10 +528,10 @@
 
 
             <div class="kalkulator ">
-              <h3>Service *<span> :</span></h3>
+              <h3><%= t(".calculator.service") %> *<span> :</span></h3>
               <div class="dropdown ">
                 <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
-                  Service Type <span class="caret"></span>
+                  <%= t(".calculator.service_placeholder") %> <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" id="service" onchange="calculateTotal()">
                   <li><a space="500" vm="5" value="120">BaaS</a></li>
@@ -535,10 +547,10 @@
 
 
             <div class="kalkulator ">
-              <h3>PLATFORM *<span> :</span></h3>
+              <h3><%= t(".calculator.platform") %> *<span> :</span></h3>
               <div class="dropdown ">
                 <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-                  Platform <span class="caret"></span>
+                  <%= t(".calculator.platform_placeholder") %><span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" id="platform" onchange="calculateTotal()">
                   <li><a value="0">VMware</a></li>
@@ -555,7 +567,7 @@
             <!-- FEATURE -->
 
             <div class="kalkulator ">
-              <h3>Extra VM<span> :</span></h3>
+              <h3 style="height: 44px; line-height: 44px;"><%= t(".calculator.extra_vm") %><span> :</span></h3>
 
 
               <div class="input-group spinner" data-trigger="spinner" id="spinner">
@@ -591,7 +603,7 @@
 
 
             <div class="kalkulator ">
-              <h3>Extra 100GB<span> :</span></h3>
+              <h3><%= t(".calculator.extra_storage") %><span> :</span></h3>
 
               <div class="input-group spinner" data-trigger="spinner" id="spinner2">
                 <input id="extraRam" type="text" class="form-control text-center" value="0" data-rule="quantity" >
@@ -689,8 +701,8 @@
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
           <h2><%= t(".trial_title") %></h2>
-          <p>Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate </p>
-
+          <p>Za upotrebu kalkulatora i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se registrirate ili prijavite.</p>
+          <p>Za slanje izračuna na mail, dovoljno je da samo upišete svoju mail adresu.</p>
         </div>
 
         <div class="centered margin-btm">
@@ -719,6 +731,8 @@
         <!-- Start Contact Section Title-->
         <div class="section_title">
           <h2><%= t(".get_in_touch") %></h2>
+          <p>Imate dodatnih pitanja?</br>
+          Kontaktirajte nas i zatražite dodatne informacije.</p>
         </div>
       </div>
     </div>
@@ -931,7 +945,7 @@
   });
 
   $("#extraVm").click(function(){
-    ExtraVm = 15 * parseInt($(this).attr("value"));
+    ExtraVm = 20 * parseInt($(this).attr("value"));
     /*alert($("#spinner").attr("value"));*/
     /*calculate();*/
   });
@@ -943,15 +957,15 @@
 
   function extraVmPlus(){
     var result =0;
-    if(parseInt(document.getElementById("extraVm").value) < 30){
+    if(parseInt(document.getElementById("extraVm").value) < 20){
       result = parseInt(document.getElementById("extraVm").value) + 1;
     }
     else{
-      result=30;
-      AddVm=30;
+      result=20;
+      AddVm=20;
     }
 
-    ExtraVm = result * 15;
+    ExtraVm = result * 20;
     AddVm =result;
     calculate();
     setExtraVm()
@@ -966,7 +980,7 @@
       result=0;
       AddVm=0;
     }
-    ExtraVm = result * 15;
+    ExtraVm = result * 20;
     AddVm =result;
     calculate();
     setExtraVm()
@@ -974,12 +988,12 @@
 
   function extraRamPlus(){
     var result = 0;
-    if(parseInt(document.getElementById("extraRam").value) < 30){
+    if(parseInt(document.getElementById("extraRam").value) < 20){
       result = parseInt(document.getElementById("extraRam").value) + 1;
     }
     else{
-      result=30;
-      AddSpace=30*100;
+      result=20;
+      AddSpace=20*100;
     }
     ExtraGb = result * 10;
     AddSpace =result * 100;

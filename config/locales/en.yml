@@ -43,6 +43,21 @@ en:
       welcome_text: "Hi"
   services:
     index:
+      calculator:
+        veeam_licence: "Veeam licenca"
+        veeam_licence_yes: "Koristi Veeam licencu"
+        veeam_licence_no: "Ne koristi Veeam licencu"
+        veeam_licence_placeholder: "Tip korisnika"
+        service: "Usluga"
+        service_placeholder: "Usluga"
+        platform: "Platforma"
+        platform_placeholder: "Patforma"
+        extra_vm: "Dodatne VM"
+        extra_storage: "Dodatni prostor (x100GB)"
+        texts:
+          baas: "BaaS osnovni paket sadrži mogućnost izrade sigurnosnih kopija za 5 virtualnih računala i uključuje 500 GB diskovnog prostora."
+          draas: "DRaaS osnovni paket sadrži mogućnost izrade replika za 5 virtualnih računala i uključuje 1.000 GB diskovnog prostora."
+          baas_draas: "BaaS i DRaaS paketi se proširuju po potrebi s dodatnim virtualnim računalima (komad) i diskovnim prostorom (100 GB inkrement)."
       free_trial_confirm: "Are you sure you want to send a request for a free trial?"
       free_trial_yes: "Yes"
       free_trial_no: "No"

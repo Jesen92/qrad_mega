@@ -21,6 +21,21 @@ hr:
       welcome_text: "Bok"
   services:
     index:
+      calculator:
+        veeam_licence: "Veeam licenca"
+        veeam_licence_yes: "Koristi Veeam licencu"
+        veeam_licence_no: "Ne koristi Veeam licencu"
+        veeam_licence_placeholder: "Tip korisnika"
+        service: "Usluga"
+        service_placeholder: "Usluga"
+        platform: "Platforma"
+        platform_placeholder: "Patforma"
+        extra_vm: "Dodatne VM"
+        extra_storage: "Dodatni prostor (x100GB)"
+        texts:
+          baas: "BaaS osnovni paket sadrži mogućnost izrade sigurnosnih kopija za 5 virtualnih računala i uključuje 500 GB diskovnog prostora."
+          draas: "DRaaS osnovni paket sadrži mogućnost izrade replika za 5 virtualnih računala i uključuje 1.000 GB diskovnog prostora."
+          baas_draas: "BaaS i DRaaS paketi se proširuju po potrebi s dodatnim virtualnim računalima (komad) i diskovnim prostorom (100 GB inkrement)."
       free_trial_confirm: "Da li ste sigurni da želite poslati upit za besplatnom probom?"
       free_trial_yes: "Da"
       free_trial_no: "Ne"
@@ -57,12 +72,12 @@ hr:
         architecture: "Moderna backup arhitektura"
         end_to_end: "End-to-end enkripcija"
         texts:
-          baas: "Podaci se repliciraju sa Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaki pojedini file ili cijelu virtualnu mašinu."
-          backup_rule: "Za kvalitetan backup potrebno je imati tri kopije podataka, spremljene na dva različita medija a jedna od kopija mora biti na drugoj lokaciji. Spremanje backupa na udaljenu lokaciju postavlja izazov na mrežne komunikacije, rastuće količine podataka, resurse potrebne za izgradnju i održavanje udaljene lokacije. Sa Veeam Cloud Connect uslugom možete ostvariti 3-2-1 backup pravilo bez dodatnih ulaganja."
-          hosting: "spremite podatke u udaljeni repozitorij pomoću sigurne SSL konekcije i bez dodatnih Veeam licenci"
-          supervision: "pristup podacima i restore izravno iz Vaše Veeam konzole"
-          architecture: "iskoristite naprednu Veeam backup tehnologiju korištenjem WAN ubrzanja, forever incremental backup, GFS (grandfather-father-son), pravilima retencije podataka i još puno toga – sve ugrađeno u jedan produkt"
-          end_to_end: "podaci se enkriptiraju na izvoru - prije nego napuste Vašu mrežu i kriptirani su u prijenosu i na udaljenoj lokaciji, bez negativnih utjecaja na kompresiju i ubrzanje WAN komunikacije"
+          baas: "Podaci se kopiraju s Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaku pojedinu datoteku ili cijelo virtualno računalo."
+          backup_rule: "Za kvalitetan backup potrebno je imati tri kopije podataka, spremljene na dva različita medija a jedna od kopija mora biti na drugoj lokaciji. Spremanje backupa na udaljenu lokaciju postavlja izazov na mrežne komunikacije, rastuće količine podataka, resurse potrebne za izgradnju i održavanje udaljene lokacije. S Veeam Cloud Connect uslugom možete ostvariti 3-2-1 backup pravilo bez dodatnih ulaganja."
+          hosting: "Spremite podatke u udaljeni repozitorij pomoću sigurne SSL konekcije i bez dodatnih Veeam licenci."
+          supervision: "Pristup i vraćanje podataka izravno iz Vaše Veeam konzole."
+          architecture: "Iskoristite naprednu Veeam backup tehnologiju korištenjem WAN ubrzanja, forever incremental backupa, GFS (grandfather-father-son) pravila zadržavanja podataka i još puno toga – sve ugrađeno u jedno rješenje."
+          end_to_end: "Podaci se kriptiraju na izvoru - prije nego napuste Vašu mrežu i kriptirani su u prijenosu i na udaljenoj lokaciji, bez negativnih utjecaja na kompresiju i ubrzanje WAN komunikacije."
           draas: "Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostavna za uspostavu i korištenje. Usluga uključuje:"
       draas:
         cloud_host: "Cloud host"
@@ -73,14 +88,14 @@ hr:
         tls_ssl: "TLS/SSL veza"
         texts:
           draas: "Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostavna za uspostavu i korištenje. Usluga uključuje:"
-          cloud_host: "Cloud host za DR pogon sa procesorskim, memorijskim, diskovnim i mrežnim resursima"
-          failover: "Full-site failover za rad sa DR lokacije ili partial-site failover za trenutno aktiviranje samo pojedinih VM replikaa, sve preko sigurnog portala sa minimalnim brojem koraka."
-          failback: "povratak na rad sa Vaše lokacije."
-          1_click: "brzo izvođenje DR procedure ili testiranje (simulacija failovera) bez prekida produkcije"
+          cloud_host: "Cloud host za DR pogon s procesorskim, memorijskim, diskovnim i mrežnim resursima"
+          failover: "Full-site failover za rad s DR lokacije ili partial-site failover za trenutno aktiviranje samo pojedinih VM replika, sve preko Veeam konzole ili sigurnog portala s minimalnim brojem koraka."
+          failback: "Povratak na rad s Vaše lokacije."
+          1_click: "Brzo izvođenje DR procedure ili testiranje bez prekida produkcije uz pomoć failover plana."
           virtual: "Ugrađeni virtualni mrežni uređaji za pojednostavljenu mrežnu infrastrukturu i sigurnu komunikaciju."
-          tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija sa enkripcijom podataka a koristi i višestruke tehnologije smanjenja mrežnog prometa, uključivo WAN acceleration, BitLocker™ i replica seeding."
+          tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija s enkripcijom podataka. Koristi višestruke tehnologije smanjenja mrežnog prometa, uključujući WAN ubrzanje i replica seeding."
       texts:
-        about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200 000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu."
+        about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200.000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu."
         calculator: "Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate"
   simple_form:
     "yes": 'Da'
