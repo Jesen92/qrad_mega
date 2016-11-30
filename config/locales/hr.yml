@@ -55,6 +55,7 @@ hr:
       inquiry: "POŠALJI IZRAČUN"
       get_in_touch: "KONTAKTIRAJTE NAS"
       trial_title: "KALKULATOR"
+      sign_in_trial_title: "KALKULATOR I ZAHTJEV ZA BESPLATNOM PROBOM"
       about_title: "O USLUZI"
       contact_us_name: "Ime i prezime"
       contact_us_email: "e-mail"
