@@ -5,8 +5,8 @@ hr:
       error: "Registracija nije uspješna: e-mail već postoji!"
     services:
       contact_us: "Hvala što ste nas kontaktirali!"
-      calculator: "Vaš upit je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
-      calc_error: "Sva obavezna polja moraju biti odabrana prije slanja upita!"
+      calculator: "Vaš izračun je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
+      calc_error: "Sva obavezna polja moraju biti odabrana prije slanja izračuna!"
       free_trial_error: "Već ste poslali upit za besplatnom probom! Možete poslati max. 1 upit za besplatnom probom"
       free_trial: "Vaš upit za besplatnom probom je poslan!"
   model:
@@ -52,7 +52,7 @@ hr:
       start_trial: "ZAPOČNI BESPLATNU PROBU"
       trial_: "BESPLATNA PROBA"
       register_now: "REGISTRIRAJ SE"
-      inquiry: "POŠALJI UPIT"
+      inquiry: "POŠALJI IZRAČUN"
       get_in_touch: "KONTAKTIRAJTE NAS"
       trial_title: "KALKULATOR I ZAHTJEV ZA BESPLATNOM PROBOM"
       about_title: "O USLUZI"
@@ -63,7 +63,7 @@ hr:
       contact_us_send: "POŠALJI PORUKU"
       inquiry_not_registered: "Registrirajte se kako bi cijena bila prikazana na stranici"
       inquiry_modal:
-        inquiry_email: "Upišite e-mail na koji želite da Vam dostavimo ponudu"
+        inquiry_email: "Upišite e-mail na koji želite da Vam dostavimo izračun"
         send_button: "Potvrdi"
       baas:
         backup_rule: "3-2-1 Backup pravilo"
@@ -82,7 +82,7 @@ hr:
       draas:
         cloud_host: "Cloud host"
         failover: "Full/Partial site failover"
-        failback: "Full and partial failback"
+        failback: "Full/partial failback"
         1_click: "1-click failover"
         virtual: "Virtual mrežni uređaji"
         tls_ssl: "TLS/SSL veza"

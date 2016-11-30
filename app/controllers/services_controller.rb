@@ -13,7 +13,8 @@ class ServicesController < ApplicationController
       flash[:calc_alert] = I18n.t("controllers.services.calc_error")
     else
       UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
-      flash[:calc_success] = I18n.t("controllers.services.calculator")
+      flash[:notice] = I18n.t("controllers.services.calculator")
+      return redirect_to root_path
     end
 
     redirect_to services_index_path(anchor: 'CALCULATOR_SERVICES')
@@ -33,7 +34,8 @@ class ServicesController < ApplicationController
       @subscriber = Subscriber.new(subscriber_params)
       @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil?
       UserMailer.send_calculated_services(@subscriber, I18n.locale.to_s, params[:subscriber]).deliver_now
-      flash[:calc_success] = I18n.t("controllers.services.calculator")
+      flash[:notice] = I18n.t("controllers.services.calculator")
+      redirect_to root_path
     end
 
     redirect_to services_index_path(anchor: 'CALC')

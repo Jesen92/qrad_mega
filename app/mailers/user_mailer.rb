@@ -36,6 +36,10 @@ class UserMailer < ApplicationMailer
     @extra_storage = params[:storage_extra]
     @extra_storage_price = (params[:storage_extra].to_i/100) * service.storage_price
     @sum_price = @veeam_user_price + @service_price + @extra_vm_price + @extra_storage_price
+    @basic_pack = service.VM_default.to_s+" VM, "+service.storage_default.to_s+" GB"
+
+    @sum_vm = service.VM_default.to_i + @extra_vm.to_i
+    @sum_storage = service.storage_default.to_i + @extra_storage.to_i
 
     if locale == "hr"
       mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')

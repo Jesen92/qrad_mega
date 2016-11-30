@@ -37,7 +37,7 @@
             <li><a href="#CALC"><%= t(".trial") %></a> </li>
             <li><a href="#CONTACT"><%= t(".contact") %></a> </li>
             <% if user_signed_in? %>
-            <li><%= link_to t(".sign_out"), destroy_user_session_path, :method => :delete %></li>
+            <li><%= link_to t(".sign_out"), destroy_user_session_path %></li>
             <% else %>
             <li><a href="#REGISTER"><%= t(".sign_in") %></a> </li>
             <% end %>
@@ -76,7 +76,7 @@
         <div class="col-md-8 col-sm-8">
           <div class="home_text">
             <!-- TITLE AND DESC -->
-            <h1>Veeam CloudConnect Backup i Disaster Recovery Usluga</h1>
+            <h1>Veeam Cloud Connect Backup i Disaster Recovery Usluga</h1>
             <p>Iskoristite i Vi mogućnosti tehnologije i postanite „Always On” tvrtka</p>
 
             <div class="download-btn">
@@ -324,7 +324,14 @@
 
           <!-- END SINGLE FEATURE -->
 
+          <div class="left_single_feature">
+            <!-- ICON -->
+            <div><span class="pe-7s-repeat"></span></div>
 
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3><%= t(".draas.failover") %><span> :</span></h3>
+            <p><%= t(".draas.texts.failover") %></p>
+          </div>
           <!-- FEATURE -->
           <div class="left_single_feature">
             <!-- ICON -->
@@ -335,18 +342,6 @@
             <p><%= t(".draas.texts.failback") %></p>
           </div>
           <!-- END SINGLE FEATURE -->
-
-
-
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-repeat"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.failover") %><span> :</span></h3>
-            <p><%= t(".draas.texts.failover") %></p>
-          </div>
-
 
         </div>
         <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
@@ -476,28 +471,20 @@
           <h2><%= t(".trial_title") %></h2>
           <div class="row" style="margin-top: 55px">
             <div class="col-md-4">
-              <h2>Baas</h2>
+              <h2>B<span style="text-transform: none;">aa</span>s</h2>
               <p><%= t(".calculator.texts.baas") %></p>
             </div>
             <div class="col-md-4">
-              <h2>Baas & DRaas</h2>
+              <h2>B<span style="text-transform: none;">aa</span>s & DR<span style="text-transform: none;">aa</span>s</h2>
               <p><%= t(".calculator.texts.baas_draas") %></p>
             </div>
             <div class="col-md-4">
-              <h2>DRaaS</h2>
+              <h2>DR<span style="text-transform: none;">aa</span>S</h2>
               <p><%= t(".calculator.texts.draas") %></p>
             </div>
           </div>
         </div>
-        <div class="centered">
 
-          <% if user_signed_in? %>
-              <a type="button" class="btn home-btn wow fadeInLeft btn-action btnlogin" href="#" role="button" data-toggle="modal" data-target="#FreeTrialConfirmForm"><%= t(".free_trial") %></a>
-          <% else %>
-             <a class="btn btn-primary btn-action" href="#REGISTER" role="button"><%= t(".free_trial") %></a>
-          <% end %>
-
-        </div>
         <!-- END FEATURES SECTION TITLE -->
       </div>
     </div>
@@ -671,8 +658,11 @@
 
           <!-- END SINGLE FEATURE -->
           <div class="centered">
-            <%= f.button :submit, t(".inquiry"), class: "btn home-btn wow fadeInLeft" %>
+            <%= f.button :submit, t(".inquiry"), class: "btn home-btn wow fadeInLeft btnlogin btn-action" %>
 
+          </div>
+          <div class="centered">
+            <a type="button" class="btn btn-primary btn-action" href="#" role="button" data-toggle="modal" data-target="#FreeTrialConfirmForm"><%= t(".free_trial") %></a>
           </div>
         </div>
         <% else %>
@@ -683,7 +673,7 @@
 
               <!-- FEATURE HEADING AND DESCRIPTION -->
               <h3><%= t(".inquiry_not_registered") %></h3>
-              <p> U cijenu je uključeno <span id="vm">0</span> VM i <span id="space">0</span> GB
+              <p class="calc_info"> U cijenu je uključeno <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
 
               </p>
 
@@ -692,8 +682,11 @@
 
             <!-- END SINGLE FEATURE -->
             <div class="centered">
-              <a type="button" class="btn home-btn wow fadeInLeft btn-action btnlogin" href="#" role="button" data-toggle="modal" data-target="#LoginForm"><%= t(".inquiry") %></a>
+              <a type="button" class="btn home-btn wow fadeInLeft btnlogin btn-action" href="#" role="button" data-toggle="modal" data-target="#LoginForm"><%= t(".inquiry") %></a>
 
+            </div>
+            <div class="centered">
+              <a class="btn btn-primary btn-action" href="#REGISTER" role="button"><%= t(".free_trial") %></a>
             </div>
           </div>
        <% end %>

@@ -1153,3 +1153,7 @@ select:-webkit-autofill {
 .dugmic {
     margin-right: 20px;
 }
+
+.calc_info {
+    font-size: 20px !important;
+}

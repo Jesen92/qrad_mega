@@ -24,7 +24,6 @@ Rails.application.routes.draw do
 
   end
 
-  match "/javascripts/active_admin", to: redirect("/javascripts/active_admin"), :via => [:get]
   match '*path', to: redirect("/#{I18n.locale}/%{path}"), :via => [:get]
   match '', to: redirect("/#{I18n.locale}"), :via => [:get]
   #match '*/admin', to: redirect("/admin"), :via => [:get]
