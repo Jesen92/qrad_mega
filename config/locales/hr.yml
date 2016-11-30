@@ -81,10 +81,10 @@ hr:
           draas: "Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostavna za uspostavu i korištenje. Usluga uključuje:"
       draas:
         cloud_host: "Cloud host"
-        failover: "Puni/parcijalni povratak stranice"
-        failback: "Puni i parcijalni povratak u slučaju pogreške"
+        failover: "Full/Partial site failover"
+        failback: "Full and partial failback"
         1_click: "1-click failover"
-        virtual: "Virtual network devices"
+        virtual: "Virtual mrežni uređaji"
         tls_ssl: "TLS/SSL veza"
         texts:
           draas: "Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostavna za uspostavu i korištenje. Usluga uključuje:"
@@ -161,7 +161,7 @@ hr:
         city: "Grad"
         address: "Adresa"
         cin: "OIB tvrtke"
-        company: "Kompanija"
+        company: "Ime tvrtke"
         phone: "Telefonski broj"
         postal: "Poštanski broj"
         signup: "Registriraj se"
