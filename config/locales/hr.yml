@@ -31,7 +31,7 @@ hr:
         platform: "Platforma"
         platform_placeholder: "Patforma"
         extra_vm: "Dodatne VM"
-        extra_storage: "Dodatni prostor (x100GB)"
+        extra_storage: "Dodatni prostor (100GB)"
         texts:
           baas: "BaaS osnovni paket sadrži mogućnost izrade sigurnosnih kopija za 5 virtualnih računala i uključuje 500 GB diskovnog prostora."
           draas: "DRaaS osnovni paket sadrži mogućnost izrade replika za 5 virtualnih računala i uključuje 1.000 GB diskovnog prostora."
@@ -54,7 +54,7 @@ hr:
       register_now: "REGISTRIRAJ SE"
       inquiry: "POŠALJI IZRAČUN"
       get_in_touch: "KONTAKTIRAJTE NAS"
-      trial_title: "KALKULATOR I ZAHTJEV ZA BESPLATNOM PROBOM"
+      trial_title: "KALKULATOR"
       about_title: "O USLUZI"
       contact_us_name: "Ime i prezime"
       contact_us_email: "e-mail"
