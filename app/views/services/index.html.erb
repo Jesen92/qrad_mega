@@ -513,7 +513,7 @@
                 <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
                 <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
                 <div class="kalkulator ">
-                  <h3><%= t(".calculator.veeam_licence") %> *<span> :</span></h3>
+                  <h3><%= t(".calculator.veeam_licence") %> <span> :</span></h3>
                   <div class="dropdown">
                     <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
                       <%= t(".calculator.veeam_licence_placeholder") %> <span class="caret"></span>
@@ -535,14 +535,14 @@
 
 
             <div class="kalkulator ">
-              <h3><%= t(".calculator.service") %> *<span> :</span></h3>
+              <h3><%= t(".calculator.service") %> <span> :</span></h3>
               <div class="dropdown ">
                 <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
-                  <%= t(".calculator.service_placeholder") %> <span class="caret"></span>
+                  <%= t(".calculator.service_placeholder") %> <span class="caret" ></span>
                 </button>
-                <ul class="dropdown-menu" id="service" onchange="calculateTotal()">
-                  <li><a space="500" vm="5" value="120">BaaS</a></li>
-                  <li><a space="1000" vm="5" value="250">DRaaS</a></li>
+                <ul class="dropdown-menu" id="service">
+                  <li><a space="500" vm="5" value="120" onclick="enableSpinners()">BaaS</a></li>
+                  <li><a space="1000" vm="5" value="250" onclick="enableSpinners()">DRaaS</a></li>
                 </ul>
               </div>
             </div>
@@ -554,7 +554,7 @@
 
 
             <div class="kalkulator ">
-              <h3><%= t(".calculator.platform") %> *<span> :</span></h3>
+              <h3><%= t(".calculator.platform") %> <span> :</span></h3>
               <div class="dropdown ">
                 <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
                   <%= t(".calculator.platform_placeholder") %><span class="caret"></span>
@@ -577,8 +577,8 @@
               <h3 style="height: 44px; line-height: 44px;"><%= t(".calculator.extra_vm") %><span> :</span></h3>
 
 
-              <div class="input-group spinner" data-trigger="spinner" id="spinner">
-                <input id="extraVm" type="text" class="form-control text-center" value="0" data-rule="quantity" >
+              <div class="input-group spinner " data-trigger="spinner" id="spinner">
+                <input id="extraVm" type="text" class="form-control text-center" value="0" data-rule="quantity" disabled="true" >
                 <div class="input-group-addon">
                   <a  onclick="extraVmPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
                   <a onclick="extraVmMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
@@ -612,11 +612,11 @@
             <div class="kalkulator ">
               <h3><%= t(".calculator.extra_storage") %><span> :</span></h3>
 
-              <div class="input-group spinner" data-trigger="spinner" id="spinner2">
-                <input id="extraRam" type="text" class="form-control text-center" value="0" data-rule="quantity" >
+              <div class="input-group spinner" data-trigger="spinner" id="spinner2" >
+                <input id="extraRam" type="text" class="form-control text-center" value="0" data-rule="quantity" disabled="true">
                 <div class="input-group-addon">
-                  <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
-                  <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+                  <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"   disabled="true"><i class="fa fa-caret-up"></i></a>
+                  <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"   disabled="true"><i class="fa fa-caret-down"></i></a>
                 </div>
               </div>
               <!--  <div class="input-group">
@@ -714,8 +714,8 @@
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
           <h2><%= t(".sign_in_trial_title") %></h2>
-          <p>Za upotrebu kalkulatora i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se registrirate ili prijavite.</br>
-          Za slanje izračuna na mail, dovoljno je da samo upišete svoju mail adresu.</p>
+          <p><%= t(".texts.calculator") %></br>
+          <%= t(".texts.calculator_mail") %></p>
         </div>
 
         <div class="centered margin-btm">
@@ -964,71 +964,85 @@
   });
 
   $("#spiner2").click(function(){
+    alert("spinner");
     ExtraGb = $(this).attr("value");
     calculate();
   });
 
-  function extraVmPlus(){
-    var result =0;
-    if(parseInt(document.getElementById("extraVm").value) < 20){
-      result = parseInt(document.getElementById("extraVm").value) + 1;
-    }
-    else{
-      result=20;
-      AddVm=20;
-    }
+  function extraVmPlus() {
+    var result = 0;
+    if (document.getElementById("extraVm").disabled == false) {
 
-    ExtraVm = result * 20;
-    AddVm =result;
-    calculate();
-    setExtraVm()
+      if (parseInt(document.getElementById("extraVm").value) < 20) {
+        result = parseInt(document.getElementById("extraVm").value) + 1;
+      }
+      else {
+        result = 20;
+        AddVm = 20;
+      }
+
+      ExtraVm = result * 20;
+      AddVm = result;
+      calculate();
+      setExtraVm()
+    }
   }
 
   function extraVmMinus(){
     var result =0;
-    if(parseInt(document.getElementById("extraVm").value) > 0){
-      result = parseInt(document.getElementById("extraVm").value) - 1;
+    if (document.getElementById("extraVm").disabled == false) {
+      if(parseInt(document.getElementById("extraVm").value) > 0){
+        result = parseInt(document.getElementById("extraVm").value) - 1;
+      }
+      else{
+        result=0;
+        AddVm=0;
+      }
+      ExtraVm = result * 20;
+      AddVm =result;
+      calculate();
+      setExtraVm()
     }
-    else{
-      result=0;
-      AddVm=0;
-    }
-    ExtraVm = result * 20;
-    AddVm =result;
-    calculate();
-    setExtraVm()
   }
 
   function extraRamPlus(){
     var result = 0;
-    if(parseInt(document.getElementById("extraRam").value) < 20){
-      result = parseInt(document.getElementById("extraRam").value) + 1;
+    if(document.getElementById("extraRam").disabled == false) {
+      if(parseInt(document.getElementById("extraRam").value) < 20 ){
+        result = parseInt(document.getElementById("extraRam").value) + 1;
+      }
+      else{
+        result=20;
+        AddSpace=20*100;
+      }
+      ExtraGb = result * 10;
+      AddSpace =result * 100;
+      calculate();
+      setExtraStorage()
     }
-    else{
-      result=20;
-      AddSpace=20*100;
-    }
-    ExtraGb = result * 10;
-    AddSpace =result * 100;
-    calculate();
-    setExtraStorage()
   }
 
   function extraRamMinus(){
     var result =0;
-    if(parseInt(document.getElementById("extraRam").value) > 0){
-      result = parseInt(document.getElementById("extraRam").value) - 1;
+    if(document.getElementById("extraRam").disabled == false){
+      if(parseInt(document.getElementById("extraRam").value) > 0){
+        result = parseInt(document.getElementById("extraRam").value) - 1;
+      }
+      else{
+        result=0;
+        AddSpace=0;
+      }
+      ExtraGb = result * 10;
+      AddSpace =result * 100;
+      calculate();
+      setExtraStorage()
     }
-    else{
-      result=0;
-      AddSpace=0;
-    }
-    ExtraGb = result * 10;
-    AddSpace =result * 100;
-    calculate();
-    setExtraStorage()
   }
 
+  function enableSpinners(){
+    document.getElementById("extraVm").disabled = false;
+    document.getElementById("extraRam").disabled = false;
+  }
 
   function calculate (){
     var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);

@@ -62,7 +62,7 @@ hr:
       contact_us_subject: "Naslov"
       contact_us_body: "  Tekst poruke..."
       contact_us_send: "POŠALJI PORUKU"
-      inquiry_not_registered: "Registrirajte se kako bi cijena bila prikazana na stranici"
+      inquiry_not_registered: "Registrirajte se da bi izračun vidjeli na ovoj stranici"
       inquiry_modal:
         inquiry_email: "Upišite e-mail na koji želite da Vam dostavimo izračun"
         send_button: "Potvrdi"
@@ -85,7 +85,7 @@ hr:
         failover: "Full/Partial site failover"
         failback: "Full/partial failback"
         1_click: "1-click failover"
-        virtual: "Virtual mrežni uređaji"
+        virtual: "Virtualni mrežni uređaji"
         tls_ssl: "TLS/SSL veza"
         texts:
           draas: "Napredna, „image VM” replikacija kroz Veeam Cloud Connect je usluga jednostavna za uspostavu i korištenje. Usluga uključuje:"
@@ -97,7 +97,8 @@ hr:
           tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija s enkripcijom podataka. Koristi višestruke tehnologije smanjenja mrežnog prometa, uključujući WAN ubrzanje i replica seeding."
       texts:
         about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200.000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu."
-        calculator: "Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate"
+        calculator: "Za upotrebu kalkulatora i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se prijavite."
+        calculator_mail: "Za slanje izračuna na mail, dovoljno je da samo upišete svoju mail adresu."
   simple_form:
     "yes": 'Da'
     "no": 'Ne'

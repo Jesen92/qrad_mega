@@ -119,7 +119,8 @@ en:
           tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija sa enkripcijom podataka a koristi i višestruke tehnologije smanjenja mrežnog prometa, uključivo WAN acceleration, BitLocker™ i replica seeding."
       texts:
         about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200 000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu."
-        calculator: "Za upotrebu kalkulatora i slanje zahtjeva za free trialom molimo da se registrirate ili logirate"
+        calculator: "Za upotrebu kalkulatora i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se prijavite."
+        calculator_mail: "Za slanje izračuna na mail, dovoljno je da samo upišete svoju mail adresu."
   users:
     passwords:
       new:

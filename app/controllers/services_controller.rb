@@ -35,7 +35,7 @@ class ServicesController < ApplicationController
       @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil?
       UserMailer.send_calculated_services(@subscriber, I18n.locale.to_s, params[:subscriber]).deliver_now
       flash[:notice] = I18n.t("controllers.services.calculator")
-      redirect_to root_path
+      return redirect_to root_path
     end
 
     redirect_to services_index_path(anchor: 'CALC')
