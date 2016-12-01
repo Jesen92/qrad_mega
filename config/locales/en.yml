@@ -43,7 +43,13 @@ en:
       welcome_text: "Hi"
   services:
     index:
+      home_header: "Veeam Cloud Connect Backup i Disaster Recovery Usluga"
+      home_paragraph: "Iskoristite i Vi mogućnosti tehnologije i postanite „Always On” tvrtka"
+      section_break: "Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku"
+      section_break_user: "Izradite najbolju konfiguraciju servisa za vašu tvrtku ili besplatno isprobajte uslugu"
       calculator:
+        price: "Cijena odabranih usluga"
+        price_packet: "U cijenu je uključeno"
         veeam_licence: "Veeam licenca"
         veeam_licence_yes: "Koristi Veeam licencu"
         veeam_licence_no: "Ne koristi Veeam licencu"
@@ -84,6 +90,11 @@ en:
       contact_us_subject: "Subject"
       contact_us_body: "  Message Text..."
       contact_us_send: "SEND MESSAGE"
+      contact_errors:
+        enter_name: "Please Enter your name"
+        enter_email: "Please Enter your Email"
+        enter_valid_email: "Please Enter a Valid Email Address"
+        enter_message: "Please Enter Your Message"
       inquiry_not_registered: "Register to view service price"
       inquiry_modal:
         inquiry_email: "Enter the e-mail you want the offer to be delivered"

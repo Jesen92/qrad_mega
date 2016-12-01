@@ -76,8 +76,8 @@
         <div class="col-md-8 col-sm-8">
           <div class="home_text">
             <!-- TITLE AND DESC -->
-            <h1>Veeam Cloud Connect Backup i Disaster Recovery Usluga</h1>
-            <p>Iskoristite i Vi mogućnosti tehnologije i postanite „Always On” tvrtka</p>
+            <h1><%= t(".home_header") %></h1>
+            <p><%= t(".home_paragraph") %></p>
 
             <div class="download-btn">
               <!-- BUTTON -->
@@ -148,12 +148,21 @@
 <div class="call_to_action">
   <div class="container">
     <div class="row wow fadeInLeftBig" data-wow-duration="1s">
+      <% if user_signed_in? %>
       <div class="col-md-9">
-        <p class="nomargin">Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku</p>
+        <p class="nomargin"><%= t(".section_break_user") %></p>
+      </div>
+      <div class="col-md-3">
+        <a href="#CALC" class="btn btn-primary btn-action"><%= t(".trial") %></a>
+      </div>
+      <% else %>
+      <div class="col-md-9">
+        <p class="nomargin"><%= t(".section_break") %>></p>
       </div>
       <div class="col-md-3">
         <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -274,12 +283,21 @@
 <div class="call_to_action">
   <div class="container">
     <div class="row wow fadeInLeftBig" data-wow-duration="1s">
-      <div class="col-md-9">
-        <p class="nomargin">Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku</p>
-      </div>
-      <div class="col-md-3">
-        <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
-      </div>
+      <% if user_signed_in? %>
+          <div class="col-md-9">
+            <p class="nomargin"><%= t(".section_break_user") %></p>
+          </div>
+          <div class="col-md-3">
+            <a href="#CALC" class="btn btn-primary btn-action"><%= t(".trial") %></a>
+          </div>
+      <% else %>
+          <div class="col-md-9">
+            <p class="nomargin"><%= t(".section_break") %>></p>
+          </div>
+          <div class="col-md-3">
+            <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
+          </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -409,7 +427,7 @@
     <div class="container  wow bounceInRight" data-wow-duration="1s">
       <div class="col-md-6">
         <div class="available_title">
-          <h2>Više o usluzi</h2>
+          <h2><%= t(".section_break_about") %></h2>
         </div>
       </div>
 
@@ -647,9 +665,9 @@
           <div class="price">
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>Cijena odabranih usluga<span>:</span></h3>
+            <h3><%= t(".calculator.price") %><span>:</span></h3>
             <h2> <span id="cijena">0</span>,00 &euro;</h2>
-            <p class="calc_info"> U cijenu je uključeno <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
+            <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
 
             </p>
 
@@ -673,7 +691,7 @@
 
               <!-- FEATURE HEADING AND DESCRIPTION -->
               <h3><%= t(".inquiry_not_registered") %></h3>
-              <p class="calc_info"> U cijenu je uključeno <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
+              <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
 
               </p>
 
@@ -755,10 +773,10 @@
 
         <!-- START ERROR AND SUCCESS MESSAGE -->
         <div class="form_error text-center">
-          <div class="name_error hide error">Please Enter your name</div>
-          <div class="email_error hide error">Please Enter your Email</div>
-          <div class="email_val_error hide error">Please Enter a Valid Email Address</div>
-          <div class="message_error hide error">Please Enter Your Message</div>
+          <div class="name_error hide error"><%= t(".contact_errors.enter_name") %></div>
+          <div class="email_error hide error"><%= t(".contact_errors.enter_email") %></div>
+          <div class="email_val_error hide error"><%= t(".contact_errors.enter_valid_email") %></div>
+          <div class="message_error hide error"><%= t(".contact_errors.enter_message") %></div>
         </div>
         <div class="Sucess"></div>
         <!-- END ERROR AND SUCCESS MESSAGE -->
