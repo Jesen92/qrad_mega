@@ -108,7 +108,7 @@ hr:
           virtual: "Ugrađeni virtualni mrežni uređaji za pojednostavljenu mrežnu infrastrukturu i sigurnu komunikaciju."
           tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija s enkripcijom podataka. Koristi višestruke tehnologije smanjenja mrežnog prometa, uključujući WAN ubrzanje i replica seeding."
       texts:
-        about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200.000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu."
+        about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200.000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu. Potrebu za spremanjem backupa na udaljenoj lokaciji najlakše i najpouzdanije je riješiti pohranom backupa u oblak. Za uslugu je dovoljno imati samo vezu na internet."
         calculator: "Za upotrebu kalkulatora i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se prijavite."
         calculator_mail: "Za slanje izračuna na mail, dovoljno je da samo upišete svoju mail adresu."
   simple_form:

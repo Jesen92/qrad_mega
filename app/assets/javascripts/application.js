@@ -12,6 +12,7 @@
 //
 //= require jquery-3.1.1.min
 //= require bootstrap.min
+//= require bootstrap-spinner
 //= require smoothscroll
 //= require jquery.ajaxchimp.langs
 //= require_tree .

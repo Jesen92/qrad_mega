@@ -43,6 +43,7 @@ en:
       welcome_text: "Hi"
   services:
     index:
+      section_break_about: "Više o usluzi"
       home_header: "Veeam Cloud Connect Backup i Disaster Recovery Usluga"
       home_paragraph: "Iskoristite i Vi mogućnosti tehnologije i postanite „Always On” tvrtka"
       section_break: "Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku"

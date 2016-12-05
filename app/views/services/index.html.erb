@@ -41,10 +41,13 @@
             <% else %>
             <li><a href="#REGISTER"><%= t(".sign_in") %></a> </li>
             <% end %>
+            <!-- ukljuci kada dode ENG prijevod -->
             <% if I18n.locale == :hr %>
+                <!--
             <li><%= link_to "EN ", locale: "en" %></li>
             <% else %>
             <li><%= link_to "HR ", locale: "hr" %></li>
+            -->
             <% end %>
           </ul>
         </div>
@@ -1094,4 +1097,26 @@
     if (document.getElementById("veeamStorageExtra") != null) document.getElementById("veeamStorageExtra").value = AddSpace;
     document.getElementById("temp_veeamStorageExtra").value = AddSpace;
   }
+
+  $(document).ready(function() {
+
+    "use strict";
+
+    var scrollAnimationTime = 1200,
+        scrollAnimation = 'easeInOutExpo';
+    $('a.scrollto').bind('click.smoothscroll', function(event) {
+      event.preventDefault();
+      var target = this.hash;
+      $('html, body').stop().animate({
+        'scrollTop': $(target).offset().top
+      }, scrollAnimationTime, scrollAnimation, function() {
+        window.location.hash = target;
+      });
+    });
+    //COUNTER
+     $('.counter_num').counterUp({
+         delay: 10,
+         time: 2000
+     });
+  });
 </script>
