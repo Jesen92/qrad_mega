@@ -994,12 +994,12 @@
     var result = 0;
     if (document.getElementById("extraVm").disabled == false) {
 
-      if (parseInt(document.getElementById("extraVm").value) < 20) {
+      if (parseInt(document.getElementById("extraVm").value) < 30) {
         result = parseInt(document.getElementById("extraVm").value) + 1;
       }
       else {
-        result = 20;
-        AddVm = 20;
+        result = 30;
+        AddVm = 30;
       }
 
       ExtraVm = result * 20;
@@ -1029,12 +1029,12 @@
   function extraRamPlus(){
     var result = 0;
     if(document.getElementById("extraRam").disabled == false) {
-      if(parseInt(document.getElementById("extraRam").value) < 20 ){
+      if(parseInt(document.getElementById("extraRam").value) < 30 ){
         result = parseInt(document.getElementById("extraRam").value) + 1;
       }
       else{
-        result=20;
-        AddSpace=20*100;
+        result=30;
+        AddSpace=30*100;
       }
       ExtraGb = result * 10;
       AddSpace =result * 100;

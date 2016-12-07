@@ -43,10 +43,10 @@ class UserMailer < ApplicationMailer
     @sum_storage = service.storage_default.to_i + @extra_storage.to_i
 
     if locale == "hr"
-      mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
-      mail(to: "cloudconnect@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      mail(to: [user.email, 'cloudconnect@megatrend.com'], subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      #mail(to: "cloudconnect@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
-      mail(to: user.email, subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
+      mail(to: [user.email, 'cloudconnect@megatrend.com'], subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
     end
   end
 
@@ -58,10 +58,10 @@ class UserMailer < ApplicationMailer
     @body = body
 
     if locale == "hr"
-      mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
-      mail(to: "cloudconnect@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      mail(to: [@email, 'cloudconnect@megatrend.com'], subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      #mail(to: "cloudconnect@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
     else
-      mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
+      mail(to: [@email,'cloudconnect@megatrend.com'], subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
     end
   end
 
@@ -69,10 +69,10 @@ class UserMailer < ApplicationMailer
     @email = user.email
 
     if locale == "hr"
-      mail(to: @email, subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
-      mail(to: "cloudconnect@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+      mail(to: [@email, 'cloudconnect@megatrend.com'], subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+      #mail(to: "cloudconnect@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
     else
-      mail(to: @email, subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
+      mail(to: [@email, 'cloudconnect@megatrend.com'], subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
     end
   end
 end
