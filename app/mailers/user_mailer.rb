@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'vcc@megatrend.com'
+  default from: 'Cloud Connect <cloudconnect@megatrend.com>'
 
   def generated_password(user, generated_password, locale)
     @user = user
@@ -44,7 +44,7 @@ class UserMailer < ApplicationMailer
 
     if locale == "hr"
       mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
-      #mail(to: "vcc@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      mail(to: "cloudconnect@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
       mail(to: user.email, subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
     end
@@ -59,7 +59,7 @@ class UserMailer < ApplicationMailer
 
     if locale == "hr"
       mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
-      #mail(to: "vcc@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      mail(to: "cloudconnect@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
     else
       mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
     end
@@ -70,7 +70,7 @@ class UserMailer < ApplicationMailer
 
     if locale == "hr"
       mail(to: @email, subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
-      #mail(to: "vcc@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+      mail(to: "cloudconnect@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
     else
       mail(to: @email, subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
     end
