@@ -43,7 +43,7 @@ class UserMailer < ApplicationMailer
     @sum_storage = service.storage_default.to_i + @extra_storage.to_i
 
     if locale == "hr"
-      mail(to: [user.email, 'cloudconnect@megatrend.com'], subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
       #mail(to: "cloudconnect@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
       mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
