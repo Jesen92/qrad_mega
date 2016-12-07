@@ -26,6 +26,7 @@ class UserMailer < ApplicationMailer
   def send_calculated_services(user, locale, params)
     service = Service.find_by(name: params[:service])
 
+    @email = user.email
     @veeam_user = params[:veeam_user]
     @veeam_user_price = params[:veeam_user].downcase.include?("non") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
     @service = service.name
@@ -43,6 +44,7 @@ class UserMailer < ApplicationMailer
 
     if locale == "hr"
       mail(to: user.email, subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      #mail(to: "vcc@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
       mail(to: user.email, subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
     end
@@ -57,6 +59,7 @@ class UserMailer < ApplicationMailer
 
     if locale == "hr"
       mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      #mail(to: "vcc@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
     else
       mail(to: @email, subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
     end
@@ -67,6 +70,7 @@ class UserMailer < ApplicationMailer
 
     if locale == "hr"
       mail(to: @email, subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+      #mail(to: "vcc@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
     else
       mail(to: @email, subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
     end

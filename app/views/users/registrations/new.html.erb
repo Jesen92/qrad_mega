@@ -9,7 +9,7 @@
 
           <div class="logo text-center">
             <!-- LOGO -->
-            <%= image_tag("logo.png", width: "250") %>
+            <%= image_tag("logo.png", width: "300") %>
             <%= image_tag("veeam.png", :alt => "veeam", width: "180", style: "padding-left: 10px") %>
           </div>
         </div>
@@ -109,7 +109,7 @@
                     <%= f.button :submit, t(".signup") , class: "button"%>
                     <%= link_to t(".back"), root_path, class: "button" %>
                   </div>
-                  <%= render "devise/shared/links" %>
+                  <%= render "users/shared/links" %>
                 </footer>
             <% end %>
 

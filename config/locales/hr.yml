@@ -49,7 +49,7 @@ hr:
       free_trial: "Besplatna proba"
       title: "Naslov"
       subheading: "Podnaslov"
-      about: "O NAMA "
+      about: "O USLUZI "
       trial: "PROBA/CIJENE "
       contact: "KONTAKT "
       sign_in: "PRIJAVI SE "
@@ -184,3 +184,4 @@ hr:
       links:
         signup: "Registriraj se"
         forgot: "Zaboravili ste lozinku?"
+        signin: "Prijavi se"
