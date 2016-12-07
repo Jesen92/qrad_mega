@@ -2,63 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91271e7c-fd97-4029-a4da-c2035c462ecb" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-144x144.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-144x144.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-192x192-e1dac8a82317640b9eb0b03b78f8b7afa3d1dcf6f2a32dd2ddb285b3d8653124.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-192x192-e1dac8a82317640b9eb0b03b78f8b7afa3d1dcf6f2a32dd2ddb285b3d8653124.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-192x192.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-192x192.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-36x36-d68642bb82bfd60204d782fe76bdaca31dc7c30f4ce459d668ac8d12bbaf727e.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-36x36-d68642bb82bfd60204d782fe76bdaca31dc7c30f4ce459d668ac8d12bbaf727e.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-36x36.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-36x36.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-48x48-4bde0204eccf625a4d4b8c0e3ea12a4d2fa75707bd3fd67b5e6fbf67d7260345.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-48x48-4bde0204eccf625a4d4b8c0e3ea12a4d2fa75707bd3fd67b5e6fbf67d7260345.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-48x48.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-48x48.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-72x72.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-72x72.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/android-icon-96x96.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-96x96.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-114x114-b32ce981bebdfabc5fb0dada516a27984869265c7743b55f394df9c59d8a3dd2.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-114x114-b32ce981bebdfabc5fb0dada516a27984869265c7743b55f394df9c59d8a3dd2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-114x114.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-114x114.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-120x120-5e06726ba7c42b82abf11c113b9310eb90abb913560e2ce6031560f31c794ce6.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-120x120-5e06726ba7c42b82abf11c113b9310eb90abb913560e2ce6031560f31c794ce6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-120x120.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-120x120.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-144x144.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-144x144.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-152x152-fcedca67fe102245babf8d8e669e8286ecd8bdc269c87fe170e7122987f3be95.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-152x152-fcedca67fe102245babf8d8e669e8286ecd8bdc269c87fe170e7122987f3be95.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-152x152.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-152x152.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-180x180-0e97f9d58c8269414109b2dbdf133d23e55555405c8a6f7cd2ca38734791afcd.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-180x180-0e97f9d58c8269414109b2dbdf133d23e55555405c8a6f7cd2ca38734791afcd.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-180x180.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-180x180.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-57x57-aba0987c7c09216e4c93185726f3474f8a0352020804145389b2d4b6cc20116c.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-57x57-aba0987c7c09216e4c93185726f3474f8a0352020804145389b2d4b6cc20116c.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-57x57.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-57x57.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-60x60-f000a914880b1d3f4c4bb7c33c141db78c98dc7e895fac0ff7ca36f9f679e96d.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-60x60-f000a914880b1d3f4c4bb7c33c141db78c98dc7e895fac0ff7ca36f9f679e96d.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-60x60.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-60x60.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-72x72.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-72x72.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-76x76-c010e4a3fb50eecf359047b4dbfc22410d1b1695766fc2e6331db3c82a3f6d56.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-76x76-c010e4a3fb50eecf359047b4dbfc22410d1b1695766fc2e6331db3c82a3f6d56.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-76x76.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-76x76.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-precomposed-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-precomposed-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon-precomposed.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-precomposed.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/apple-icon.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/browserconfig-13bc647273455808acd0f6605124ab3a78bbae67b532f8b993dc0f8ce2a03d0d.xml" afterPath="$PROJECT_DIR$/public/assets/images/favicon/browserconfig-13bc647273455808acd0f6605124ab3a78bbae67b532f8b993dc0f8ce2a03d0d.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/browserconfig.xml" afterPath="$PROJECT_DIR$/public/assets/images/favicon/browserconfig.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-16x16-ba65525c04d98ffadf88a5307ed52bf4797aae66f6ee798df1ce29c8a714bfc0.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-16x16-ba65525c04d98ffadf88a5307ed52bf4797aae66f6ee798df1ce29c8a714bfc0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-16x16.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-16x16.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-32x32-57bda88bf921570a5f4d44d3ded746d8d9a00c15557af357d17806712f1cf66d.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-32x32-57bda88bf921570a5f4d44d3ded746d8d9a00c15557af357d17806712f1cf66d.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-32x32.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-32x32.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-96x96.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-96x96.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico.gz" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico.gz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/favicon.ico" afterPath="$PROJECT_DIR$/public/assets/images/favicon/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json" afterPath="$PROJECT_DIR$/public/assets/images/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json.gz" afterPath="$PROJECT_DIR$/public/assets/images/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json.gz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/manifest.json" afterPath="$PROJECT_DIR$/public/assets/images/favicon/manifest.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-144x144.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-144x144.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-150x150-af334ced759a80a2ce18fae8dd50b696a679086a0394a1bb02c23ea399a4a8c7.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-150x150-af334ced759a80a2ce18fae8dd50b696a679086a0394a1bb02c23ea399a4a8c7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-150x150.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-150x150.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-310x310-2375ecd6f679f43af73f48b5e0ddab7b61d598f72c45bc2f77f20dc55c7a0545.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-310x310-2375ecd6f679f43af73f48b5e0ddab7b61d598f72c45bc2f77f20dc55c7a0545.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-310x310.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-310x310.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-70x70-01094287cc3f8677911ae8fc0be37abf02a9557f9315a778af1b248807a60c5b.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-70x70-01094287cc3f8677911ae8fc0be37abf02a9557f9315a778af1b248807a60c5b.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/assets/favicon/ms-icon-70x70.png" afterPath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-70x70.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-192x192-e1dac8a82317640b9eb0b03b78f8b7afa3d1dcf6f2a32dd2ddb285b3d8653124.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-192x192.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-36x36-d68642bb82bfd60204d782fe76bdaca31dc7c30f4ce459d668ac8d12bbaf727e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-36x36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-48x48-4bde0204eccf625a4d4b8c0e3ea12a4d2fa75707bd3fd67b5e6fbf67d7260345.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-48x48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-114x114-b32ce981bebdfabc5fb0dada516a27984869265c7743b55f394df9c59d8a3dd2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-114x114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-120x120-5e06726ba7c42b82abf11c113b9310eb90abb913560e2ce6031560f31c794ce6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-120x120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-152x152-fcedca67fe102245babf8d8e669e8286ecd8bdc269c87fe170e7122987f3be95.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-152x152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-180x180-0e97f9d58c8269414109b2dbdf133d23e55555405c8a6f7cd2ca38734791afcd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-180x180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-57x57-aba0987c7c09216e4c93185726f3474f8a0352020804145389b2d4b6cc20116c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-57x57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-60x60-f000a914880b1d3f4c4bb7c33c141db78c98dc7e895fac0ff7ca36f9f679e96d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-76x76-c010e4a3fb50eecf359047b4dbfc22410d1b1695766fc2e6331db3c82a3f6d56.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-76x76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-precomposed-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-precomposed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-16x16-ba65525c04d98ffadf88a5307ed52bf4797aae66f6ee798df1ce29c8a714bfc0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-16x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-32x32-57bda88bf921570a5f4d44d3ded746d8d9a00c15557af357d17806712f1cf66d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-150x150-af334ced759a80a2ce18fae8dd50b696a679086a0394a1bb02c23ea399a4a8c7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-150x150.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-310x310-2375ecd6f679f43af73f48b5e0ddab7b61d598f72c45bc2f77f20dc55c7a0545.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-310x310.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-70x70-01094287cc3f8677911ae8fc0be37abf02a9557f9315a778af1b248807a60c5b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-70x70.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/browserconfig-13bc647273455808acd0f6605124ab3a78bbae67b532f8b993dc0f8ce2a03d0d.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/browserconfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/favicon/manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/user_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
     </list>
     <ignored path="CloudConnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,8 +113,8 @@
       <file leaf-file-name="user_mailer.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+            <state relative-caret-position="476">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,8 +153,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+            <state relative-caret-position="390">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -338,7 +339,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,11 +357,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,15 +379,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -798,12 +839,12 @@
       <workItem from="1480950511297" duration="1125000" />
       <workItem from="1480955753735" duration="2802000" />
       <workItem from="1481015964071" duration="1603000" />
-      <workItem from="1481102392656" duration="4891000" />
+      <workItem from="1481102392656" duration="5246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159113000" />
+    <option name="totallyTimeSpent" value="159468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1215,16 +1256,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="476">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
