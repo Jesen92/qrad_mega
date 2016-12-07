@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'Cloud Connect <cloudconnect@megatrend.com>'
+  default from: 'Cloud Connect <vcc@ccweb.megatrend.com>'
 
   def generated_password(user, generated_password, locale)
     @user = user
@@ -58,7 +58,7 @@ class UserMailer < ApplicationMailer
     @body = body
 
     if locale == "hr"
-      mail(to: @email,bcc: 'hrvoje.jesenovic@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      mail(to: @email,bcc: 'cloudconnect@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
       #mail(to: "cloudconnect@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
     else
       mail(to: @email,bcc: 'cloudconnect@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
