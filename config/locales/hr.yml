@@ -36,7 +36,7 @@ hr:
         service: "Usluga"
         service_placeholder: "Usluga"
         platform: "Platforma"
-        platform_placeholder: "Patforma"
+        platform_placeholder: "Platforma"
         extra_vm: "Dodatne VM"
         extra_storage: "Dodatni prostor (100GB)"
         texts:

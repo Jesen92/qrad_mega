@@ -23,23 +23,21 @@
   </style>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  <div class="container" style="margin-top: 30px">
-    <div class="row" >
-      <div class="col-md-4">
-        <%= image_tag "mpr_logo.png", width: "250", style: "padding-top: 18px;" %>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "veeam_logo.png", width: "250" %>
-      </div>
-    </div>
-  </div>
+
 </head>
 <body>
 <div class="container" style="margin-top: 5px; margin-bottom: 35px">
   <div class="page-header">
     <h1><span style="color: #A9CC2D; ">Dobro došli na Cloud Connect</span><small>, <%= @email %></small></h1>
   </div>
-  <div class="container" >
+  <div class="container" style="margin-top: 30px">
+    <div class="row" >
+      <div class="col-md-4">
+        <%= image_tag "logomail.png", width:"400px",style: "padding-top: 18px;" %>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 10px;">
     <h3>Odabirom na kalkulatoru odabrali ste sljedeće stavke za Cloud Connect uslugu:</h3>
 
     <div class="row">
