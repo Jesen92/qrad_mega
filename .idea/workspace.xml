@@ -2,617 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91271e7c-fd97-4029-a4da-c2035c462ecb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/.keep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/android-icon-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/android-icon-192x192.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/android-icon-36x36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/android-icon-48x48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/android-icon-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/android-icon-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-114x114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-152x152.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-180x180.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-57x57.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-60x60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-76x76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon-precomposed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/apple-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/favicon-16x16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/favicon-32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/favicon-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/ms-icon-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/ms-icon-150x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/ms-icon-310x310.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/ms-icon-70x70.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/Pe-icon-7-stroke.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ad.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ae.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/af.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ai.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/al.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/am.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ao.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/aq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/as.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/at.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/au.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/aw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ax.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/az.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ba.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/be.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/br.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/by.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/bz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ca.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ch.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ci.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ck.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/co.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cx.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/cz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/de.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/dj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/dk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/dm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/do.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/dz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ec.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ee.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/eg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/eh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/er.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/es.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/et.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/eu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/fi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/fj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/fk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/fm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/fo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/fr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ga.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gb-eng.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gb-nir.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gb-sct.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gb-wls.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ge.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/gy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/hk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/hm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/hn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/hr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ht.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/hu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/id.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ie.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/il.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/im.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/in.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/io.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/iq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ir.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/is.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/it.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/je.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/jm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/jo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/jp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ke.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ki.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/km.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ky.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/kz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/la.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/li.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ls.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/lv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ly.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ma.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/md.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/me.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ml.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ms.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mx.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/my.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/mz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/na.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/nc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ne.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/nf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ng.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ni.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/nl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/np.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/nr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/nu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/nz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/om.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pe.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ph.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ps.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/pw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/py.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/qa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/re.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ro.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/rs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ru.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/rw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/se.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/si.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/so.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ss.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/st.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sx.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/sz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/td.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/th.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/to.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/tz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ua.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ug.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/um.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/un.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/us.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/uy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/uz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/va.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/vc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ve.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/vg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/vi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/vn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/vu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/wf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ws.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/ye.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/yt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/za.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/zm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/1x1/zw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ad.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ae.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/af.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ai.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/al.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/am.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ao.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/aq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/as.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/at.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/au.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/aw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ax.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/az.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ba.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/be.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/br.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/by.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/bz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ca.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ch.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ci.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ck.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/co.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cx.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/cz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/de.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/dj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/dk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/dm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/do.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/dz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ec.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ee.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/eg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/eh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/er.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/es.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/et.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/eu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/fi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/fj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/fk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/fm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/fo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/fr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ga.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gb-eng.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gb-nir.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gb-sct.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gb-wls.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ge.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/gy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/hk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/hm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/hn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/hr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ht.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/hu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/id.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ie.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/il.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/im.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/in.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/io.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/iq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ir.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/is.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/it.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/je.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/jm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/jo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/jp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ke.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ki.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/km.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ky.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/kz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/la.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/li.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ls.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/lv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ly.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ma.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/md.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/me.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ml.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mq.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ms.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mx.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/my.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/mz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/na.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/nc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ne.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/nf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ng.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ni.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/nl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/no.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/np.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/nr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/nu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/nz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/om.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pe.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ph.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ps.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/pw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/py.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/qa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/re.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ro.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/rs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ru.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/rw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/se.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sh.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/si.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/so.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ss.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/st.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sx.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/sz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/td.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/th.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tj.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tl.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/to.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tr.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tv.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/tz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ua.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ug.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/um.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/un.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/us.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/uy.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/uz.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/va.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/vc.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ve.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/vg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/vi.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/vn.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/vu.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/wf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ws.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/ye.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/yt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/za.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/zm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/flags/4x3/zw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/browserconfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/manifest.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-6a4d3fb29b2c610168ee6e8ff10669d0.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-e8c69bbed179a07083f7a1160b4d52b0.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4469bb9e3e65f3b2769684f3be9ed6d040b260ffb47dfaaf63a6b8b91e10bd5c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-4469bb9e3e65f3b2769684f3be9ed6d040b260ffb47dfaaf63a6b8b91e10bd5c.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-aec4d69f76e62d49b4d903c2fd668425e2a5d2b3f3f092184f7f377f8148a432.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-aec4d69f76e62d49b4d903c2fd668425e2a5d2b3f3f092184f7f377f8148a432.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-192x192-e1dac8a82317640b9eb0b03b78f8b7afa3d1dcf6f2a32dd2ddb285b3d8653124.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-36x36-d68642bb82bfd60204d782fe76bdaca31dc7c30f4ce459d668ac8d12bbaf727e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-36x36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-48x48-4bde0204eccf625a4d4b8c0e3ea12a4d2fa75707bd3fd67b5e6fbf67d7260345.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-48x48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/android-icon-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-114x114-b32ce981bebdfabc5fb0dada516a27984869265c7743b55f394df9c59d8a3dd2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-114x114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-120x120-5e06726ba7c42b82abf11c113b9310eb90abb913560e2ce6031560f31c794ce6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-120x120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-152x152-fcedca67fe102245babf8d8e669e8286ecd8bdc269c87fe170e7122987f3be95.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-152x152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-180x180-0e97f9d58c8269414109b2dbdf133d23e55555405c8a6f7cd2ca38734791afcd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-180x180.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-57x57-aba0987c7c09216e4c93185726f3474f8a0352020804145389b2d4b6cc20116c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-57x57.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-60x60-f000a914880b1d3f4c4bb7c33c141db78c98dc7e895fac0ff7ca36f9f679e96d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-72x72-17c4317b7e2b1f7e9c96a2011e40938395be7adecd6f035c9f312c8548043ba3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-76x76-c010e4a3fb50eecf359047b4dbfc22410d1b1695766fc2e6331db3c82a3f6d56.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-76x76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-precomposed-f34bdaa4e8e39709f3a364703187dcc3a05ff3396434ec728d222e5c9f8530a8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/apple-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/browserconfig-13bc647273455808acd0f6605124ab3a78bbae67b532f8b993dc0f8ce2a03d0d.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-16x16-ba65525c04d98ffadf88a5307ed52bf4797aae66f6ee798df1ce29c8a714bfc0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-32x32-57bda88bf921570a5f4d44d3ded746d8d9a00c15557af357d17806712f1cf66d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-96x96-1624907a95622ce6f47388f047a5f31dc10502068cb454263d9d78809fc5d59d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon-d7cb16c2cbafc84bbc56fc34f145df055b7c7f23caf0677518a09e14f75eab33.ico.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/manifest-27eca3e8297eb7ff340deb3849b210185a459b3845456aa4d0036f6d966b3518.json.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-144x144-4ee655be6542999ea9365efb4e9a3c85bba254718f5dbb88b2d0079b8fc2acfb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-150x150-af334ced759a80a2ce18fae8dd50b696a679086a0394a1bb02c23ea399a4a8c7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-310x310-2375ecd6f679f43af73f48b5e0ddab7b61d598f72c45bc2f77f20dc55c7a0545.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-310x310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-70x70-01094287cc3f8677911ae8fc0be37abf02a9557f9315a778af1b248807a60c5b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon/ms-icon-70x70.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/logomail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/veeam_baas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/veeam_draas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/responsive-00ab8bcbdd79737de8776481230c426969ff8f26d866cc80dc18abebcfaec3dc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/responsive-00ab8bcbdd79737de8776481230c426969ff8f26d866cc80dc18abebcfaec3dc.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/responsive.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/active_admin-ae5fdeb3412c69b9936c5bb0a2981b8e085b1bedae2bc608f7358c5b978f4b1b.js.gz" afterPath="$PROJECT_DIR$/public/assets/active_admin-ae5fdeb3412c69b9936c5bb0a2981b8e085b1bedae2bc608f7358c5b978f4b1b.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/MPR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/_iPhone_Home (2).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/about_iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/client_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/client_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/client_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/data.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/data_protection_evolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/download_screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/evolution.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/flow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/fun_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/home.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iPhone02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iPhone_Home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iphone04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iphone05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iphone06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iphone07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iphone08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/iphone09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/logomail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/mpr_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/subscribe.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/testimonial.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/veeam.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/veeam_baas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/veeam_backup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/veeam_draas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/veeam_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" />
     </list>
     <ignored path="CloudConnect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -643,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="calculator_hr.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calculator_hr.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="467">
+              <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -661,6 +82,26 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generated_password_hr.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/user_mailer/generated_password_hr.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -695,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
@@ -710,16 +151,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact_us.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/user_mailer/contact_us.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -792,7 +223,6 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.text.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/generated_password.erb" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/generated_password_hr.erb" />
         <option value="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/devise.erb" />
@@ -812,6 +242,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/contact_us_hr.erb" />
         <option value="$PROJECT_DIR$/app/controllers/services_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb" />
       </list>
     </option>
   </component>
@@ -887,6 +318,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -930,22 +375,12 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CloudConnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailers" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -962,8 +397,22 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CloudConnect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -985,25 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudConnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudConnect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1427,12 +858,12 @@
       <workItem from="1481015964071" duration="1603000" />
       <workItem from="1481102392656" duration="9950000" />
       <workItem from="1481188911895" duration="2908000" />
-      <workItem from="1481196205889" duration="7866000" />
+      <workItem from="1481196205889" duration="8519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174946000" />
+    <option name="totallyTimeSpent" value="175599000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1660,14 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/generated_password_hr.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user_mailer/reset_password_hr.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1701,14 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1811,22 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.text.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1873,6 +1272,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.text.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/generated_password_hr.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/calculator_hr.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
           <folding />
         </state>
       </provider>

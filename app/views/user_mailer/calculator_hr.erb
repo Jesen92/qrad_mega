@@ -46,7 +46,7 @@
           <tr>
             <td >Tip Korisnika</td>
             <td ><%= @veeam_user %></td>
-            <td align="right"><%= number_to_currency(@veeam_user_price, :unit => "" ) %></td>
+            <td align="right"><% unless @veeam_user_price.to_i <= 0 %><%= number_to_currency(@veeam_user_price, :unit => "" ) %><% end %></td>
           </tr>
           <tr>
             <td >USLUGA:</td>
@@ -96,6 +96,7 @@
       </div>
     </div>
 
+    <h4>Koristite naš online kalkulator. Registrirajte se i kalkulator ćete moći koristiti online!</h4>
   </div>
   <hr>
   <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Cloud Connect</span> - postanite <span style="color: #A9CC2D; ">„Always On”</span> tvrtka!</h4>
