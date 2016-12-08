@@ -4,7 +4,6 @@ class ServicesController < ApplicationController
   def index
     @subscriber = Subscriber.new unless user_signed_in?
 
-    expires_in 3.minutes, :public => true
   end
 
   def show
