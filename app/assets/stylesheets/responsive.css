@@ -31,6 +31,23 @@
     .about_phone img {
         width: 100%;
     }
+
+    .logo img{
+        margin-top: 40px;
+        width: 60%;
+    }
+    .call_to_action p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .left_single_feature h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .kalkulator {
+        padding-bottom: 20px;
+    }
 }
 /* This Css is for tablet */
 
