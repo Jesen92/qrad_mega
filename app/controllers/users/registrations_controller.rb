@@ -5,7 +5,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def create
     resource = nil
-    unless User.exists?(email: params[:email])
+    unless User.exists?(email: params[:user][:email])
     resource = User.create_with_password(sign_up_params)
     end
     #resource.save
