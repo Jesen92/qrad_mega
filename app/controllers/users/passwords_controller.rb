@@ -1,5 +1,6 @@
 class Users::PasswordsController < Devise::PasswordsController
 
+
   def create
 
     message = User.reset_password(resource_params)
