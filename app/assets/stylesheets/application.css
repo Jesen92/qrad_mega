@@ -25,4 +25,27 @@
  *= require sky-forms
  *= require sky-forms-green
  *= require style
+ *= require cookies_eu
  */
+
+.cookies-eu-ok {
+    background-color: #54b948 !important;
+    font-size: 14px !important;
+    line-height: 30px !important;
+    border-radius: 1px;
+}
+
+.cookies-eu {
+    line-height: 60px !important;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    text-align: center;
+    border-top: 1px solid #E4E4E4;
+    background: rgba(243, 156, 18, 0.85) !important;
+    font-size: 18px !important;
+    font-weight: 600;
+}

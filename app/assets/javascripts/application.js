@@ -15,4 +15,5 @@
 //= require bootstrap-spinner
 //= require smoothscroll
 //= require jquery.ajaxchimp.langs
+//= require cookies_eu
 //= require_tree .
