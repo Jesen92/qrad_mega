@@ -5,13 +5,13 @@ hr:
       error: "Registracija nije uspješna: e-mail već postoji!"
     services:
       contact_us: "Hvala što ste nas kontaktirali!"
-      calculator: "Vaš izračun je poslan! Kontaktirati ćemo vas sa dodatnim informacijama!"
+      calculator: "Vaš izračun je poslan! Kontaktirat ćemo vas sa dodatnim informacijama!"
       calc_error: "Sva obavezna polja moraju biti odabrana prije slanja izračuna!"
-      free_trial_error: "Već ste poslali upit za besplatnom probom! Možete poslati max. 1 upit za besplatnom probom"
+      free_trial_error: "Već ste poslali upit za besplatnom probom! Možete poslati max. jedan upit za besplatnom probom"
       free_trial: "Vaš upit za besplatnom probom je poslan!"
   model:
     user:
-      reset_password: "Lozinka nije resetirana! Možete max 1 dnevno resetirati password!"
+      reset_password: "Lozinka nije resetirana! Možete max. jednom dnevno resetirati password!"
       new_password: "Poslana vam je nova lozinka"
       email_doesnt_exist: "Upisani e-mail ne postoji!"
   layouts:
@@ -42,8 +42,8 @@ hr:
         texts:
           baas: "BaaS osnovni paket sadrži mogućnost izrade sigurnosnih kopija za 5 virtualnih računala i uključuje 500 GB diskovnog prostora."
           draas: "DRaaS osnovni paket sadrži mogućnost izrade replika za 5 virtualnih računala i uključuje 1.000 GB diskovnog prostora."
-          baas_draas: "BaaS i DRaaS paketi se proširuju po potrebi s dodatnim virtualnim računalima (komad) i diskovnim prostorom (100 GB inkrement)."
-      free_trial_confirm: "Da li ste sigurni da želite poslati upit za besplatnom probom?"
+          baas_draas: "BaaS i DRaaS paketi se po potrebi proširuju s dodatnim virtualnim računalima (komad) i diskovnim prostorom (100 GB inkrement)."
+      free_trial_confirm: "Jeste li sigurni da želite poslati upit za besplatnom probom?"
       free_trial_yes: "Da"
       free_trial_no: "Ne"
       free_trial: "Besplatna proba"
@@ -70,9 +70,9 @@ hr:
       contact_us_body: "  Tekst poruke..."
       contact_us_send: "POŠALJI PORUKU"
       contact_errors:
-        enter_name: "Molim Vas unesite Ime"
+        enter_name: "Molim Vas unesite ime"
         enter_email: "Molim Vas unesite e-mail adresu"
-        enter_valid_email: "Molim Vas unesite važeći e-mail adresu"
+        enter_valid_email: "Molim Vas unesite važeću e-mail adresu"
         enter_message: "Molim Vas unesite poruku"
       inquiry_not_registered: "Registrirajte se da bi izračun vidjeli na ovoj stranici"
       inquiry_modal:
@@ -155,7 +155,7 @@ hr:
     passwords:
       new:
         email: "user@example.com"
-        reset: "Upišite e-mail na koji želite da vam je dostavljena nova lozinka"
+        reset: "Upišite e-mail na koji želite da Vam dostavimo novu lozinku"
         reset_password_button: "Resetiraj mi šifru"
         back: "Nazad"
     sessions:
