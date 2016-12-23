@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
 
     UserMailer.generated_password(user, generated_password, I18n.locale.to_s).deliver_now
 
+    UserMailer.no_veeam_user(user, I18n.locale.to_s).deliver_now unless attr[:veeam_user] == '1'
+
     user
   end
 

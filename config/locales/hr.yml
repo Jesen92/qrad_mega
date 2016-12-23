@@ -29,6 +29,8 @@ hr:
       calculator:
         price: "Cijena odabranih usluga"
         price_packet: "U cijenu je uključeno"
+        price_disclaimer: "Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa."
+        price_disclaimer_sec_html: "Izračun vrijedi za korisnike koji koriste komercijalnu <b>Veeam “Backup & Replication”</b> licencu."
         veeam_licence: "Veeam licenca"
         veeam_licence_yes: "Koristi Veeam licencu"
         veeam_licence_no: "Ne koristi Veeam licencu"
@@ -40,9 +42,10 @@ hr:
         extra_vm: "Dodatne VM"
         extra_storage: "Dodatni prostor (100GB)"
         texts:
-          baas: "BaaS osnovni paket sadrži mogućnost izrade sigurnosnih kopija za 5 virtualnih računala i uključuje 500 GB diskovnog prostora."
-          draas: "DRaaS osnovni paket sadrži mogućnost izrade replika za 5 virtualnih računala i uključuje 1.000 GB diskovnog prostora."
-          baas_draas: "BaaS i DRaaS paketi se po potrebi proširuju s dodatnim virtualnim računalima (komad) i diskovnim prostorom (100 GB inkrement)."
+          baas: "BaaS osnovni paket sadrži mogućnost izrade sigurnosnih kopija za 5 virtualnih poslužitelja i uključuje 500 GB diskovnog prostora."
+          draas: "DRaaS osnovni paket sadrži mogućnost izrade replika za 5 virtualnih poslužitelja i uključuje 1.000 GB diskovnog prostora."
+          baas_draas: "BaaS i DRaaS paketi se po potrebi proširuju s dodatnim virtualnim poslužiteljima (komad) i diskovnim prostorom (100 GB inkrement)."
+          disclaimer: "Kod pokretanja Disaster Recovery poslužitelja (zbog testiranja ili stvarnog oporavka sustava) naplaćuje se procesorski i memorijski resursi koje zauzimaju upaljeni virtualni poslužitelji prema korištenim vCPU i RAM-u, za svaki dan kada su virtualni poslužitelji upaljeni: 1EUR/vCPU; 1EUR/1GB"
       free_trial_confirm: "Jeste li sigurni da želite poslati upit za besplatnom probom?"
       free_trial_yes: "Da"
       free_trial_no: "Ne"
@@ -85,7 +88,7 @@ hr:
         architecture: "Moderna backup arhitektura"
         end_to_end: "End-to-end enkripcija"
         texts:
-          baas: "Podaci se kopiraju s Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaku pojedinu datoteku ili cijelo virtualno računalo."
+          baas: "Podaci se kopiraju s Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaku pojedinu datoteku ili cijeli virtualn poslužitelj."
           backup_rule: "Za kvalitetan backup potrebno je imati tri kopije podataka, spremljene na dva različita medija a jedna od kopija mora biti na drugoj lokaciji. Spremanje backupa na udaljenu lokaciju postavlja izazov na mrežne komunikacije, rastuće količine podataka, resurse potrebne za izgradnju i održavanje udaljene lokacije. S Veeam Cloud Connect uslugom možete ostvariti 3-2-1 backup pravilo bez dodatnih ulaganja."
           hosting: "Spremite podatke u udaljeni repozitorij pomoću sigurne SSL konekcije i bez dodatnih Veeam licenci."
           supervision: "Pristup i vraćanje podataka izravno iz Vaše Veeam konzole."
@@ -108,7 +111,7 @@ hr:
           virtual: "Ugrađeni virtualni mrežni uređaji za pojednostavljenu mrežnu infrastrukturu i sigurnu komunikaciju."
           tls_ssl: "Sigurna i pouzdana TLS/SSL veza između lokacija s enkripcijom podataka. Koristi višestruke tehnologije smanjenja mrežnog prometa, uključujući WAN ubrzanje i replica seeding."
       texts:
-        about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih računala kod više od 200.000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu. Potrebu za spremanjem backupa na udaljenoj lokaciji najlakše i najpouzdanije je riješiti pohranom backupa u oblak. Za uslugu je dovoljno imati samo vezu na internet."
+        about: "Veeam backup i replikacijske tehnologije štite više od 10.5 milijuna virtualnih poslužitelja kod više od 200.000 korisnika. Zaštita podataka je doživjela evoluciju od klasičnog dnevnog (povremenog) backupa do replikacije podataka u realnom vremenu. Potrebu za spremanjem backupa na udaljenoj lokaciji najlakše i najpouzdanije je riješiti pohranom backupa u oblak. Za uslugu je dovoljno imati samo vezu na internet."
         calculator: "Za upotrebu kalkulatora i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se prijavite."
         calculator_mail: "Za slanje izračuna na mail, dovoljno je da samo upišete svoju mail adresu."
   simple_form:
@@ -180,6 +183,7 @@ hr:
         postal: "Poštanski broj"
         signup: "Registriraj se"
         back: "Nazad"
+        veeam_user_html: "Koristim komercijalnu <b>Veeam Backup & Replication</b> licencu"
     shared:
       links:
         signup: "Registriraj se"

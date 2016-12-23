@@ -54,10 +54,8 @@
                         <div class="col col-8">
 
                             <% if devise_mapping.rememberable? -%>
-                              <label class="checkbox">
-                                <div class="field">
-                            <%= f.check_box :remember_me, label: false %><i></i><%= t(".remember") %>
-                                </div>
+                              <label class="checkbox" >
+                            <%= f.check_box :remember_me, type: :check_box,label: false %><i style="height: 20px!important; width:20px!important;"></i><%= t(".remember") %>
                               </label>
                             <% end -%>
 

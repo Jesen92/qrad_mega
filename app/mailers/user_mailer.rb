@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'Cloud Connect <vcc@ccweb.megatrend.com>'
+  default from: 'Megatrend VCC <vcc@ccweb.megatrend.com>'
 
   def generated_password(user, generated_password, locale)
     @user = user
@@ -9,6 +9,16 @@ class UserMailer < ApplicationMailer
       mail(to: @user.email, subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'generated_password_hr')
     else
       mail(to: @user.email, subject: "Account Details")
+    end
+  end
+
+  def no_veeam_user(user,locale)
+    @user = user
+
+    if locale == "hr"
+      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
+    else
+      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
     end
   end
 
@@ -27,8 +37,8 @@ class UserMailer < ApplicationMailer
     service = Service.find_by(name: params[:service])
 
     @email = user.email
-    @veeam_user = params[:veeam_user]
-    @veeam_user_price = params[:veeam_user].downcase.include?("doesn't") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
+    #@veeam_user = params[:veeam_user]
+    #@veeam_user_price = params[:veeam_user].downcase.include?("doesn't") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
     @service = service.name
     @service_price = service.price
     @platform = params[:vm_server]
@@ -36,14 +46,14 @@ class UserMailer < ApplicationMailer
     @extra_vm_price = @extra_vm.to_i * service.VM_price.to_i
     @extra_storage = params[:storage_extra]
     @extra_storage_price = (params[:storage_extra].to_i/100) * service.storage_price
-    @sum_price = @veeam_user_price + @service_price + @extra_vm_price + @extra_storage_price
+    @sum_price = @service_price + @extra_vm_price + @extra_storage_price
     @basic_pack = service.VM_default.to_s+" VM, "+service.storage_default.to_s+" GB"
 
     @sum_vm = service.VM_default.to_i + @extra_vm.to_i
     @sum_storage = service.storage_default.to_i + @extra_storage.to_i
 
     if locale == "hr"
-      mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Megatrend ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
       #mail(to: "cloudconnect@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
       mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')

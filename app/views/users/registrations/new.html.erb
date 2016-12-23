@@ -102,6 +102,9 @@
                       <%= f.input :address, placeholder: t(".address"), label: false, required: true %>
                     </label>
                   </section>
+                  <label class="checkbox" style="padding-bottom: 30px;">
+                      <%= f.check_box :veeam_user, label: false %><i></i><%= t(".veeam_user_html") %>
+                  </label>
                   <%= flash[:recaptcha_error] %>
                   <%= recaptcha_tags %>
                 </fieldset>

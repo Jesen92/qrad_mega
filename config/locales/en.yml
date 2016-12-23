@@ -51,6 +51,8 @@ en:
       calculator:
         price: "The price of selected services"
         price_packet: "The price includes"
+        price_disclaimer: "Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa."
+        price_disclaimer_sec_html: "Izračun vrijedi za korisnike koji koriste komercijalnu Veeam “Backup & Replication” licencu."
         veeam_licence: "Veeam licenca"
         veeam_licence_yes: "Use Veeam licence"
         veeam_licence_no: "Doesn't use Veeam licence"
@@ -65,6 +67,7 @@ en:
           baas: "Baas basic package includes the ability to back up to 5 virtual machines and includes 500 GB of disk space."
           draas: "DRaaS basic package includes the ability to create a replica of 5 virtual machines and includes 1.000 GB of disk space."
           baas_draas: "Baas and DRaaS packages can be extended with additional virtual machines (per piece) and disk space (per 100 GB increment)."
+          disclaimer: "Kod pokretanja Disaster Recovery poslužitelja (zbog testiranja ili stvarnog oporavka sustava) naplaćuje se procesorski i memorijski resursi koje zauzimaju upaljeni virtualni poslužitelji prema korištenim vCPU i RAM-u, za svaki dan kada su virtualni poslužitelji upaljeni: 1EUR/vCPU; 1EUR/1GB"
       free_trial_confirm: "Are you sure you want to send a request for a free trial?"
       free_trial_yes: "Yes"
       free_trial_no: "No"
@@ -162,6 +165,7 @@ en:
         postal: "Postal code"
         signup: "Sign Up"
         back: "Back"
+        veeam_user_html: "Koristim komercijalnu <b>Veeam Backup & Replication</b> licencu"
     shared:
       links:
         signup: "Sign Up"

@@ -544,20 +544,56 @@
     </div>
   </div>
 
+  <!-- =========================
+   START SIGNIN SIGNUP - ovo se prikazuje ako je korisnik nije logiran
+  ============================== -->
+  <% if !user_signed_in? %>
+      <section id="REGISTER" class="features page">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <!-- FEATURES SECTION TITLE -->
+              <div class="section_title wow fadeIn" data-wow-duration="1s" style="padding-top: 50px;">
+                <h2><%= t(".sign_in_trial_title") %></h2>
+                <p><%= t(".texts.calculator") %></br>
+                  <%= t(".texts.calculator_mail") %></p>
+              </div>
 
-  <div class="container" id="CALCULATOR_SERVICES">
+              <div class="centered margin-btm">
+
+                <%= link_to t(".sign_up"), new_user_registration_path, class: "btn btn-primary btn-action" %>
+                <%= link_to t(".sign_in"), new_user_session_path, class: "btn btn-primary btn-action " %>
+
+
+              </div>
+              <!-- END FEATURES SECTION TITLE -->
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- END SIGNIN SIGNUP SECTION -->
+  <% end %>
+
+
+  <div class="container" id="CALCULATOR_SERVICES" style="padding-bottom: 80px;">
+    <!--<p class="calc_disclaimer_info">
+      *<%= t(".calculator.price_disclaimer_sec") %>
+    </p> -->
     <div class="row margin">
 
       <div class="col-md-8">
         <div class="row">
-          <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+          <!-- <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s"> -->
             <!-- FEATURE -->
             <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
-                <%= f.input :veeam_user ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamUser"} %>
+                <!-- Default value se miče samo ako se vrati odabir veeam_user licence -->
+                <%= f.input :veeam_user ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamUser", value: "1"} %>
                 <%= f.input :service ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamService"} %>
                 <%= f.input :vm_server ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamServer"} %>
                 <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
                 <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
+              <!--
                 <div class="kalkulator ">
                   <h3><%= t(".calculator.veeam_licence") %> <span> :</span></h3>
                   <div class="dropdown">
@@ -572,23 +608,21 @@
                 </div>
 
 
-            <!-- END SINGLE FEATURE -->
-
           </div>
+          -->
 
-
-          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+          <div class="col-md-5 col-md-offset-1 right_no_padding wow fadeInLeft" data-wow-duration="1s">
 
 
             <div class="kalkulator ">
               <h3><%= t(".calculator.service") %> <span> :</span></h3>
               <div class="dropdown ">
-                <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
+                <button class="btn btn-default btn-lg dropdown-toggle button_width" type="button" data-toggle="dropdown" >
                   <%= t(".calculator.service_placeholder") %> <span class="caret" ></span>
                 </button>
                 <ul class="dropdown-menu" id="service">
-                  <li><a space="500" vm="5" value="120" onclick="enableSpinners()">BaaS</a></li>
-                  <li><a space="1000" vm="5" value="250" onclick="enableSpinners()">DRaaS</a></li>
+                  <li><a space="500" vm="5" value="160" onclick="enableSpinners()">BaaS</a></li>
+                  <li><a space="1000" vm="5" value="290" onclick="enableSpinners()">DRaaS</a></li>
                 </ul>
               </div>
             </div>
@@ -596,13 +630,13 @@
           </div>
 
 
-          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+          <div class="col-md-5 right_no_padding wow fadeInLeft" data-wow-duration="1s">
 
 
             <div class="kalkulator ">
               <h3><%= t(".calculator.platform") %> <span> :</span></h3>
               <div class="dropdown ">
-                <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                <button class="btn btn-default btn-lg dropdown-toggle button_width" type="button" data-toggle="dropdown">
                   <%= t(".calculator.platform_placeholder") %><span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" id="platform" onchange="calculateTotal()">
@@ -616,15 +650,15 @@
         </div>
         <div class="row">
 
-          <div class="col-md-4 col-md-offset-2 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+          <div class="col-md-5 col-md-offset-1 right_no_padding wow fadeInLeft " data-wow-duration="1s">
             <!-- FEATURE -->
 
             <div class="kalkulator ">
-              <h3 style="height: 44px; line-height: 44px;"><%= t(".calculator.extra_vm") %><span> :</span></h3>
+              <h3><%= t(".calculator.extra_vm") %><span> :</span></h3>
 
 
               <div class="input-group spinner " data-trigger="spinner" id="spinner">
-                <input id="extraVm" type="text" class="form-control text-center" value="0" data-rule="quantity" disabled="true" >
+                <input id="extraVm" type="text" class="form-control text-center button_width" value="0" data-rule="quantity" disabled="true" style="width: 166px; height: 44.5px;">
                 <div class="input-group-addon">
                   <a  onclick="extraVmPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
                   <a onclick="extraVmMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
@@ -652,14 +686,14 @@
           </div>
 
 
-          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+          <div class="col-md-5 right_no_padding wow fadeInLeft" data-wow-duration="1s">
 
 
             <div class="kalkulator ">
               <h3><%= t(".calculator.extra_storage") %><span> :</span></h3>
 
               <div class="input-group spinner" data-trigger="spinner" id="spinner2" >
-                <input id="extraRam" type="text" class="form-control text-center" value="0" data-rule="quantity" disabled="true">
+                <input id="extraRam" type="text" class="form-control text-center " value="0" data-rule="quantity" disabled="true" style="width: 166px; height: 44.5px;">
                 <div class="input-group-addon">
                   <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"   disabled="true"><i class="fa fa-caret-up"></i></a>
                   <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"   disabled="true"><i class="fa fa-caret-down"></i></a>
@@ -685,7 +719,17 @@
 
 
         </div>
-      </div>
+        <% if user_signed_in? %>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 ight_no_padding wow fadeInLeft">
+                <p class="calc_disclaimer_info">
+                  <%= t(".calculator.texts.disclaimer") %>
+                </p>
+              </div>
+            </div>
+        <% end %>
+
+        </div>
       <% if user_signed_in? %>
         <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
           <!-- FEATURE -->
@@ -695,11 +739,13 @@
             <!-- FEATURE HEADING AND DESCRIPTION -->
             <h3><%= t(".calculator.price") %><span>:</span></h3>
             <h2> <span id="cijena">0</span>,00 &euro;</h2>
-            <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
-
+            <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b></p>
+            <p class="calc_disclaimer">
+              <%= t(".calculator.price_disclaimer_sec_html") %>
             </p>
-
-
+            <p class="calc_disclaimer">
+              <%= t(".calculator.price_disclaimer") %>
+            </p>
           </div>
 
           <!-- END SINGLE FEATURE -->
@@ -719,10 +765,10 @@
 
               <!-- FEATURE HEADING AND DESCRIPTION -->
               <h3><%= t(".inquiry_not_registered") %></h3>
-              <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b>
-
+              <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b></p>
+              <p class="calc_disclaimer">
+                <%= t(".calculator.price_disclaimer_sec_html") %>
               </p>
-
 
             </div>
 
@@ -735,7 +781,7 @@
               <a class="btn btn-primary btn-action" href="#REGISTER" role="button"><%= t(".free_trial") %></a>
             </div>
           </div>
-       <% end %>
+        <% end %>
 
     </div>
 
@@ -748,36 +794,6 @@
 </section>
 <!-- END KALKULATOR SECTION -->
 
-<% end %>
-<!-- =========================
- START SIGNIN SIGNUP - ovo se prikazuje ako je korisnik nije logiran
-============================== -->
-<% if !user_signed_in? %>
-<section id="REGISTER" class="features page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <!-- FEATURES SECTION TITLE -->
-        <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2><%= t(".sign_in_trial_title") %></h2>
-          <p><%= t(".texts.calculator") %></br>
-          <%= t(".texts.calculator_mail") %></p>
-        </div>
-
-        <div class="centered margin-btm">
-
-          <%= link_to t(".sign_up"), new_user_registration_path, class: "btn btn-primary btn-action" %>
-          <%= link_to t(".sign_in"), new_user_session_path, class: "btn btn-primary btn-action " %>
-
-
-        </div>
-        <!-- END FEATURES SECTION TITLE -->
-      </div>
-    </div>
-  </div>
-
-</section>
-<!-- END SIGNIN SIGNUP SECTION -->
 <% end %>
 
 <!-- =========================

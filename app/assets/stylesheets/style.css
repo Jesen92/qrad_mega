@@ -1169,3 +1169,34 @@ select:-webkit-autofill {
 .calc_info {
     font-size: 20px !important;
 }
+
+.calc_disclaimer {
+    padding-top: 30px;
+    font-size: 17px !important;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.calc_disclaimer_info {
+    padding-bottom: 10px;
+    font-size: 17px !important;
+    font-style: italic;
+    color: #333;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif !important;
+    text-align: center;
+}
+
+.button_width {
+    width: 200px;
+}
+
+.sky-form .checkbox input + i:after {
+    padding-top: 5px;
+    width: 20px !important;
+}
+
+.sky-form .checkbox input + i {
+    width: 20px !important;
+    height: 20px !important;
+}
