@@ -911,7 +911,7 @@
                 <div class="modal-content">
                   <% unless user_signed_in? %>
                       <%= simple_form_for(@subscriber, url: subscriber_create_services_path, method: :post, html: {class: "sky-form"}) do |f| %>
-                          <%= f.input :veeam_user,:as => :hidden , :include_blank => true,:input_html => { id: "temp_veeamUser"} %>
+                          <%= f.input :veeam_user,:as => :hidden , :include_blank => true,:input_html => { id: "temp_veeamUser", value: "1"} %>
                           <%= f.input :service ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamService"} %>
                           <%= f.input :vm_server ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamServer"} %>
                           <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamVmExtra"}, default: 0 %>
