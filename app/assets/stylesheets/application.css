@@ -49,3 +49,8 @@
     font-size: 18px !important;
     font-weight: 600;
 }
+
+.radio_button_wrapper {
+    padding-left: 10px!important;
+    font-size: 135%;
+}

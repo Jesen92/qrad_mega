@@ -88,7 +88,7 @@ hr:
         architecture: "Moderna backup arhitektura"
         end_to_end: "End-to-end enkripcija"
         texts:
-          baas: "Podaci se kopiraju s Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaku pojedinu datoteku ili cijeli virtualn poslužitelj."
+          baas: "Podaci se kopiraju s Vaše lokacije u Veeam repozitorij na lokaciji Megatrend Data Centra. Veeam Cloud Connect integrira cloud backup repozitorij direktno u Vašu Veeam backup konzolu i Vi upravljate svim procesima. U slučaju potrebe moguće je vratiti svaku pojedinu datoteku ili cijeli virtualni poslužitelj."
           backup_rule: "Za kvalitetan backup potrebno je imati tri kopije podataka, spremljene na dva različita medija a jedna od kopija mora biti na drugoj lokaciji. Spremanje backupa na udaljenu lokaciju postavlja izazov na mrežne komunikacije, rastuće količine podataka, resurse potrebne za izgradnju i održavanje udaljene lokacije. S Veeam Cloud Connect uslugom možete ostvariti 3-2-1 backup pravilo bez dodatnih ulaganja."
           hosting: "Spremite podatke u udaljeni repozitorij pomoću sigurne SSL konekcije i bez dodatnih Veeam licenci."
           supervision: "Pristup i vraćanje podataka izravno iz Vaše Veeam konzole."
