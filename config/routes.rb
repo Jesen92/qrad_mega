@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :subscribers
   get 'services/index'
 
   get 'services/show'

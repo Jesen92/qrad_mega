@@ -26,6 +26,7 @@ en:
       notice: "Check your e-mail for your password!"
       error: "Registration failed: e-mail already exists!"
     services:
+      spam_indicator: "Vaš e-mail je obilježen kao spam!"
       contact_us: "Thank you for contacting us!"
       calculator: "Your calculation has been sent! We will contact you with more information!!"
       calc_error: "All required fields must be seleceted before sending an inquiry!"

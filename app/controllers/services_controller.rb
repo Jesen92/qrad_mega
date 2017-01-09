@@ -10,34 +10,56 @@ class ServicesController < ApplicationController
   end
 
   def calculator #slanje mail-a za kalkulator - registrirani korisnik
-    if params[:users_service][:veeam_user].empty? || params[:users_service][:service].empty? || params[:users_service][:vm_server].empty?
-      flash[:calc_alert] = I18n.t("controllers.services.calc_error")
+    if !current_user.spam_indicator?
+      if params[:users_service][:veeam_user].empty? || params[:users_service][:service].empty? || params[:users_service][:vm_server].empty?
+        flash[:calc_alert] = I18n.t("controllers.services.calc_error")
+      else
+        UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
+        flash[:notice] = I18n.t("controllers.services.calculator")
+        return redirect_to root_path
+      end
     else
-      UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
-      flash[:notice] = I18n.t("controllers.services.calculator")
-      return redirect_to root_path
+      flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
     end
 
     redirect_to services_index_path(anchor: 'CALCULATOR_SERVICES')
   end
 
   def contact_us
-    UserMailer.send_contact_us(I18n.locale.to_s, params[:email_form][:name], params[:email_form][:email], params[:email_form][:subject], params[:email_form][:body]).deliver_now
+    @subscriber = Subscriber.find_by(email: params[:email_form][:email])
+    @user = nil
 
-    flash[:notice] = I18n.t("controllers.services.contact_us")
+    if @subscriber.nil?
+      @user = User.find_by(email: params[:email_form][:email])
+      puts "Nema subscriber!"
+    end
+
+    if @subscriber.nil? && @user.nil? || !@subscriber.nil? && !@subscriber.spam_indicator? || !@user.nil? && !@user.spam_indicator?
+      UserMailer.send_contact_us(I18n.locale.to_s, params[:email_form][:name], params[:email_form][:email], params[:email_form][:subject], params[:email_form][:body]).deliver_now
+      flash[:notice] = I18n.t("controllers.services.contact_us")
+    else
+      flash[:alert] = I18n.t("controllers.services.spam_indicator")
+    end
+
     redirect_to :back
   end
 
   def subscriber_create #slanje mail-a za kalkulator - neregistrirani korisnik
-    if params[:subscriber][:veeam_user].empty? || params[:subscriber][:service].empty? || params[:subscriber][:vm_server].empty?
-      flash[:calc_alert] = I18n.t("controllers.services.calc_error")
+    @subscriber = Subscriber.new(subscriber_params)
+
+    if Subscriber.find_by(email: @subscriber.email).nil? || !Subscriber.find_by(email: @subscriber.email).spam_indicator?
+      if params[:subscriber][:veeam_user].empty? || params[:subscriber][:service].empty? || params[:subscriber][:vm_server].empty?
+        flash[:calc_alert] = I18n.t("controllers.services.calc_error")
+      else
+        @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil? && User.find_by(email: @subscriber.email).nil?
+        UserMailer.send_calculated_services(@subscriber, I18n.locale.to_s, params[:subscriber]).deliver_now
+        flash[:notice] = I18n.t("controllers.services.calculator")
+        return redirect_to root_path
+      end
     else
-      @subscriber = Subscriber.new(subscriber_params)
-      @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil? && User.find_by(email: @subscriber.email).nil?
-      UserMailer.send_calculated_services(@subscriber, I18n.locale.to_s, params[:subscriber]).deliver_now
-      flash[:notice] = I18n.t("controllers.services.calculator")
-      return redirect_to root_path
+      flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
     end
+
 
     redirect_to services_index_path(anchor: 'CALC')
   end

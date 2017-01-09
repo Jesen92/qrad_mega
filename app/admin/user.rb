@@ -12,7 +12,7 @@ ActiveAdmin.register User do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  permit_params :email, :password, :password_confirmation, :admin, :veeam_user
+  permit_params :email, :password, :password_confirmation, :admin, :veeam_user, :spam_indicator
 
   index do
     selectable_column
@@ -23,6 +23,7 @@ ActiveAdmin.register User do
     column :created_at
     column :veeam_user
     column :admin
+    column :spam_indicator
     actions
   end
 
@@ -30,6 +31,7 @@ ActiveAdmin.register User do
   filter :current_sign_in_at
   filter :sign_in_count
   filter :created_at
+  filter :spam_indicator
   filter :admin
 
   form do |f|
@@ -49,6 +51,7 @@ ActiveAdmin.register User do
       f.input :free_trial_requested, label: "Poslan upit za probom"
       f.input :admin
       f.input :veeam_user
+      f.input :spam_indicator
     end
     f.actions
   end
