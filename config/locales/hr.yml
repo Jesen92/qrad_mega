@@ -4,6 +4,7 @@ hr:
       notice: "Provjerite svoj e-mail za lozinku!"
       error: "Registracija nije uspješna: e-mail već postoji!"
     services:
+      recaptcha_error: "Potrebna je validacija captcha-om!"
       spam_indicator: "E-mail nije poslan! Vaš e-mail je obilježen kao spam!"
       contact_us: "Hvala što ste nas kontaktirali!"
       calculator: "Vaš izračun je poslan! Kontaktirat ćemo vas sa dodatnim informacijama!"

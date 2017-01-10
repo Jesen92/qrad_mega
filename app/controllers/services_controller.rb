@@ -1,9 +1,9 @@
 class ServicesController < ApplicationController
   #before_filter :authenticate_active_admin_user!
+  #prepend_before_action :check_captcha, only: [:subscriber_create, :contact_us]
 
   def index
     @subscriber = Subscriber.new unless user_signed_in?
-
   end
 
   def show
@@ -22,16 +22,21 @@ class ServicesController < ApplicationController
       flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
     end
 
-    redirect_to services_index_path(anchor: 'CALCULATOR_SERVICES')
+    redirect_to services_index_path(anchor: 'CALC')
   end
 
   def contact_us
+    unless check_service_captcha(params["g-recaptcha-response"])
+      flash[:recaptcha_error] = I18n.t("controllers.services.recaptcha_error")
+      return redirect_to services_index_path(anchor: 'CONTACT')
+    end
+
     @subscriber = Subscriber.find_by(email: params[:email_form][:email])
     @user = nil
 
     if @subscriber.nil?
       @user = User.find_by(email: params[:email_form][:email])
-      puts "Nema subscriber!"
+      puts "Nema subscribera!"
     end
 
     if @subscriber.nil? && @user.nil? || !@subscriber.nil? && !@subscriber.spam_indicator? || !@user.nil? && !@user.spam_indicator?
@@ -45,6 +50,7 @@ class ServicesController < ApplicationController
   end
 
   def subscriber_create #slanje mail-a za kalkulator - neregistrirani korisnik
+
     @subscriber = Subscriber.new(subscriber_params)
 
     if Subscriber.find_by(email: @subscriber.email).nil? || !Subscriber.find_by(email: @subscriber.email).spam_indicator?
@@ -78,6 +84,10 @@ class ServicesController < ApplicationController
   end
 
   private
+
+    def check_service_captcha(recaptcha_param)
+      verify_recaptcha(response: recaptcha_param)
+    end
 
     def subscriber_params
       params.require(:subscriber).permit( :email)

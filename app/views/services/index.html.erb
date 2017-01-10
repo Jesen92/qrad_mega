@@ -840,6 +840,14 @@
               <%= f.button :submit, t(".contact_us_send"), class: "btn btn-default submit-btn" %>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-4">
+              <% unless flash[:recaptcha_error].nil? %>
+                <div class="alert alert-danger" role="alert"><%= flash[:recaptcha_error] %></div>
+              <% end %>
+              <%= recaptcha_tags %>
+            </div>
+          </div>
         <% end %>
         <!-- END FORM -->
       </div>
@@ -931,8 +939,6 @@
                           </div>
                         </div>
                       </section>
-
-
                     </fieldset>
                     <footer>
                       <%= f.button :submit, t(".inquiry_modal.send_button"), class: "button" %>
