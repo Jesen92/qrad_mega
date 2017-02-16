@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <div class="container" style="margin-top: 30px">
+
+  </div>
+</head>
+
+<style>
+  .bb {
+    font-weight: bold;
+  }
+</style>
+<body>
+<div class="container" style="margin-top: 5px; margin-bottom: 35px">
+  <div class="page-header">
+    <h1>Korisnik info - <span style="color: #A9CC2D; ">Veeam Cloud Connect</span></h1>
+  </div>
+  <div class="container" style="margin-top: 30px">
+    <div class="row" >
+      <div class="col-md-4">
+        <%= image_tag "logomail.png", width:"400px",style: "padding-top: 18px;" %>
+      </div>
+    </div>
+  </div>
+
+  <h3>Informacije o korisniku koji se registrirao na stranicu </h3><h2><%= link_to "cc.megatrend.com" , "http://cc.megatrend.com/hr" %></h2>
+  <br>
+  <h3>Informacije o korisniku su: </h3><br>
+  <div class="container" >
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Ime: <span class="bb"><%= @user.first_name%></span></h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Prezime: <span class="bb"><%= @user.last_name%></span></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Ime tvrtke: <span class="bb"><%= @user.company %></span></h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h4>OIB: <span class="bb"><%= @user.cin %></span></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="well">
+          <h4>e-mail: <span class="bb"><%= @user.email %></span></h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Tel. broj: <span class="bb"><%= @user.phone %></span></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Država: <span class="bb"><%= @user.country %></span></h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Grad: <span class="bb"><%= @user.city %></span></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Poštanski broj: <span class="bb"><%= @user.postal_code %></span></h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Adresa: <span class="bb"><%= @user.address %></span></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col-md-4">
+        <div class="well">
+          <h4>Koristi veeam licencu: <span class="bb"><%= @user.veeam_user ? 'Da' : 'Ne' %></span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Veeam Cloud Connect</span> - postanite <span style="color: #A9CC2D; ">„Always On”</span> tvrtka!</h4>
+  <br/>
+  <div class="row">
+    <div class="col-md-8 col-md-2">
+      <small>Ako ste ovu poruku primili greškom ili vam nije namijenjena, ne koristite ju, ne kopirajte, ne distribuirajte, ne otvarajte privitke, odmah ju obrišite sa svog računalnog sustava i obavijestite pošiljatelja da ste to napravili. Hvala!</small>
+    </div>
+  </div>
+</div>
+</body>
+</html>

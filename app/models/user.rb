@@ -11,8 +11,12 @@ class User < ActiveRecord::Base
 
     UserMailer.generated_password(user, generated_password, I18n.locale.to_s).deliver_now
 
+
     puts "Veeam user: "+attr[:veeam_user].to_s
     UserMailer.no_veeam_user(user, I18n.locale.to_s).deliver_now unless attr[:veeam_user] == "true"
+
+    #Informacije o user-u slane na megatrend mail
+    UserMailer.user_information(user, I18n.locale.to_s).deliver_now
 
     user
   end

@@ -12,6 +12,16 @@ class UserMailer < ApplicationMailer
     end
   end
 
+  def user_information(user, locale)
+    @user = user
+
+    if locale == "hr"
+      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
+    else
+      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
+    end
+  end
+
   def no_veeam_user(user,locale)
     @user = user
 
