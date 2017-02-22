@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'Megatrend VCC <vcc@ccweb.megatrend.com>'
+  default from: 'Megatrend VCC NO REPLY <vcc@ccweb.megatrend.com>'
 
   def generated_password(user, generated_password, locale)
     @user = user
