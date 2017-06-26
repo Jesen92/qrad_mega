@@ -40,7 +40,9 @@ class ServicesController < ApplicationController
     end
 
     if @subscriber.nil? && @user.nil? || !@subscriber.nil? && !@subscriber.spam_indicator? || !@user.nil? && !@user.spam_indicator?
-      UserMailer.send_contact_us(I18n.locale.to_s, params[:email_form][:name], params[:email_form][:email], params[:email_form][:subject], params[:email_form][:body]).deliver_now
+      UserMailer.send_contact_us(I18n.locale.to_s, params[:email_form][:name], params[:email_form][:email],
+                                 params[:email_form][:subject], params[:email_form][:body]).deliver_now
+
       flash[:notice] = I18n.t("controllers.services.contact_us")
     else
       flash[:alert] = I18n.t("controllers.services.spam_indicator")
@@ -65,7 +67,6 @@ class ServicesController < ApplicationController
     else
       flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
     end
-
 
     redirect_to services_index_path(anchor: 'CALC')
   end
