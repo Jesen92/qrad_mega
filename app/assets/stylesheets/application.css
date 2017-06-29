@@ -29,8 +29,8 @@
  *= require price
  */
 
-@import url('//fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300');
-@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic');
 
 .cookies-eu-ok {
     background-color: #54b948 !important;
