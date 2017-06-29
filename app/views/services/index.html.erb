@@ -487,7 +487,7 @@
     ============================== -->
     <% if current_user %>
     <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
-    <div class="container">
+    <div class="container" style="padding-bottom: 100px;">
       <div class="row margin">
         <% if calc_alert %>
             <div class="container" style="padding-top: 10px;">
@@ -653,10 +653,10 @@
 
           <!-- END SINGLE FEATURE -->
           <div class="centered2">
-            <%= f.button :submit, 'Pošalji upit' ,class: 'btn home-btn wow fadeInLeft' %>
+            <div class="centered">
+            <%= f.button :submit, 'Pošalji upit' ,class:'btn home-btn wow fadeInLeft', style: 'padding-left: 31px;' %>
+            </div>
             <!--<a class="btn home-btn wow fadeInLeft" href="">Pošalji upit</a> -->
-
-
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ class ServicesController < ApplicationController
 
   def calculator #slanje mail-a za kalkulator - registrirani korisnik
     if !current_user.spam_indicator?
-      if params[:subscriber][:package].empty? || params[:subscriber][:one_mobile].blank? && params[:subscriber][:multiple_mobile].blank?
+      if params[:users_service][:package].blank? || params[:users_service][:one_mobile].blank? && params[:users_service][:multiple_mobile].blank?
         flash[:calc_alert] = I18n.t("controllers.services.calc_error")
       else
         UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
