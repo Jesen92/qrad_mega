@@ -21,22 +21,23 @@ URL: http://designscrazed.org/
   13. SECTION FOOTER 
 
 */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic");
-/* line 30, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 31, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 35, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 36, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 body {
   font-family: 'Raleway', sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/* line 40, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 41, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -45,19 +46,19 @@ p {
 /*---------------------------------------
    COMMON STYLES
 -----------------------------------------*/
-/* line 48, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 49, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .section_title_feature {
   padding-top: 15px;
   padding-bottom: 10px;
 }
 
-/* line 53, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 54, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .section_title {
   padding-top: 90px;
   padding-bottom: 50px;
 }
 
-/* line 57, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 58, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .section_title h2 {
   text-transform: uppercase;
   text-align: center;
@@ -67,7 +68,7 @@ p {
   font-weight: 400;
 }
 
-/* line 65, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 66, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .section_title h2:after {
   content: "";
   position: absolute;
@@ -79,7 +80,7 @@ p {
   margin-left: -30px;
 }
 
-/* line 75, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 76, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .section_title p {
   text-align: center;
   margin-top: 45px;
@@ -89,7 +90,7 @@ p {
   font-weight: 300;
 }
 
-/* line 83, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 84, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .parallax {
   background-attachment: fixed !important;
   background-position: center center;
@@ -97,7 +98,7 @@ p {
   background-size: cover;
 }
 
-/* line 89, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 90, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .parallax:before {
   content: "";
   display: block;
@@ -115,52 +116,52 @@ p {
    SECTION HOME
 -----------------------------------------*/
 /*menu*/
-/* line 106, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 107, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .header h2 {
   height: 0px;
   margin: 0px;
 }
 
-/* line 110, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 111, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .navbar {
   margin-top: -100px;
 }
 
-/* line 113, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 114, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .navbar-brand {
   padding: 9px 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 117, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 118, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default {
     background-color: transparent;
   }
 
-  /* line 120, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 121, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default .navbar-nav > li > a {
     color: #efefef;
     font-family: 'Raleway', sans-serif;
   }
 
-  /* line 125, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 126, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default .navbar-nav > li > a:hover {
     color: #f39c12;
   }
 
-  /* line 128, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 129, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default .navbar-nav > li > a:focus {
     color: #B5B5B5;
   }
 
-  /* line 131, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 132, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 110;
   }
 
-  /* line 136, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 137, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-brand img {
     padding-top: 25px;
     height: 45px;
@@ -168,24 +169,24 @@ p {
     transition: all 1s;
   }
 
-  /* line 142, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 143, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default .navbar-nav > li > a {
     -webkit-transition: all 1s;
     transition: all 1s;
   }
 
-  /* line 146, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 147, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-nav > li > a {
     padding-top: 45px;
   }
 }
 @media (max-width: 768px) {
-  /* line 152, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 153, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .navbar-default {
     /*  background-color: #fff !important; */
   }
 }
-/* line 156, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 157, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -198,27 +199,27 @@ p {
     background-size: cover;
 	background-repeat: no-repeat;
 }*/
-/* line 167, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 168, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .header .section_overlay {
   background-color: rgba(33, 33, 33, 0.75);
 }
 
-/* line 170, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 171, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .logo {
   padding-bottom: 50px;
 }
 
-/* line 173, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 174, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home_text {
   text-align: left;
 }
 
-/* line 176, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 177, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home-iphone {
   text-align: right;
 }
 
-/* line 179, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 180, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home-iphone img {
   margin-top: 20px;
   padding-top: 30px;
@@ -226,17 +227,17 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* line 186, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 187, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .home-iphone {
     display: none;
   }
 
-  /* line 189, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 190, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .home_text {
     text-align: center;
   }
 }
-/* line 194, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 195, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home_text h1 {
   color: #fff;
   text-transform: uppercase;
@@ -246,7 +247,7 @@ p {
   padding-top: 30px;
 }
 
-/* line 202, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 203, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home_text p {
   color: #fff;
   font-size: 17px;
@@ -255,13 +256,13 @@ p {
   font-weight: 300;
 }
 
-/* line 209, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 210, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .download-btn {
   margin-top: 90px;
   margin-bottom: 50px;
 }
 
-/* line 213, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 214, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home-btn,
 .home-btn:focus,
 .home-btn:active,
@@ -280,13 +281,13 @@ p {
   transition: all 1s;
 }
 
-/* line 230, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 231, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .home-btn:hover {
   background-color: #f39c12;
   color: #fff;
 }
 
-/* line 234, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 235, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .tuor,
 .tuor:focus,
 tuor:active,
@@ -301,12 +302,12 @@ tuor:visited {
   transition: all 1s;
 }
 
-/* line 247, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 248, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .tuor:hover {
   color: #fff;
 }
 
-/* line 250, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 251, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .tuor i {
   font-size: 20px;
   padding-left: 5px;
@@ -316,22 +317,22 @@ tuor:visited {
 /*---------------------------------------
    SECTION ABOUT
 -----------------------------------------*/
-/* line 264, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 265, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .about {
   background: #F1F1F1;
 }
 
-/* line 268, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 269, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .inner_about_area {
   padding-top: 50px;
 }
 
-/* line 271, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 272, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .inner_about_title {
   padding-bottom: 50px;
 }
 
-/* line 274, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 275, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .inner_about_title h2 {
   text-transform: uppercase;
   font-weight: 800;
@@ -340,7 +341,7 @@ tuor:visited {
   position: relative;
 }
 
-/* line 281, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 282, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .inner_about_title h2:after {
   content: "";
   position: absolute;
@@ -351,28 +352,28 @@ tuor:visited {
   height: 1px;
 }
 
-/* line 290, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 291, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .inner_about_title p {
   font-size: 19px;
   line-height: 24px;
   margin-top: 40px;
 }
 
-/* line 295, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 296, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_about_area {
   position: relative;
   padding-bottom: 4px;
   padding-left: 80px;
 }
 
-/* line 300, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 301, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_about_area div {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 
-/* line 305, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 306, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_about_area div i {
   font-size: 55px;
   color: #BABABA;
@@ -380,7 +381,7 @@ tuor:visited {
   transition: all 1s;
 }
 
-/* line 311, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 312, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_about_area h3 {
   color: #343434;
   text-transform: uppercase;
@@ -388,19 +389,19 @@ tuor:visited {
   font-weight: 800;
 }
 
-/* line 317, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 318, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_about_area p {
   color: #727272;
   font-size: 15px;
 }
 
-/* line 321, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 322, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_about_area:hover div i {
   color: #f39c12;
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
-  /* line 325, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 326, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .about_phone img {
     margin-top: 184px;
     width: 80%;
@@ -410,19 +411,19 @@ tuor:visited {
 /*---------------------------------------
    SECTION VIDEO
 -----------------------------------------*/
-/* line 335, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 336, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .video_area {
   background: #e4e4e4;
   padding-bottom: 140px;
   padding-top: 120px;
 }
 
-/* line 340, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 341, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .video_title {
   padding-bottom: 30px;
 }
 
-/* line 343, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 344, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .video_title h2 {
   text-transform: uppercase;
   font-weight: 800;
@@ -432,7 +433,7 @@ tuor:visited {
   margin-top: 0px;
 }
 
-/* line 351, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 352, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .video_title h2:after {
   content: "";
   position: absolute;
@@ -443,7 +444,7 @@ tuor:visited {
   height: 1px;
 }
 
-/* line 360, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 361, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .video_title p {
   font-size: 18px;
   line-height: 28px;
@@ -452,7 +453,7 @@ tuor:visited {
   font-weight: 300;
 }
 
-/* line 367, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 368, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .btn-video,
 .btn-video:active,
 .btn-video:focus,
@@ -467,14 +468,14 @@ tuor:visited {
   transition: all 1s;
 }
 
-/* line 380, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 381, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .btn-video:hover {
   background: #f39c12;
   color: #fff;
   border: 1px solid #f39c12;
 }
 
-/* line 385, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 386, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .video iframe {
   width: 100%;
   border: 1px solid #999999;
@@ -484,52 +485,52 @@ tuor:visited {
 /*---------------------------------------
    SECTION TESTIMONIAL
 -----------------------------------------*/
-/* line 394, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 395, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 #owl-demo .item {
   margin-left: 90px;
   margin-right: 90px;
   margin-bottom: 50px;
 }
 
-/* line 399, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 400, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 #owl-demo .item img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 404, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 405, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial {
   background: url(../images/testimonial.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 409, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 410, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial .section_overlay {
   background: rgba(0, 0, 0, 0.6);
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-/* line 414, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 415, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .carousel-indicators {
   bottom: -8px;
 }
 
-/* line 417, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 418, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 div.carousel-inner .item img {
   border: 2px solid #f39c12;
   border-radius: 50%;
   padding: 3px;
 }
 
-/* line 422, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 423, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial_caption {
   padding-bottom: 70px;
 }
 
-/* line 425, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 426, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial_caption p {
   color: #D8D8D8;
   font-size: 18px;
@@ -537,7 +538,7 @@ div.carousel-inner .item img {
   padding-top: 50px;
 }
 
-/* line 431, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 432, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial_caption h2 {
   color: #f39c12;
   text-transform: uppercase;
@@ -546,19 +547,19 @@ div.carousel-inner .item img {
   margin-top: 25px;
 }
 
-/* line 438, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 439, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial_caption h4 {
   color: #f39c12;
 }
 
-/* line 441, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 442, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial_caption h4 span {
   color: #D8D8D8;
   font-style: italic;
   font-weight: 300;
 }
 
-/* line 446, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 447, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial ol.carousel-indicators li {
   width: 12px;
   height: 12px;
@@ -566,7 +567,7 @@ div.carousel-inner .item img {
   margin: 1PX;
 }
 
-/* line 452, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 453, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .testimonial ol.carousel-indicators li.active {
   width: 12px;
   height: 12px;
@@ -577,23 +578,23 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION FEATURES
 -----------------------------------------*/
-/* line 462, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 463, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .features {
   background-color: #f1f1f1;
 }
 
-/* line 465, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 466, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .feature_inner {
   padding-top: 30px;
   padding-bottom: 70px;
 }
 
-/* line 469, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 470, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .feature_iphone img {
   width: 100%;
 }
 
-/* line 472, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 473, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .right_single_feature {
   position: relative;
   padding-left: 90px;
@@ -601,7 +602,7 @@ div.carousel-inner .item img {
   margin-top: 35px;
 }
 
-/* line 478, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 479, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .right_single_feature div {
   position: absolute;
   font-size: 40px;
@@ -613,7 +614,7 @@ div.carousel-inner .item img {
   top: -8px;
 }
 
-/* line 488, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 489, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .right_single_feature h3 {
   text-transform: uppercase;
   font-size: 25px;
@@ -622,12 +623,12 @@ div.carousel-inner .item img {
   color: #333333;
 }
 
-/* line 495, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 496, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .right_single_feature h3 span {
   color: #f39c12;
 }
 
-/* line 498, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 499, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .right_single_feature p {
   color: #333;
   font-size: 16px;
@@ -636,7 +637,7 @@ div.carousel-inner .item img {
 }
 
 /*left feature*/
-/* line 506, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 507, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .left_single_feature {
   position: relative;
   padding-right: 90px;
@@ -645,7 +646,7 @@ div.carousel-inner .item img {
   margin-top: 30px;
 }
 
-/* line 513, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 514, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .price {
   position: relative;
   padding-top: 0px;
@@ -654,13 +655,13 @@ div.carousel-inner .item img {
   margin-top: 30px;
 }
 
-/* line 521, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 522, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .kalkulator {
   position: relative;
   padding-bottom: 15px;
 }
 
-/* line 528, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 529, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .left_single_feature div {
   position: absolute;
   font-size: 40px;
@@ -672,13 +673,13 @@ div.carousel-inner .item img {
   top: -8px;
 }
 
-/* line 539, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 540, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .kalkulator div {
   position: relative;
   margin-top: 20px;
 }
 
-/* line 544, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 545, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .left_single_feature h3 {
   text-transform: uppercase;
   font-size: 25px;
@@ -687,7 +688,7 @@ div.carousel-inner .item img {
   color: #333333;
 }
 
-/* line 552, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 553, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .kalkulator h3 {
   z-index: 1;
   font-size: 35px;
@@ -697,7 +698,7 @@ div.carousel-inner .item img {
   display: inline-block;
 }
 
-/* line 562, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 563, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .price h3 {
   text-transform: uppercase;
   font-size: 25px;
@@ -706,7 +707,7 @@ div.carousel-inner .item img {
   color: #333333;
 }
 
-/* line 570, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 571, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .price h2 {
   text-transform: uppercase;
   font-size: 35px;
@@ -715,12 +716,12 @@ div.carousel-inner .item img {
   color: #333333;
 }
 
-/* line 577, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 578, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .left_single_feature h3 span {
   color: #f39c12;
 }
 
-/* line 580, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 581, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .left_single_feature p {
   color: #333;
   font-size: 16px;
@@ -728,7 +729,7 @@ div.carousel-inner .item img {
   line-height: 25px;
 }
 
-/* line 587, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 588, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .price p {
   color: #333;
   font-size: 16px;
@@ -736,33 +737,33 @@ div.carousel-inner .item img {
   line-height: 25px;
 }
 
-/* line 593, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 594, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .right_no_padding {
   padding-left: 15px;
 }
 
-/* line 596, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 597, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .left_no_padding {
   padding-right: 15px;
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
-  /* line 600, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 601, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .right_single_feature {
     margin-left: -60px;
   }
 
-  /* line 603, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 604, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .left_single_feature {
     margin-right: -60px;
   }
 
-  /* line 606, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 607, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .feature_iphone {
     margin-top: 35px;
   }
 
-  /* line 609, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 610, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .right_single_feature h3,
   .left_single_feature h3 {
     margin-top: 0px;
@@ -772,21 +773,21 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION CALL TO ACTION
 -----------------------------------------*/
-/* line 621, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 622, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .call_to_action {
   background-color: #1a1a1a;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 632, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 633, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .call_to_action p {
   color: #dfdfdf;
   font-size: 18px;
   font-weight: 300;
 }
 
-/* line 637, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 638, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .btn-action,
 .btn-action:active,
 .btn-action:focus,
@@ -801,7 +802,7 @@ div.carousel-inner .item img {
   transition: all 0.5s;
 }
 
-/* line 650, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 651, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .btn-action:hover {
   background: #cbad48;
   border-color: #cbad48;
@@ -810,18 +811,18 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION APPS SCREEN
 -----------------------------------------*/
-/* line 659, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 660, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .apps_screen {
   background: #f1f1f1;
   padding-bottom: 96px;
 }
 
-/* line 663, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 664, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .screen_slider {
   padding-top: 50px;
 }
 
-/* line 666, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 667, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .owl-theme .owl-controls .owl-page span {
   display: block;
   width: 12px;
@@ -834,7 +835,7 @@ div.carousel-inner .item img {
   border: 1px solid #f39c12;
 }
 
-/* line 677, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 678, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   opacity: 1;
@@ -844,31 +845,31 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION FUN FACTS
 -----------------------------------------*/
-/* line 686, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 687, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .fun_facts {
   background: url(../images/fun_bg.jpg) no-repeat center;
   background-size: cover;
 }
 
-/* line 690, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 691, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .fun_facts .section_overlay {
   padding-top: 120px;
   padding-bottom: 120px;
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* line 695, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 696, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_fun_facts {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* line 698, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 699, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_fun_facts i {
   color: #f39c12;
   font-size: 60px;
 }
 
-/* line 703, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 704, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_fun_facts h2 {
   color: #D7DADB;
   font-weight: 700;
@@ -879,13 +880,13 @@ div.carousel-inner .item img {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* line 712, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 713, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_fun_facts h2 span {
   font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* line 716, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 717, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_fun_facts p {
   color: #D7DADB;
   font-size: 20px;
@@ -898,45 +899,45 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION DOWNLOAD
 -----------------------------------------*/
-/* line 728, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 729, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .download {
   background: #f1f1f1;
 }
 
-/* line 731, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 732, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .download_screen {
   padding-top: 45px;
 }
 
-/* line 734, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 735, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .download_screen img {
   width: 100%;
 }
 
-/* line 737, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 738, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .available_store {
   background: #1a1a1a;
   margin-top: -8px;
   position: relative;
 }
 
-/* line 742, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 743, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .available_title {
   padding-top: 75px;
 }
 
-/* line 745, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 746, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .available_title h2 {
   color: #fff;
   font-size: 30px;
 }
 
-/* line 749, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 750, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .available_title p {
   color: #B5B5B5;
 }
 
-/* line 752, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 753, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_store {
   text-align: center;
   border-left: 1px solid #0F1217;
@@ -947,7 +948,7 @@ div.carousel-inner .item img {
   transition: all 1s;
 }
 
-/* line 761, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 762, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_store i {
   color: #f39c12;
   text-align: center;
@@ -958,7 +959,7 @@ div.carousel-inner .item img {
   transition: all 1s;
 }
 
-/* line 770, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 771, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .store_inner {
   position: absolute;
   bottom: 93px;
@@ -968,7 +969,7 @@ div.carousel-inner .item img {
   transition: all 1s;
 }
 
-/* line 778, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 779, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .store_inner h2 {
   text-align: center;
   font-weight: 300;
@@ -976,28 +977,28 @@ div.carousel-inner .item img {
   font-size: 16px;
 }
 
-/* line 784, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 785, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_store:hover {
   background: #121212;
 }
 
-/* line 787, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 788, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_store:hover i {
   opacity: 0;
 }
 
-/* line 790, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 791, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .single_store:hover div.store_inner {
   opacity: 1;
 }
 
-/* line 793, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 794, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .no_padding {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 797, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 798, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .last {
   border-right: 1px solid #0F1217;
 }
@@ -1005,19 +1006,19 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION CONTACT
 -----------------------------------------*/
-/* line 804, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 805, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .contact {
   background: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 809, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 810, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .contact_form {
   padding-top: 30px;
 }
 
-/* line 812, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 813, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .contact_form .form-control {
   display: block;
   display: block;
@@ -1038,7 +1039,7 @@ div.carousel-inner .item img {
   outline: 0px !important;
 }
 
-/* line 834, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 835, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .contact_form .form-control:focus {
   border: 1px solid #f39c12;
   border-color: #f39c12;
@@ -1046,29 +1047,29 @@ div.carousel-inner .item img {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px rgba(102, 175, 233, 0.6);
 }
 
-/* line 840, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 841, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .form-control:-webkit-input-placeholder {
   color: red;
 }
 
-/* line 843, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 844, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: red;
 }
 
-/* line 848, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 849, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .form-control:-moz-placeholder {
   /* Firefox 19+ */
   color: red;
 }
 
-/* line 853, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 854, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .form-control:-ms-input-placeholder {
   color: red;
 }
 
-/* line 856, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 857, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .submit-btn,
 .submit-btn:active,
 .submit-btn:focus,
@@ -1086,34 +1087,34 @@ div.carousel-inner .item img {
   outline: 0px !important;
 }
 
-/* line 872, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 873, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .submit-btn:hover {
   background-color: #f39c12;
   color: #fff;
   border-color: #f39c12;
 }
 
-/* line 877, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 878, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .social_icons {
   padding-top: 50px;
   padding-bottom: 70px;
 }
 
-/* line 881, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 882, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .social_icons ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-/* line 886, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 887, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .social_icons ul li {
   list-style: none;
   display: inline;
   padding-left: 10px;
 }
 
-/* line 891, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 892, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .social_icons ul li a {
   text-decoration: none;
   display: inline-block;
@@ -1128,19 +1129,19 @@ div.carousel-inner .item img {
   transition: all 1s;
 }
 
-/* line 904, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 905, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .social_icons ul li a i {
   font-size: 20px;
 }
 
-/* line 907, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 908, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .social_icons ul li a:hover {
   background: #f39c12;
   border: 1px solid #f39c12;
   color: #fff;
 }
 
-/* line 912, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 913, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .error {
   color: #f39c12;
   display: block;
@@ -1148,13 +1149,13 @@ div.carousel-inner .item img {
   font-size: 18px;
 }
 
-/* line 918, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 919, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .error i {
   padding-right: 10px;
   font-size: 18px;
 }
 
-/* line 922, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 923, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .Sucess {
   color: #4DB849;
   display: block;
@@ -1163,19 +1164,19 @@ div.carousel-inner .item img {
   text-align: center;
 }
 
-/* line 929, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 930, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .Sucess i {
   padding-right: 10px;
   font-size: 18px;
   color: #4DB849;
 }
 
-/* line 934, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 935, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .contact_form .form-control {
   color: #3d3d3d;
 }
 
-/* line 937, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 938, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 #message {
   height: 117px;
   resize: none;
@@ -1184,7 +1185,7 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION SUBSCRIBE
 -----------------------------------------*/
-/* line 945, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 946, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe {
   background-image: url(../images/subscribe.jpg);
   background-size: cover;
@@ -1192,29 +1193,29 @@ div.carousel-inner .item img {
   background-position: center;
 }
 
-/* line 951, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 952, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe .section_overlay {
   padding-bottom: 70px;
   background: transparent;
 }
 
-/* line 955, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 956, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe .section_title h2 {
   color: #eaeaea;
 }
 
-/* line 958, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 959, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe .section_title p {
   color: #a4a4a4;
 }
 
-/* line 961, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 962, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe_form {
   text-align: center;
   padding-top: 30px;
 }
 
-/* line 965, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 966, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe_form .form-control {
   background: transparent;
   border: 1px solid #575b63;
@@ -1228,14 +1229,14 @@ div.carousel-inner .item img {
   transition: all 1s;
 }
 
-/* line 977, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 978, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscribe_form .form-control:focus {
   background: transparent;
   border-bottom: 1px solid #f1f1f1;
   box-shadow: none;
 }
 
-/* line 982, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 983, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subs-btn,
 .subs-btn:active,
 .subs-btn:focus,
@@ -1256,7 +1257,7 @@ div.carousel-inner .item img {
   outline: 0px !important;
 }
 
-/* line 1001, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1002, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subs-btn:hover {
   background-color: #f39c12;
   color: #fff;
@@ -1264,19 +1265,19 @@ div.carousel-inner .item img {
 }
 
 @media (min-width: 300px) {
-  /* line 1007, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+  /* line 1008, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
   .subscribe_form .form-control {
     width: 100%;
   }
 }
-/* line 1011, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1012, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscription-success {
   color: #fff;
   text-align: center;
   font-size: 20px;
 }
 
-/* line 1016, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1017, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .subscription-error {
   color: #fff;
   text-align: center;
@@ -1286,7 +1287,7 @@ div.carousel-inner .item img {
 /*---------------------------------------
    SECTION FOOTER
 -----------------------------------------*/
-/* line 1025, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1026, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .copyright {
   background-color: #1A1D22;
   padding-bottom: 65px;
@@ -1294,18 +1295,18 @@ div.carousel-inner .item img {
   border-bottom: 3px solid #f39c12;
 }
 
-/* line 1031, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1032, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .copyright h2 {
   height: 0px;
   margin: 0px;
 }
 
-/* line 1035, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1036, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .copy_right_text {
   width: 60%;
 }
 
-/* line 1038, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1039, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .copy_right_text p {
   color: #8C8B8A;
   font-weight: 600;
@@ -1313,35 +1314,35 @@ div.carousel-inner .item img {
   font-size: 15px;
 }
 
-/* line 1044, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1045, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .copy_right_text p a {
   text-decoration: none;
   color: #f39c12;
 }
 
-/* line 1048, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1049, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .copy_right_text p span {
   font-weight: 300;
 }
 
-/* line 1051, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1052, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .scroll_top {
   text-align: right;
 }
 
-/* line 1054, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1055, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .scroll_top a {
   background: #f39c12;
   padding: 25px;
 }
 
-/* line 1058, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1059, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .scroll_top a i {
   color: #fff;
   font-size: 25px;
 }
 
-/* line 1062, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1063, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -1350,7 +1351,7 @@ select:-webkit-autofill {
   color: black;
 }
 
-/* line 1069, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1070, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .spn_hol {
   position: fixed;
   top: 0;
@@ -1364,7 +1365,7 @@ select:-webkit-autofill {
   transition: all 1s;
 }
 
-/* line 1081, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1082, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .spinner2 {
   position: absolute;
   top: 50%;
@@ -1377,7 +1378,7 @@ select:-webkit-autofill {
   display: block;
 }
 
-/* line 1092, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1093, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .spinner2 > div {
   width: 18px;
   height: 18px;
@@ -1391,13 +1392,13 @@ select:-webkit-autofill {
   animation-fill-mode: both;
 }
 
-/* line 1105, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1106, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .spinner2 .bounce1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-/* line 1109, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1110, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .spinner2 .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
@@ -1421,45 +1422,45 @@ select:-webkit-autofill {
     -webkit-transform: scale(1);
   }
 }
-/* line 1132, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1133, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .centered {
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* line 1138, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1139, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .centered2 {
   text-align: center;
   margin-top: 40px;
 }
 
-/* line 1151, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1152, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .kalkulator .input-group {
   width: 125px;
   z-index: 1;
 }
 
-/* line 1157, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1158, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .margin {
   margin-top: 50px;
 }
 
-/* line 1170, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1171, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .dropdown-menu {
   z-index: 1000;
 }
 
-/* line 1179, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1180, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .margin-btm {
   margin-bottom: 90px;
 }
 
-/* line 1183, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1184, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .dugmic {
   margin-right: 20px;
 }
 
-/* line 1191, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1192, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .nomargin {
   height: 52px;
   line-height: 52px;
@@ -1467,20 +1468,20 @@ select:-webkit-autofill {
   padding: 0;
 }
 
-/* line 1198, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1199, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 ul {
   text-transform: none;
   font-size: 16px;
   margin-top: 30px;
 }
 
-/* line 1205, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1206, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 ul.key {
   list-style-type: circle;
   line-height: 30px;
 }
 
-/* line 1210, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1211, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .paragraf {
   text-align: center;
   margin-top: 15px;
@@ -1490,7 +1491,7 @@ ul.key {
   font-weight: 300;
 }
 
-/* line 1221, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1222, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .paragraf2 {
   margin-top: 15px;
   color: #333;
@@ -1499,7 +1500,7 @@ ul.key {
   font-weight: 300;
 }
 
-/* line 1231, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1232, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .naslov_opis {
   text-align: center;
   margin-top: 10px;
@@ -1509,7 +1510,7 @@ ul.key {
   font-weight: 400;
 }
 
-/* line 1246, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
+/* line 1247, /Users/Jesenovic/RubymineProjects/mdm_megatrend/app/assets/stylesheets/style.scss */
 .pricing-footer a:hover {
   text-decoration: none;
   background: #f39c12;
@@ -1548,6 +1549,7 @@ ul.key {
 
  */
 
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic');
 
