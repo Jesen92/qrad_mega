@@ -21,92 +21,54 @@
 
     tr:nth-child(even){background-color: #f2f2f2}
   </style>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 
 </head>
 <body>
-<div class="container" style="margin-top: 5px; margin-bottom: 35px">
-  <div class="page-header">
-    <h1><span style="color: #A9CC2D; ">Dobro došli na Veeam Cloud Connect</span><small>, <%= @email %></small></h1>
-  </div>
-  <div class="container" style="margin-top: 30px">
-    <div class="row" >
-      <div class="col-md-4">
-        <%= image_tag "logomail.png", width:"400px",style: "padding-top: 18px;" %>
-      </div>
-    </div>
-  </div>
-  <h3 style="margin-top:25px; margin-bottom:25px;">Mail za kontakt i upite:<span> <%= mail_to "cloudconnect@megatrend.com" %></span></h3>
-  <div class="container" style="margin-top: 10px;">
-    <h3>Odabirom na kalkulatoru odabrali ste sljedeće stavke za Veeam Cloud Connect uslugu:</h3>
-
+<div class="container" style="background-color: rgba(242, 242, 242, .33); padding: 0 25px;">
+  <div id="header" class=" mb-4">
     <div class="row">
-      <div class="col-md-12">
-        <table class="table_padding">
-          <tr>
-            <td >USLUGA:</td>
-            <td ><%= @service %></td>
-            <td align="right"></td>
-          </tr>
-          <tr>
-            <td >PLATFORMA:</td>
-            <td ><%= @platform %></td>
-            <td align="right"></td>
-          </tr>
-          <tr>
-            <td >OSNOVNI PAKET:</td>
-            <td ><%= @basic_pack %></td>
-            <td align="right"><%= number_to_currency(@service_price, :unit => "" ) %></td>
-          </tr>
-          <% unless @extra_vm.empty? %>
-              <tr>
-                <td >DODATNI VM:</td>
-                <td ><%= @extra_vm %></td>
-                <td align="right"><%= number_to_currency(@extra_vm_price, :unit => "" ) %></td>
-              </tr>
-          <% end %>
-          <% unless @extra_storage.empty? %>
-              <tr>
-                <td >DODATNI PROSTOR:</td>
-                <td ><%= @extra_storage.to_i/100 %>x100 GB</td>
-                <td align="right"><%= number_to_currency(@extra_storage_price, :unit => "" ) %></td>
-              </tr>
-          <% end%>
-          <tr>
-            <td ></td>
-            <td></td>
-            <td align="right" ><b><%= number_to_currency(@sum_price, :unit => "", ) %></b></td>
-            <td><b>EUR/mjesečno</b></td>
-          </tr>
-        </table>
-        <h4>U cijenu je uključeno <%= @sum_vm %> VM i <%= @sum_storage %> GB.</h4>
+      <div class="col-md-6 mt-2">
+        <%= image_tag('MPR.png', style: "width: auto; height: 75px;") %>
+      </div>
+      <div class="col-md-6 mt-2">
+        <%= image_tag('maaslogoblack.png', style: "width: auto; height: 75px;") %>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <p>Cijena je iskazana u EUR.</br>
-          Za korisnike u RH cijena se obračunava u kunskoj protuvrijednosti prema prodajnom tečaju RBA na dan izdavanja računa. </br>
-          Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa. </br>
-          </br>
-          Izračun vrijedi za korisnike koji koriste komercijalnu Veeam “Backup & Replication” licencu.
-        </p>
-      </div>
-    </div>
-
-    <h4>Registrirajte se i koristite naš online kalkulator!</h4>
   </div>
-  <h3 style="margin-top:25px; margin-bottom:25px;">Mail za kontakt i upite:<span> <%= mail_to "cloudconnect@megatrend.com" %></span></h3>
-  <hr>
-  <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Veeam Cloud Connect</span> - postanite <span style="color: #A9CC2D; ">„Always On”</span> tvrtka!</h4>
-  <br/>
-  <div class="row">
-    <div class="col-md-8 col-md-2">
-      <small>Ako ste ovu poruku primili greškom ili vam nije namijenjena, ne koristite ju, ne kopirajte, ne distribuirajte, ne otvarajte privitke, odmah ju obrišite sa svog računalnog sustava i obavijestite pošiljatelja da ste to napravili. Hvala!</small>
+  <div id="content_box">
+    <div class="row">
+      <span><strong style="font-size: 1.7em;">MDM</strong><span style="font-size: 1.15em"> Zahtjev za ponudom:</span></span>
     </div>
+    <hr>
+    <div class="row"><b><%= @user %></b>, zaprimili smo Vaš zahtjev za ponudu:</div>
+    <table class="table table-striped mt-3">
+      <thead>
+      <tr>
+        <th>Naziv paketa</th>
+        <th>1 mobitel = 1 korisnik</th>
+        <th>>1 mobitel = 1 korisnik </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="background-color: rgba(34, 168, 173, 0.20);">
+        <th scope="row"><%= @package_name.blank? ? '-' : @package_name %></th>
+        <td align="center"><%= @one_mobile == '0'? '-' : @one_mobile %></td>
+        <td align="center"><%= @multiple_mobile == '0' ? '-' : @multiple_mobile %></td>
+      </tr>
+
+      </tbody>
+    </table>
+    <div class="row mt-3">Zahvaljujemo Vam se na Vašem upitu!</div>
+    <div class="row">U kratkom roku će Vas kontaktirati naš agent sa ponudom kreiranom isključivo prema Vašim potrebama.</div>
+    <hr>
+  </div>
+  <div id="footer" class="row mt-3">
+    <span><strong style="font-size: 1.35em;">MDM - </strong><span style="color: #b2d043; font-size: 1.25em;"> MaaS360</span></span>
+    <p class="mt-2">Ako ste ovu poruku primili greškom ili vam nije namijenjena, ne koristite ju, ne kopirajte, ne distribuirajte, ne otvarajte privitke, odmah ju obrišite sa svog računalnog sustava i obavijestite pošiljatelja da ste to napravili. Hvala!</p>
   </div>
 </div>
-
+<script></script>
 </body>
 </html>

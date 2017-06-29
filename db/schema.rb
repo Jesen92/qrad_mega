@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170109132251) do
+ActiveRecord::Schema.define(version: 20170629074910) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,18 +52,24 @@ ActiveRecord::Schema.define(version: 20170109132251) do
     t.string   "RAM_default"
     t.datetime "created_at",                               null: false
     t.datetime "updated_at",                               null: false
+    t.string   "package"
+    t.integer  "one_mobile"
+    t.integer  "multiple_mobile"
   end
 
   create_table "subscribers", force: :cascade do |t|
     t.string   "email"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.integer  "veeam_user_id"
     t.integer  "service_id"
     t.integer  "vm_server_id"
     t.integer  "vm_extra"
     t.integer  "storage_extra"
     t.boolean  "spam_indicator"
+    t.string   "package"
+    t.integer  "one_mobile"
+    t.integer  "multiple_mobile"
   end
 
   create_table "users", force: :cascade do |t|

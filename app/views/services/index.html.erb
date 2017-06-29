@@ -1,3 +1,18 @@
+<style>
+  .icon_image_centering {
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .phone_user_icons{
+    vertical-align: -50%;
+    height:50px;width:50px;
+    display: inline-block;
+  }
+</style>
+
 <div class="spn_hol">
   <div class="spinner2">
     <div class="bounce1"></div>
@@ -30,12 +45,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <!-- NAV -->
-            <li><a href="#HOME">HOME</a> </li>
-            <li><a href="#ABOUT"><%= t(".about") %></a> </li>
-            <li><a href="#BAAS">BaaS</a></li>
-            <li><a href="#DRAAS">DRaaS</a> </li>
-            <li><a href="#CALC"><%= t(".trial") %></a> </li>
-            <li><a href="#CONTACT"><%= t(".contact") %></a> </li>
+              <!-- NAV -->
+              <li><a href="#HOME">HOME</a> </li>
+              <li><a href="#ABOUT">O USLUZI </a> </li>
+              <li><a href="#PACKAGE">PAKETI U PONUDI</a></li>
+              <li><a href="#PRICES">PROBA/CIJENE</a> </li>
+              <li><a href="#CONTACT">KONTAKT </a> </li>
             <% if user_signed_in? %>
             <li><%= link_to t(".sign_out"), destroy_user_session_path %></li>
             <% else %>
@@ -79,26 +94,32 @@
         <div class="col-md-8 col-sm-8">
           <div class="home_text">
             <!-- TITLE AND DESC -->
-            <h1><%= t(".home_header") %></h1>
-            <p><%= t(".home_paragraph") %></p>
+            <h1>Mobile device managment usluga</h1>
+            <p>Osigurajte svoje mobilne uređaje, aplikacije i sadržaj pomoću sveobuhvatnog rješenja za upravljanje mobilnim uređajima</p>
 
             <div class="download-btn">
               <!-- BUTTON -->
-              <% if user_signed_in? %>
-              <a class="btn home-btn wow fadeInLeft" href="#CALC"><%= t(".start_trial") %></a>
-              <% else %>
-              <a class="btn home-btn wow fadeInLeft" href="#REGISTER"><%= t(".start_trial") %></a>
-              <% end %>
+              <a class="btn home-btn wow fadeInLeft" href="#PACKAGE"><%= t(".start_trial") %></a>
               <a class="tuor btn wow fadeInRight" href="#ABOUT"><%= t(".tour") %><i class="fa fa-angle-down"></i></a>
             </div>
           </div>
         </div>
         <div class="col-md-3 col-md-offset-1 col-sm-4">
           <div class="home-iphone">
-            <%= image_tag("veeam.png", :alt => "veeam") %>
+            <%= image_tag("maaslogo_type.png", :alt => "MaaS360") %>
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-2 col-sm-offset-2 col-md-10 col-sm-10">
+        <div class="home_text">
+          <!-- TITLE AND DESC -->
+          <p>* IBM MaaS360 proizvod</p>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -119,25 +140,104 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- ABOUT US SECTION TITLE-->
         <div class="section_title">
-          <h2><%= t(".about_title") %></h2>
-          <p><%= t(".texts.about") %>
+          <h2>O usluzi</h2>
+          <p>Mobile Device Management je pouzdano rješenje za upravljanje mobilnim uređajima vašeg poduzeća koje čini rad u mobilnom svijetu jednostavnijim i sigurnijim. Koristite snažan alat za upravljanje mobilnim uređajima sa sveobuhvatnom, integriranom zaštitom kako biste omogućili pristup i korištenje aplikacija, sadržaja, e-pošte i uređaja, bez ugrožavanja korisničkog doživljaja, sigurnosti podataka ili privatnosti.
           </p>
         </div>
       </div>
 
     </div>
   </div>
-  <div class="inner_about_area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="about_phone wow bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
-            <!-- PHONE -->
-            <%= image_tag("evolution.png", width: "700", alt: "data protection evolution") %>
-          </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="section_title_feature">
+          <div class="icon_image_centering"><%= image_tag('iconsIBM/benefits--svg.svg', alt: "MaaS360", style: 'width: 70px;' ) %></div>
+          <!-- TITLE AND DESC -->
+          <h2 class="naslov_opis" > Jednostavno i lako upravljanje vašim mobilnim uređajima</h2>
+          <p class="paragraf" >Svi vaši uređaji su vidljivi na jednom mjestu i njima možete daljinski upravljati</p>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="section_title_feature">
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (1).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <!-- TITLE AND DESC -->
+          <h2 class="naslov_opis"> Brza implementacija aplikacija</h2>
+          <p class="paragraf">Jednostavna distribucija aplikacija pomoći interaktivnog kataloga aplikacija</p>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="section_title_feature">
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (2).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <!-- TITLE AND DESC -->
+          <h2 class="naslov_opis"> Dostupnost dokumenta i sadržaja</h2>
+          <p class="paragraf">„Mobilizacija“ dokumenata i sadržaja kako bi ste ostali produktivni s bilo kojeg mjesta i u bilo koje vrijeme, a u sigurnom okruženju</p>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-offset-2 col-sm-offset-2 col-md-4 col-sm-4">
+        <div class="section_title_feature">
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (3).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <!-- TITLE AND DESC -->
+          <h2 class="naslov_opis"> Sigurnost  dokumenta i sadržaja</h2>
+          <p class="paragraf">Omogućuje korisnicima pristup informacijama bez rizika od curenja podataka </p>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="section_title_feature">
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (4).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <!-- TITLE AND DESC -->
+          <h2 class="naslov_opis"> Pristup poslovnim sustavima</h2>
+          <p class="paragraf">Integracija s poslovnim sustavima uz mogućnost korištenja postojeće infrastrukture i spremišta podataka</p>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="margin-btm row">
+
+      <div class="col-md-10 col-md-offset-1">
+        <!-- ABOUT US SECTION TITLE-->
+        <div class="section_title" style="padding-top:50px; padding-bottom: 10px;">
+          <h2>Glavne značajke</h2>
+          <p>
+          </p>
         </div>
 
+
       </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="section_title_feature" style="padding-top:0; padding-bottom:20px;">
+          <!-- TITLE AND DESC -->
+          <ul class="paragraf2 key"> <li>BYOD/korištenje privatnih mobilnih uređaja za pristup poslovnim podacima </li> <li>
+            Korporativni sadržaj dostupan na mobilnim uređajima</li> <li>
+            Siguran pristup korporativnim sadržajima</li> <li>
+
+            Zaštita i detekcija  uređaja od „malware“, „jailbreak“ i „root“ </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <div class="section_title_feature" style="padding-top:0; padding-bottom:20px; ">
+          <!-- TITLE AND DESC -->
+          <ul class="paragraf2 key"> <li>Trenutan uvid u status uređaja i mogućnost promptnog oduzimanja aktivnosti </li> <li>
+            Upravljanje uređajima „out-of-the-box“
+          </li> <li>Upravljanje svim tipovima PC i Mac uređaja</li> <li>
+            Korištenje pouzdane MDM platforme </li>
+          </ul>
+
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -179,114 +279,147 @@
 <!-- =========================
  START FEATURES
 ============================== -->
-<section id="BAAS" class="features page">
+<section id="PACKAGE" class="features page">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2>Backup <span style="text-transform: none;">as a </span>Service - <span style="text-transform: none;">BaaS</span></h2>
-          <p><%= t(".baas.texts.baas") %>
-          </p>
+          <h2>PAKETI U PONUDI </h2>
         </div>
         <!-- END FEATURES SECTION TITLE -->
       </div>
     </div>
   </div>
 
-  <div class="feature_inner">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-          <!-- FEATURE -->
 
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-cloud-upload"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".baas.backup_rule") %><span> :</span></h3>
-            <p><%= t(".baas.texts.backup_rule") %>
-            </p>
-          </div>
-
-          <!-- END SINGLE FEATURE -->
-
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-network"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".baas.hosting") %><span> :</span></h3>
-            <p><%= t(".baas.texts.hosting") %>
-            </p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-look"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".baas.supervision") %><span> :</span></h3>
-            <p><%= t(".baas.texts.supervision") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-
-
-        </div>
-        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-diamond"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".baas.architecture") %><span> :</span></h3>
-            <p><%= t(".baas.texts.architecture") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-key"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".baas.end_to_end") %><span> :</span></h3>
-            <p><%= t(".baas.texts.end_to_end") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-        </div>
-        <!--  <div class="col-md-4">
-            <div class="feature_iphone">
-                <img class="wow bounceIn" data-wow-duration="1s" src="images/flow.png" alt="">
-            </div>
-        </div>-->
-
-      </div>
-    </div>
-  </div>
-  <% if I18n.locale == :en %>
   <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="logo text-center">
-          <!-- LOGO -->
-          <%= image_tag("veeam_baas.png", width: "1000") %>
-        </div>
-      </div>
+
+    <div class="pricing-container">
+
+      <ul class="pricing-list bounce-invert">
+        <li>
+          <ul class="pricing-wrapper">
+            <li data-type="monthly" class="is-visible">
+              <header class="pricing-header">
+                <h2>Essentials</h2>
+                <div class="opis">
+                  <p>Upravljanje i osiguravanje korisnika, pametnih telefona, tableta, prijenosna računala i aplikacija</p>
+                </div>
+              </header>
+              <div class="pricing-body">
+                <ul class="pricing-features">
+                  <li style="margin-bottom: 11px;">Mobile Device Management* </li>
+                  <li>Mobile App Management*</li>
+                  <li>Patch and Update Management</li>
+                  <li>Identity Management</li>
+                  <li>Advisor</li>
+                  <li>Container App</li>
+                  <li>Expense Management</li>
+                  <li><span style="font-size: 12px;">*iOS/Android/ Windows/macOS</span></li>
+                </ul>
+              </div>
+              <footer class="pricing-footer">
+                <a class="select_price" href="#">BESPLATNA PROBA</a>
+              </footer>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <ul class="pricing-wrapper">
+            <li data-type="monthly" class="is-visible">
+              <header class="pricing-header">
+                <h2>Deluxe</h2>
+                <div class="opis">
+                  <p>Razdvajanje privatnih i poslovnih  podataka (containerization)</p>
+                </div>
+              </header>
+              <div class="pricing-body">
+                <ul class="pricing-features">
+                  <li>uključuje sve funkcionalnosti Essential paketa</li>
+                  <li>Secure Mobile Mail</li>
+                  <li>Secure Mobile Chat</li>
+                  <li> </li>
+                  <li></li>
+                  <li> </li>
+                  <li> </li>
+                  <li> </li>
+
+                </ul>
+              </div>
+              <footer class="pricing-footer">
+                <a class="select_price" href="#">BESPLATNA PROBA</a>
+              </footer>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          <ul class="pricing-wrapper">
+            <li data-type="monthly" class="is-visible">
+              <header class="pricing-header">
+                <h2>Premier</h2>
+                <div class="opis">
+                  <p>Upravljanje sadržajem, sigurni pretraživaći, sigurnost aplikacija i zaštičeni pristup mreži</p>
+                </div>
+              </header>
+              <div class="pricing-body">
+                <ul class="pricing-features">
+                  <li>uključuje sve funkcionalnosti Deluxe paketa</li>
+                  <li>OS VPN</li>
+                  <li>Secure Browser</li>
+                  <li> Gateway for Browser</li>
+                  <li>Content Management</li>
+                  <li> Gateway for Documents</li>
+                  <li> Application Security</li>
+                  <li> Gateway for Apps</li>
+                </ul>
+              </div>
+              <footer class="pricing-footer">
+                <a class="select_price" href="#">BESPLATNA PROBA</a>
+              </footer>
+            </li>
+
+          </ul>
+        </li>
+
+        <li>
+          <ul class="pricing-wrapper">
+            <li data-type="monthly" class="is-visible">
+              <header class="pricing-header">
+                <h2>Enterprise</h2>
+                <div class="opis">
+                  <p>Transformacija poslovanja kompanije unutar sigurnih okvira uz pomoć paketa za zaštitu poduzeća i produktivnost</p>
+                </div>
+              </header>
+              <div class="pricing-body">
+                <ul class="pricing-features">
+                  <li>uključuje sve funkcionalnosti Premier  paketa</li>
+                  <li>Mobile Document Editor</li>
+                  <li>Mobile Document Sync</li>
+                  <li>Mobile Threat Management</li>
+                  <li></li>
+                  <li> </li>
+                  <li> </li>
+                  <li></li>
+                </ul>
+              </div>
+              <footer class="pricing-footer">
+                <a class="select_price" href="#">BESPLATNA PROBA</a>
+              </footer>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+      <p>* Više informacija o funkcionalnostima pronađite na sljedećem linku <br> &nbsp;&nbsp;
+        <a href="https://www.ibm.com/in-en/marketplace/mobile-device-management" target="_blank">www.ibm.com/in-en/marketplace/mobile-device-management</a></p>
     </div>
+
+
   </div>
-  <% end %>
+
 </section>
 <!-- END FEATURES SECTION -->
 
@@ -319,482 +452,406 @@
 
 <!-- END CALL TO ACTION -->
 
-
-
-<!-- =========================
- START FEATURES
-============================== -->
-<section id="DRAAS" class="features page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <!-- FEATURES SECTION TITLE -->
-        <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2>Disaster recovery <span style="text-transform: none;">as a </span>Service - <span style="text-transform: none;">DRaaS</span></h2>
-          <p><%= t(".draas.texts.draas") %></p>
-        </div>
-        <!-- END FEATURES SECTION TITLE -->
-      </div>
-    </div>
-  </div>
-
-  <div class="feature_inner">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-          <!-- FEATURE -->
-
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-cloud"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.cloud_host") %><span> :</span></h3>
-            <p><%= t(".draas.texts.cloud_host") %>
-
-            </p>
-          </div>
-
-          <!-- END SINGLE FEATURE -->
-
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-repeat"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.failover") %><span> :</span></h3>
-            <p><%= t(".draas.texts.failover") %></p>
-          </div>
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-home"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.failback") %><span> :</span></h3>
-            <p><%= t(".draas.texts.failback") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-        </div>
-        <div class="col-md-6 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-magic-wand"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.1_click") %><span> :</span></h3>
-            <p><%= t(".draas.texts.1_click") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-vector"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.virtual") %><span> :</span></h3>
-            <p><%= t(".draas.texts.virtual") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-
-          <!-- FEATURE -->
-          <div class="left_single_feature">
-            <!-- ICON -->
-            <div><span class="pe-7s-lock"></span></div>
-
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".draas.tls_ssl") %><span> :</span></h3>
-            <p><%= t(".draas.texts.tls_ssl") %></p>
-          </div>
-          <!-- END SINGLE FEATURE -->
-
-        </div>
-
-        <!--  <div class="col-md-4">
-            <div class="feature_iphone">
-                <img class="wow bounceIn" data-wow-duration="1s" src="images/flow.png" alt="">
-            </div>
-        </div>-->
-
-      </div>
-    </div>
-  </div>
-  <% if I18n.locale == :en %>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="logo text-center">
-          <!-- LOGO -->
-          <%= image_tag("veeam_draas.png", width: "1000") %>
-        </div>
-      </div>
-    </div>
-  </div>
-  <% end %>
-</section>
-<!-- END FEATURES SECTION -->
-
-
-
-
-
-<!-- =========================
- Start FUN FACTS
-============================== -->
-
-
-<section class="fun_facts parallax">
-  <div class="available_store">
-    <div class="container  wow bounceInRight" data-wow-duration="1s">
-      <div class="col-md-6">
-        <div class="available_title">
-          <h2><%= t(".section_break_about") %></h2>
-        </div>
-      </div>
-
-      <!-- DOWNLOADABLE STORE -->
-      <div class="col-md-6">
-        <div class="row">
-          <a href="http://www.megatrend.com/ " target="_blank">
-            <div class="col-md-4 no_padding">
-              <div class="single_store">
-                <i class="fa fa-home"></i>
-                <div class="store_inner">
-                  <h2>MEGATREND</h2>
-                </div>
-              </div>
-            </div>
-          </a>
-          <div class="col-md-4 no_padding">
-            <a href="https://www.veeam.com/vm-backup-recovery-replication-software.html" target="_blank">
-              <div class="single_store">
-                <i class="fa fa-cogs"></i>
-                <div class="store_inner">
-                  <h2>VEEAM</h2>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 no_padding">
-            <a href="http://www.vmware.com/" target="_blank">
-              <div class="single_store last">
-                <i class="fa fa-magic"></i>
-                <div class="store_inner">
-                  <h2>VMware</h2>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- END DOWNLOADABLE STORE -->
-    </div>
-  </div>
-</section>
-
-<!-- END FUN FACTS -->
-
 <!-- =========================
  START KALKULATOR - ovo se prikazuje ako je korisnik logiran
 ============================== -->
-
-
-
-
-<section id="CALC" class="features page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <!-- FEATURES SECTION TITLE -->
-        <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2><%= t(".trial_title") %></h2>
-          <div class="row" style="margin-top: 55px">
-            <% if calc_alert %>
-                <div class="container" style="padding-top: 10px;">
-                  <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
-                </div>
-            <% elsif calc_success %>
-                <div class="container" style="padding-top: 10px;">
-                  <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
-                </div>
-            <% end %>
-            <div class="col-md-4">
-              <h2>B<span style="text-transform: none;">aa</span>s</h2>
-              <p><%= t(".calculator.texts.baas") %></p>
-            </div>
-            <div class="col-md-4">
-              <h2>B<span style="text-transform: none;">aa</span>s & DR<span style="text-transform: none;">aa</span>s</h2>
-              <p><%= t(".calculator.texts.baas_draas") %></p>
-            </div>
-            <div class="col-md-4">
-              <h2>DR<span style="text-transform: none;">aa</span>S</h2>
-              <p><%= t(".calculator.texts.draas") %></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- END FEATURES SECTION TITLE -->
-      </div>
-    </div>
-  </div>
-
   <!-- =========================
    START SIGNIN SIGNUP - ovo se prikazuje ako je korisnik nije logiran
   ============================== -->
-  <% if !user_signed_in? %>
-      <section id="REGISTER" class="features page">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <!-- FEATURES SECTION TITLE -->
-              <div class="section_title wow fadeIn" data-wow-duration="1s" style="padding-top: 50px;">
-                <h2><%= t(".sign_in_trial_title") %></h2>
-                <p><%= t(".texts.calculator") %></br>
-                  <%= t(".texts.calculator_mail") %></p>
-              </div>
 
-              <div class="centered margin-btm">
+  <section id="PRICES" class="features page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <!-- FEATURES SECTION TITLE -->
+          <div class="section_title wow fadeIn" data-wow-duration="1s">
+            <h2>Kalkulator </h2>
+            <p>Usluga je namijenjena velikim, srednjim i malim poduzećima. <br>Za veće tvrtke, cijena ovisi o broju uređaja na kojima je usluga akivirana. <br> <br>
+              Moguća je i realizacija kombinacije MDM funkcionalnosti izvan okvira ponuđenih paketa. Cijena tako pilagođenog rješenja dostupna je na projektnoj osnovi na zahtjev!
+            </p>
 
-                <%= link_to t(".sign_up"), new_user_registration_path, class: "btn btn-primary btn-action" %>
-                <%= link_to t(".sign_in"), new_user_session_path, class: "btn btn-primary btn-action " %>
-
-
-              </div>
-              <!-- END FEATURES SECTION TITLE -->
-            </div>
           </div>
+          <div class="centered">
+
+            <a class="btn btn-primary btn-action" href="#" role="button">Besplatna proba</a>
+
+
+          </div>
+          <!-- END FEATURES SECTION TITLE -->
         </div>
+      </div>
+    </div>
 
-      </section>
-      <!-- END SIGNIN SIGNUP SECTION -->
-  <% end %>
+    <!-- =========================
+     ovo se prikazuje ako je korisnik logiran
+    ============================== -->
+    <% if current_user %>
+    <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
+    <div class="container">
+      <div class="row margin">
+        <% if calc_alert %>
+            <div class="container" style="padding-top: 10px;">
+              <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
+            </div>
+        <% elsif calc_success %>
+            <div class="container" style="padding-top: 10px;">
+              <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
+            </div>
+        <% end %>
+
+        <div class="col-md-8">
+          <!--  <div class="row">
+                <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+
+                    <div class="kalkulator ">
+                        <h3>Veam license<span> :</span></h3>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
+                                User Type <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="license" >
+                                <li><a value="0">Veeam user</a></li>
+                                <li><a value="40">non Veeam user</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
 
-  <div class="container" id="CALCULATOR_SERVICES" style="padding-bottom: 80px;">
-    <!--<p class="calc_disclaimer_info">
-      *<%= t(".calculator.price_disclaimer_sec") %>
-    </p> -->
-    <div class="row margin">
-
-      <div class="col-md-8">
-        <div class="row">
-          <!-- <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s"> -->
-            <!-- FEATURE -->
-            <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
-                <!-- Default value se miče samo ako se vrati odabir veeam_user licence -->
-                <%= f.input :veeam_user ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamUser", value: "1"} %>
-                <%= f.input :service ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamService"} %>
-                <%= f.input :vm_server ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamServer"} %>
-                <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamVmExtra"}, default: 0 %>
-                <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "veeamStorageExtra"}, default: 0 %>
-              <!--
-                <div class="kalkulator ">
-                  <h3><%= t(".calculator.veeam_licence") %> <span> :</span></h3>
-                  <div class="dropdown">
-                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
-                      <%= t(".calculator.veeam_licence_placeholder") %> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" id="license" >
-                      <li><a value="0"><%= t(".calculator.veeam_licence_yes") %></a></li>
-                      <li><a value="40"><%= t(".calculator.veeam_licence_no") %></a></li>
-                    </ul>
-                  </div>
                 </div>
 
 
-          </div>
-          -->
-
-          <div class="col-md-5 col-md-offset-1 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+                <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
 
 
-            <div class="kalkulator ">
-              <h3><%= t(".calculator.service") %> <span> :</span></h3>
-              <div class="dropdown ">
-                <button class="btn btn-default btn-lg dropdown-toggle button_width" type="button" data-toggle="dropdown" >
-                  <%= t(".calculator.service_placeholder") %> <span class="caret" ></span>
-                </button>
-                <ul class="dropdown-menu" id="service">
-                  <li><a space="500" vm="5" value="120" onclick="enableSpinners()">BaaS</a></li>
-                  <li><a space="1000" vm="5" value="250" onclick="enableSpinners()">DRaaS</a></li>
-                </ul>
-              </div>
+                    <div class="kalkulator ">
+                        <h3>Service<span> :</span></h3>
+                        <div class="dropdown ">
+                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
+                                Service Type <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="service" >
+                                <li><a space="500" vm="5" value="120">BUaaS</a></li>
+                                <li><a space="1000" vm="5" value="250">DRaaS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+                    <div class="kalkulator ">
+                        <h3>PLATFORM<span> :</span></h3>
+                        <div class="dropdown ">
+                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                                Platform <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="platform">
+                                <li><a value="0">VMware</a></li>
+                                <li><a value="0">HyperV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+          -->  <div class="row">
 
-          </div>
-
-
-          <div class="col-md-5 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-
+          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
 
             <div class="kalkulator ">
-              <h3><%= t(".calculator.platform") %> <span> :</span></h3>
-              <div class="dropdown ">
-                <button class="btn btn-default btn-lg dropdown-toggle button_width" type="button" data-toggle="dropdown">
-                  <%= t(".calculator.platform_placeholder") %><span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" id="platform" onchange="calculateTotal()">
-                  <li><a value="0">VMware</a></li>
-                  <li><a value="0">HyperV</a></li>
-                </ul>
-              </div>
-            </div>
+              <h3>1x</h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
+              <h3>=</h3> <div style="display: inline-block; margin: 0 5px;">
+              <div  class="input-group spinner" data-trigger="spinner" id="spinner">
+                <%= f.input :one_mobile, label: false, wrapper: false,id: 'extraVm',input_html: {value: '0', class: 'form-control text-center'}, data: { rule: 'quantity'} %>
 
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-md-5 col-md-offset-1 right_no_padding wow fadeInLeft " data-wow-duration="1s">
-            <!-- FEATURE -->
-
-            <div class="kalkulator ">
-              <h3><%= t(".calculator.extra_vm") %><span> :</span></h3>
-
-
-              <div class="input-group spinner " data-trigger="spinner" id="spinner">
-                <input id="extraVm" type="text" class="form-control text-center button_width" value="0" data-rule="quantity" disabled="true" style="width: 166px; height: 44.5px;">
                 <div class="input-group-addon">
                   <a  onclick="extraVmPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
                   <a onclick="extraVmMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
                 </div>
               </div>
+            </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
 
 
-              <!--<div id="extraVm" class="input-group">
-                  <span class="input-group-btn">
-<button type="button" class="btn btn-default" data-value="decrease" data-target="#spinner" data-toggle="spinner">
-<span class="glyphicon glyphicon-minus"></span>
-                  </button>
-                  </span>
-                  <input type="text" data-ride="spinner" id="spinner" class="form-control input-number" value="0">
-                  <span class="input-group-btn">
-<button type="button" class="btn btn-default" data-value="increase" data-target="#spinner" data-toggle="spinner">
-<span class="glyphicon glyphicon-plus"></span>
-                  </button>
-                  </span>
-              </div>-->
+              <div style="margin-top: -10px; font-size: 14px;">* broj korisnika sa jednim uređajem po korisniku</div>
             </div>
 
             <!-- END SINGLE FEATURE -->
 
           </div>
 
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
 
-          <div class="col-md-5 right_no_padding wow fadeInLeft" data-wow-duration="1s">
 
 
-            <div class="kalkulator ">
-              <h3><%= t(".calculator.extra_storage") %><span> :</span></h3>
 
-              <div class="input-group spinner" data-trigger="spinner" id="spinner2" >
-                <input id="extraRam" type="text" class="form-control text-center " value="0" data-rule="quantity" disabled="true" style="width: 166px; height: 44.5px;">
-                <div class="input-group-addon">
-                  <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"   disabled="true"><i class="fa fa-caret-up"></i></a>
-                  <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"   disabled="true"><i class="fa fa-caret-down"></i></a>
+            <div style="z-index:1;" class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+
+
+              <div class="kalkulator ">
+                <h3> &gt;1 </h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
+                <h3>=</h3>  <div style="display: inline-block; margin: 0 5px;">
+                <div class="input-group spinner" data-trigger="spinner" id="spinner2">
+                  <%= f.input :multiple_mobile, label: false, wrapper: false,id: 'extraRam',input_html: {value: '0', class: 'form-control text-center'}, data: { rule: 'quantity'} %>
+                  <div class="input-group-addon">
+                    <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+                    <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+                  </div>
+                </div>  </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
+
+
+
+              </div>
+              <div style="margin-top: -10px; font-size: 14px;">* broj korisnika sa više od jednog uređaja po korisniku</div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+
+              <div class="kalkulator ">
+                <h3 style="font-size: 26px;">Odaberite paket:</h3>
+
+                <div style="display: inline-block; margin-left: 20px; ">
+                  <div class="dropdown">
+                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: 'izaberi paket', input_html: {style: 'width: 150px; height: 45px;'}%>
+                  </div>
+
                 </div>
               </div>
-              <!--  <div class="input-group">
-                    <span class="input-group-btn">
-<button type="button" class="btn btn-default" data-value="decrease" data-target="#spinner2" data-toggle="spinner">
-<span class="glyphicon glyphicon-minus"></span>
-                    </button>
-                    </span>
-                    <input type="text" data-ride="spinner" id="spinner2" class="form-control input-number" value="0" >
-                    <span class="input-group-btn">
-<button type="button" class="btn btn-default" data-value="increase" data-target="#spinner2" data-toggle="spinner">
-<span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                    </span>
-                </div>-->
+
+
             </div>
 
           </div>
 
-
-
         </div>
-        <% if user_signed_in? %>
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1 ight_no_padding wow fadeInLeft">
-                <p class="calc_disclaimer_info">
-                  <%= t(".calculator.texts.disclaimer") %>
-                </p>
-              </div>
-            </div>
-        <% end %>
-
-        </div>
-      <% if user_signed_in? %>
         <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
           <!-- FEATURE -->
 
-          <div class="price">
+          <!--   <div class="price">
 
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".calculator.price") %><span>:</span></h3>
-            <h2> <span id="cijena">0</span>,00 &euro;</h2>
-            <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b></p>
-            <p class="calc_disclaimer">
-              <%= t(".calculator.price_disclaimer_sec_html") %>
-            </p>
-            <p class="calc_disclaimer">
-              <%= t(".calculator.price_disclaimer") %>
-            </p>
-          </div>
+                 <h3>Odabrali ste <span> :</span></h3>
+                 <h2> <span id="cijena">0</span>,00 &euro;</h2>
+                 <p> <span id="vm">0</span> VM i <span id="space">0</span> GB
+
+                 </p>
+
+
+             </div>-->
 
           <!-- END SINGLE FEATURE -->
-          <div class="centered">
-            <%= f.button :submit, t(".inquiry"), class: "btn home-btn wow fadeInLeft btnlogin btn-action" %>
+          <div class="centered2">
+            <%= f.button :submit, 'Pošalji upit' ,class: 'btn home-btn wow fadeInLeft' %>
+            <!--<a class="btn home-btn wow fadeInLeft" href="">Pošalji upit</a> -->
 
-          </div>
-          <div class="centered">
-            <a type="button" class="btn btn-primary btn-action" href="#" role="button" data-toggle="modal" data-target="#FreeTrialConfirmForm"><%= t(".free_trial") %></a>
+
           </div>
         </div>
-        <% else %>
-          <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-            <!-- FEATURE -->
-
-            <div class="price">
-
-              <!-- FEATURE HEADING AND DESCRIPTION -->
-              <h3><%= t(".inquiry_not_registered") %></h3>
-              <p class="calc_info"> <%= t(".calculator.price_packet") %> <b><span id="vm">0</span> VM</b> i <b><span id="space">0</span> GB</b></p>
-              <p class="calc_disclaimer">
-                <%= t(".calculator.price_disclaimer_sec_html") %>
-              </p>
-
-            </div>
-
-            <!-- END SINGLE FEATURE -->
-            <div class="centered">
-              <a type="button" class="btn home-btn wow fadeInLeft btnlogin btn-action" href="#" role="button" data-toggle="modal" data-target="#LoginForm"><%= t(".inquiry") %></a>
-
-            </div>
-            <div class="centered">
-              <a class="btn btn-primary btn-action" href="#REGISTER" role="button"><%= t(".free_trial") %></a>
-            </div>
-          </div>
-        <% end %>
-
+      </div>
     </div>
+            <% end %>
+    <% else %>
+        <!-- =========================
+         ovo se prikazuje ako korisnik NIJE logiran
+        ============================== -->
+        <%= simple_form_for(@subscriber, url: subscriber_create_services_path, method: :post) do |f| %>
+            <div class="container">
+              <div class="row margin">
+                <% if calc_alert %>
+                    <div class="container" style="padding-top: 10px;">
+                      <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
+                    </div>
+                <% elsif calc_success %>
+                    <div class="container" style="padding-top: 10px;">
+                      <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
+                    </div>
+                <% end %>
+
+                <div class="col-md-8">
+                  <div class="row">
+
+                  <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+
+                    <div class="kalkulator ">
+                      <h3>1x</h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
+                      <h3>=</h3> <div style="display: inline-block; margin: 0 5px;">
+                      <div  class="input-group spinner" data-trigger="spinner" id="spinner">
+                        <%= f.input :one_mobile, label: false, wrapper: false,input_html: {value: '0', class: 'form-control text-center',id: 'extraVmNoUser'}, data: { rule: 'quantity'} %>
+
+                        <div class="input-group-addon">
+                          <a  onclick="extraVmPlusNoUser()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+                          <a onclick="extraVmMinusNoUser()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                    </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
+
+
+                      <div style="margin-top: -10px; font-size: 14px;">* broj korisnika sa jednim uređajem po korisniku</div>
+                    </div>
+
+                    <!-- END SINGLE FEATURE -->
+
+                  </div>
+
+                </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="row">
 
 
 
 
-  </div>
+                    <div style="z-index:1;" class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft" data-wow-duration="1s">
 
 
-</section>
-<!-- END KALKULATOR SECTION -->
+                      <div class="kalkulator ">
+                        <h3> &gt;1 </h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
+                        <h3>=</h3>  <div style="display: inline-block; margin: 0 5px;">
+                        <div class="input-group spinner" data-trigger="spinner" id="spinner2">
+                          <%= f.input :multiple_mobile, label: false, wrapper: false,input_html: {value: '0', class: 'form-control text-center',id: 'extraRamNoUser'}, data: { rule: 'quantity'} %>
+                          <div class="input-group-addon">
+                            <a  onclick="extraRamPlusNoUser()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+                            <a onclick="extraRamMinusNoUser()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+                          </div>
+                        </div>  </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
 
+
+
+                      </div>
+                      <div style="margin-top: -10px; font-size: 14px;">* broj korisnika sa više od jednog uređaja po korisniku</div>
+
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
+
+                      <div class="kalkulator ">
+                        <h3 style="font-size: 26px;">Odaberite paket:</h3>
+
+                        <div style="display: inline-block; margin-left: 20px; ">
+                          <div class="dropdown">
+                            <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: 'izaberi paket', input_html: {style: 'width: 150px; height: 45px;'}%>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+                  <!-- FEATURE -->
+
+                  <!--   <div class="price">
+
+                         <h3>Odabrali ste <span> :</span></h3>
+                         <h2> <span id="cijena">0</span>,00 &euro;</h2>
+                         <p> <span id="vm">0</span> VM i <span id="space">0</span> GB
+
+                         </p>
+
+
+                     </div>-->
+
+                  <!-- END SINGLE FEATURE -->
+                  <div class="centered2">
+                    <!--<a class="btn home-btn wow fadeInLeft" href="">Pošalji upit</a> -->
+                    <div class="centered">
+                      <a type="button" class="btn home-btn wow fadeInLeft" href="#" role="button" data-toggle="modal" data-target="#LoginForm"><%= 'Pošalji upit' %></a>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="closewnd modal fade" id="LoginForm" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content -->
+
+                <div class="modal-content sky-form">
+                  <% unless user_signed_in? %>
+
+                      <header><%= t(".inquiry_modal.inquiry_email") %></header>
+
+                      <fieldset>
+                        <section>
+                          <div class="row">
+                            <label class="label col col-4 skylabel">E-mail</label>
+                            <div class="col col-8">
+                              <label class="input">
+                                <i class="icon-append icon-user"></i>
+                                <%= f.input :email, required: true, label: false %>
+                              </label>
+                            </div>
+                          </div>
+                        </section>
+                      </fieldset>
+                      <footer>
+                        <%= f.button :submit, t(".inquiry_modal.send_button"), class: "button" %>
+                      </footer>
+
+                  <% end %>
+        <% end %>
+        </div>
+
+        </div>
+        </div>
+    <% end %>
+
+  </section>
+<!-- =========================
+ KRAJ KALKULATORA
+============================== -->
+<% if !user_signed_in? %>
+    <section id="REGISTER" class="features page" style="padding-top: 45px">
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <!-- FEATURES SECTION TITLE -->
+            <div class="section_title wow fadeIn" data-wow-duration="1s" style="padding-top: 50px;">
+              <h2><%= t(".sign_in_trial_title") %></h2>
+              <p>Za izradu ponude i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se prijavite/registrirate.</p>
+            </div>
+
+            <div class="centered margin-btm">
+
+              <%= link_to t(".sign_up"), new_user_registration_path, class: "btn btn-primary btn-action" %>
+              <%= link_to t(".sign_in"), new_user_session_path, class: "btn btn-primary btn-action " %>
+
+            </div>
+            <!-- END FEATURES SECTION TITLE -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- END SIGNIN SIGNUP SECTION -->
 <% end %>
+<!-- END KALKULATOR SECTION -->
 
 <!-- =========================
  START CONTCT FORM AREA
@@ -911,45 +968,7 @@
 
 <!--Login Form dialog-->
 
-            <div class="closewnd modal fade" id="LoginForm" role="dialog">
-              <div class="modal-dialog">
 
-                <!-- Modal content -->
-
-                <div class="modal-content">
-                  <% unless user_signed_in? %>
-                      <%= simple_form_for(@subscriber, url: subscriber_create_services_path, method: :post, html: {class: "sky-form"}) do |f| %>
-                          <%= f.input :veeam_user,:as => :hidden , :include_blank => true,:input_html => { id: "temp_veeamUser", value: "1"} %>
-                          <%= f.input :service ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamService"} %>
-                          <%= f.input :vm_server ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamServer"} %>
-                          <%= f.input :vm_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamVmExtra"}, default: 0 %>
-                          <%= f.input :storage_extra ,:as => :hidden, :include_blank => true,:input_html => { id: "temp_veeamStorageExtra"}, default: 0 %>
-
-                    <header><%= t(".inquiry_modal.inquiry_email") %></header>
-
-                    <fieldset>
-                      <section>
-                        <div class="row">
-                          <label class="label col col-4 skylabel">E-mail</label>
-                          <div class="col col-8">
-                            <label class="input">
-                              <i class="icon-append icon-user"></i>
-                              <%= f.input :email, required: true, label: false %>
-                            </label>
-                          </div>
-                        </div>
-                      </section>
-                    </fieldset>
-                    <footer>
-                      <%= f.button :submit, t(".inquiry_modal.send_button"), class: "button" %>
-                    </footer>
-
-                      <% end %>
-                  <% end %>
-                </div>
-
-              </div>
-            </div>
 
 <!--Free trial confirm box-->
             <div class="closewnd modal fade" id="FreeTrialConfirmForm" role="dialog">
@@ -1041,7 +1060,7 @@
     var result = 0;
     if (document.getElementById("extraVm").disabled == false) {
 
-      if (parseInt(document.getElementById("extraVm").value) < 30) {
+      if (parseInt(document.getElementById("extraVm").value) < 300) {
         result = parseInt(document.getElementById("extraVm").value) + 1;
       }
       else {
@@ -1053,6 +1072,26 @@
       AddVm = result;
       calculate();
       setExtraVm()
+    }
+  }
+
+  function extraVmPlusNoUser() {
+    var result = 0;
+    if (document.getElementById("extraVmNoUser").disabled == false) {
+
+      if (parseInt(document.getElementById("extraVmNoUser").value) < 300) {
+        result = parseInt(document.getElementById("extraVmNoUser").value) + 1;
+        document.getElementById("extraVmNoUser").value = result;
+      }
+      else {
+        result = 30;
+        AddVm = 30;
+      }
+
+      ExtraVm = result * 20;
+      AddVm = result;
+      //calculate();
+      //setExtraVm()
     }
   }
 
@@ -1076,7 +1115,7 @@
   function extraRamPlus(){
     var result = 0;
     if(document.getElementById("extraRam").disabled == false) {
-      if(parseInt(document.getElementById("extraRam").value) < 30 ){
+      if(parseInt(document.getElementById("extraRam").value) < 300 ){
         result = parseInt(document.getElementById("extraRam").value) + 1;
       }
       else{
@@ -1087,6 +1126,42 @@
       AddSpace =result * 100;
       calculate();
       setExtraStorage()
+    }
+  }
+
+  function extraVmMinusNoUser(){
+    var result =0;
+    if (document.getElementById("extraVmNoUser").disabled == false) {
+      if(parseInt(document.getElementById("extraVmNoUser").value) > 0){
+        result = parseInt(document.getElementById("extraVmNoUser").value) - 1;
+          document.getElementById("extraVmNoUser").value = result;
+      }
+      else{
+        result=0;
+        AddVm=0;
+      }
+      ExtraVm = result * 20;
+      AddVm =result;
+      //calculate();
+      //setExtraVm()
+    }
+  }
+
+  function extraRamPlusNoUser(){
+    var result = 0;
+    if(document.getElementById("extraRamNoUser").disabled == false) {
+      if(parseInt(document.getElementById("extraRamNoUser").value) < 300 ){
+        result = parseInt(document.getElementById("extraRamNoUser").value) + 1;
+          document.getElementById("extraRamNoUser").value = result;
+      }
+      else{
+        result=30;
+        AddSpace=30*100;
+      }
+      ExtraGb = result * 10;
+      AddSpace =result * 100;
+      //calculateNoUser();
+      //setExtraStorage()
     }
   }
 
@@ -1107,6 +1182,24 @@
     }
   }
 
+  function extraRamMinusNoUser(){
+    var result =0;
+    if(document.getElementById("extraRamNoUser").disabled == false){
+      if(parseInt(document.getElementById("extraRamNoUser").value) > 0){
+        result = parseInt(document.getElementById("extraRamNoUser").value) - 1;
+          document.getElementById("extraRamNoUser").value = result;
+      }
+      else{
+        result=0;
+        AddSpace=0;
+      }
+      ExtraGb = result * 10;
+      AddSpace =result * 100;
+      //calculate();
+      //setExtraStorage()
+    }
+  }
+
   function enableSpinners(){
     document.getElementById("extraVm").disabled = false;
     document.getElementById("extraRam").disabled = false;
@@ -1117,7 +1210,13 @@
     if (document.getElementById("cijena") != null) document.getElementById("cijena").innerHTML = result;
     document.getElementById("vm").innerHTML = Vm + AddVm;
     document.getElementById("space").innerHTML = Space + AddSpace;
+  }
 
+  function calculateNoUser(){
+      var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);
+      if (document.getElementById("cijena") != null) document.getElementById("cijena").innerHTML = result;
+      document.getElementById("vm").innerHTML = Vm + AddVm;
+      document.getElementById("space").innerHTML = Space + AddSpace;
   }
 
   function setVeaamUser(){

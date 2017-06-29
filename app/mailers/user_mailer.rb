@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'Megatrend VCC NO REPLY <vcc@ccweb.megatrend.com>'
+  default from: 'Megatrend MDM NO REPLY <mdm@mdmweb.megatrend.com>'
 
   def generated_password(user, generated_password, locale)
     @user = user
@@ -16,9 +16,9 @@ class UserMailer < ApplicationMailer
     @user = user
 
     if locale == "hr"
-      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
+      mail(to: 'mdm@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
     else
-      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
+      mail(to: 'mdm@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
     end
   end
 
@@ -26,9 +26,9 @@ class UserMailer < ApplicationMailer
     @user = user
 
     if locale == "hr"
-      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
+      mail(to: 'mdm@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
     else
-      mail(to: 'cloudconnect@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
+      mail(to: 'mdm@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
     end
   end
 
@@ -44,29 +44,20 @@ class UserMailer < ApplicationMailer
   end
 
   def send_calculated_services(user, locale, params)
-    service = Service.find_by(name: params[:service])
+    #service = Service.find_by(name: params[:service])
 
-    @email = user.email
+    @user= user.email
+    @package_name = params[:package]
+    @one_mobile = params[:one_mobile]
+    @multiple_mobile = params[:multiple_mobile]
     #@veeam_user = params[:veeam_user]
     #@veeam_user_price = params[:veeam_user].downcase.include?("doesn't") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
-    @service = service.name
-    @service_price = service.price
-    @platform = params[:vm_server]
-    @extra_vm = params[:vm_extra]
-    @extra_vm_price = @extra_vm.to_i * service.VM_price.to_i
-    @extra_storage = params[:storage_extra]
-    @extra_storage_price = (params[:storage_extra].to_i/100) * service.storage_price
-    @sum_price = @service_price + @extra_vm_price + @extra_storage_price
-    @basic_pack = service.VM_default.to_s+" VM, "+service.storage_default.to_s+" GB"
-
-    @sum_vm = service.VM_default.to_i + @extra_vm.to_i
-    @sum_storage = service.storage_default.to_i + @extra_storage.to_i
 
     if locale == "hr"
-      mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Megatrend ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
-      #mail(to: "cloudconnect@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      mail(to: user.email,bcc: 'mdm@megatrend.com', subject: "MDM - Megatrend ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      #mail(to: "mdm@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
-      mail(to: user.email,bcc: 'cloudconnect@megatrend.com', subject: "Cloud Connect - Veeam offer", template_path: 'user_mailer', template_name: 'calculator')
+      mail(to: user.email,bcc: 'mdm@megatrend.com', subject: "MDM - Megatrend offer", template_path: 'user_mailer', template_name: 'calculator')
     end
   end
 
@@ -78,10 +69,10 @@ class UserMailer < ApplicationMailer
     @body = body
 
     if locale == "hr"
-      mail(to: @email,bcc: 'cloudconnect@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
-      #mail(to: "cloudconnect@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      mail(to: @email,bcc: 'mdm@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
+      #mail(to: "mdm@megatrend.com", subject: @subject, template_path: 'user_mailer', template_name: 'contact_us_hr')
     else
-      mail(to: @email,bcc: 'cloudconnect@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
+      mail(to: @email,bcc: 'mdm@megatrend.com', subject: @subject, template_path: 'user_mailer', template_name: 'contact_us')
     end
   end
 
@@ -89,10 +80,10 @@ class UserMailer < ApplicationMailer
     @email = user.email
 
     if locale == "hr"
-      mail(to: @email,bcc: 'cloudconnect@megatrend.com', subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
-      #mail(to: "cloudconnect@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+      mail(to: @email,bcc: 'mdm@megatrend.com', subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+      #mail(to: "mdm@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
     else
-      mail(to: @email,bcc: 'cloudconnect@megatrend.com', subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
+      mail(to: @email,bcc: 'mdm@megatrend.com', subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
     end
   end
 end

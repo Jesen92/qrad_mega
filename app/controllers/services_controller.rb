@@ -11,7 +11,7 @@ class ServicesController < ApplicationController
 
   def calculator #slanje mail-a za kalkulator - registrirani korisnik
     if !current_user.spam_indicator?
-      if params[:users_service][:veeam_user].empty? || params[:users_service][:service].empty? || params[:users_service][:vm_server].empty?
+      if params[:subscriber][:package].empty? || params[:subscriber][:one_mobile].blank? && params[:subscriber][:multiple_mobile].blank?
         flash[:calc_alert] = I18n.t("controllers.services.calc_error")
       else
         UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
@@ -56,7 +56,7 @@ class ServicesController < ApplicationController
     @subscriber = Subscriber.new(subscriber_params)
 
     if Subscriber.find_by(email: @subscriber.email).nil? || !Subscriber.find_by(email: @subscriber.email).spam_indicator?
-      if params[:subscriber][:veeam_user].empty? || params[:subscriber][:service].empty? || params[:subscriber][:vm_server].empty?
+      if params[:subscriber][:package].blank? || params[:subscriber][:one_mobile].blank? && params[:subscriber][:multiple_mobile].blank?
         flash[:calc_alert] = I18n.t("controllers.services.calc_error")
       else
         @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil? && User.find_by(email: @subscriber.email).nil?
@@ -68,7 +68,7 @@ class ServicesController < ApplicationController
       flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
     end
 
-    redirect_to services_index_path(anchor: 'CALC')
+    redirect_to services_index_path(anchor: 'PRICES')
   end
 
   def free_trial_request

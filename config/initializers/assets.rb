@@ -11,5 +11,6 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
  Rails.application.config.assets.precompile += ['active_admin.scss']
- Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+ Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg)
  Rails.application.config.assets.precompile += ['responsive.scss']
+ Rails.application.config.assets.precompile += ['bootstrap.min.scss']

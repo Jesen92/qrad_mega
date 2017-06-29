@@ -22,17 +22,10 @@ URL: http://designscrazed.org/
   13. SECTION FOOTER 
 
 */
-.nomargin {
-    height: 52px;
-    line-height: 52px;
-    margin: 0;
-    padding: 0;
-}
-
 * {
     margin: 0;
     padding: 0;
-   
+
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -44,8 +37,13 @@ p {
     font-size: 14px;
 }
 /*---------------------------------------
-   COMMON STYLES             
+   COMMON STYLES
 -----------------------------------------*/
+
+.section_title_feature {
+    padding-top:15px;
+    padding-bottom: 10px;
+}
 
 .section_title {
     padding-top: 90px;
@@ -96,7 +94,7 @@ p {
     background-size: cover;
 }
 /*---------------------------------------
-   SECTION HOME              
+   SECTION HOME
 -----------------------------------------*/
 /*menu*/
 
@@ -118,7 +116,7 @@ p {
         color: #efefef;
         font-family: 'Raleway', sans-serif;
     }
-    
+
     .navbar-default .navbar-nav>li>a:hover {
         color: #f39c12;
     }
@@ -143,12 +141,12 @@ p {
     .navbar-nav>li>a {
         padding-top: 45px;
     }
-    
+
 }
 @media (max-width: 768px) {
     .navbar-brand img {} .navbar-default {
-      /*  background-color: #fff !important; */
-    }
+                             /*  background-color: #fff !important; */
+                         }
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
@@ -157,7 +155,7 @@ p {
     color: #f39c12;
 }
 /*.header {
-    background: url("data.jpg");
+    background: url(../images/data.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 }*/
@@ -253,14 +251,14 @@ tuor:visited {
 
 
 /*---------------------------------------
-   SECTION ABOUT              
+   SECTION ABOUT
 -----------------------------------------*/
 
 
 
 .about {
     background: #F1F1F1;
-   
+
 }
 .inner_about_area {
     padding-top: 50px;
@@ -290,10 +288,10 @@ tuor:visited {
     margin-top: 40px;
 }
 .inner_about_desc {} .single_about_area {
-    position: relative;
-    padding-bottom: 4px;
-    padding-left: 80px;
-}
+                         position: relative;
+                         padding-bottom: 4px;
+                         padding-left: 80px;
+                     }
 .single_about_area div {
     position: absolute;
     top: 0px;
@@ -326,7 +324,7 @@ tuor:visited {
     }
 }
 /*---------------------------------------
-   SECTION VIDEO              
+   SECTION VIDEO
 -----------------------------------------*/
 
 .video_area {
@@ -380,12 +378,12 @@ tuor:visited {
     border: 1px solid #f39c12;
 }
 .video {} .video iframe {
-    width: 100%;
-    border: 1px solid #999999;
-    padding: 5px;
-}
+              width: 100%;
+              border: 1px solid #999999;
+              padding: 5px;
+          }
 /*---------------------------------------
-   SECTION TESTIMONIAL              
+   SECTION TESTIMONIAL
 -----------------------------------------*/
 
 #owl-demo .item {
@@ -453,7 +451,7 @@ div.carousel-inner .item img {
     background: #f39c12;
 }
 /*---------------------------------------
-   SECTION FEATURES              
+   SECTION FEATURES
 -----------------------------------------*/
 
 .features {
@@ -464,8 +462,8 @@ div.carousel-inner .item img {
     padding-bottom: 70px;
 }
 .feature_iphone {} .feature_iphone img {
-    width: 100%;
-}
+                       width: 100%;
+                   }
 .right_single_feature {
     position: relative;
     padding-left: 90px;
@@ -516,11 +514,11 @@ div.carousel-inner .item img {
 }
 
 .kalkulator {
-     position: relative;
-    
-    padding-bottom: 55px;
-    
-   
+    position: relative;
+
+    padding-bottom: 15px;
+
+
 }
 .left_single_feature div {
     position: absolute;
@@ -535,7 +533,7 @@ div.carousel-inner .item img {
 
 .kalkulator div {
     position: relative;
-   
+
     margin-top: 20px;
 }
 .left_single_feature h3 {
@@ -548,12 +546,12 @@ div.carousel-inner .item img {
 
 .kalkulator h3 {
     z-index: 1;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 21px;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
     color: #333333;
-   
+    display: inline-block;
+
 }
 
 .price h3 {
@@ -612,7 +610,7 @@ div.carousel-inner .item img {
 
 
 /*---------------------------------------
-   SECTION CALL TO ACTION              
+   SECTION CALL TO ACTION
 -----------------------------------------*/
 
 .call_to_action {
@@ -621,31 +619,36 @@ div.carousel-inner .item img {
     padding-bottom: 20px;
 }
 
+
+
+
+
+
 .call_to_action p {
     color: #dfdfdf;
     font-size: 18px;
     font-weight: 300;
 }
 .call_to_action a {} .btn-action,
-.btn-action:active,
-.btn-action:focus,
-.btn-action:visited {
-    background: #f39c12;
-    border: 1px solid #f39c12;
-    color: #fff;
-    border-radius: 3px;
-    padding: 15px 35px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
+                     .btn-action:active,
+                     .btn-action:focus,
+                     .btn-action:visited {
+                         background: #f39c12;
+                         border: 1px solid #f39c12;
+                         color: #fff;
+                         border-radius: 3px;
+                         padding: 15px 35px;
+                         text-transform: uppercase;
+                         -webkit-transition: all 0.5s;
+                         transition: all 0.5s;
+                     }
 .btn-action:hover {
     background: #cbad48;
     border-color: #cbad48;
 }
 
 /*---------------------------------------
-   SECTION APPS SCREEN             
+   SECTION APPS SCREEN
 -----------------------------------------*/
 
 .apps_screen {
@@ -672,13 +675,13 @@ div.carousel-inner .item img {
     background: #f39c12;
 }
 /*---------------------------------------
-   SECTION FUN FACTS              
+   SECTION FUN FACTS
 -----------------------------------------*/
 
-/*.fun_facts {
+.fun_facts {
     background: url(../images/fun_bg.jpg) no-repeat center;
     background-size: cover;
-}*/
+}
 .fun_facts .section_overlay {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -690,7 +693,7 @@ div.carousel-inner .item img {
 .single_fun_facts i {
     color: #f39c12;
     font-size: 60px;
-    ;
+;
 }
 .single_fun_facts h2 {
     color: #D7DADB;
@@ -714,7 +717,7 @@ div.carousel-inner .item img {
     font-family: 'Source Sans Pro', sans-serif;
 }
 /*---------------------------------------
-   SECTION DOWNLOAD              
+   SECTION DOWNLOAD
 -----------------------------------------*/
 
 .download {
@@ -790,7 +793,7 @@ div.carousel-inner .item img {
     border-right: 1px solid #0F1217;
 }
 /*---------------------------------------
-   SECTION CONTACT              
+   SECTION CONTACT
 -----------------------------------------*/
 
 .contact {
@@ -816,9 +819,9 @@ div.carousel-inner .item img {
     border-radius: 3px;
     margin-bottom: 15px;
     opacity: .8;
-     -webkit-transition: all 1s;
+    -webkit-transition: all 1s;
     transition: all 1s;
-    outline: 0px !important;   
+    outline: 0px !important;
 
 }
 
@@ -830,16 +833,16 @@ div.carousel-inner .item img {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px rgba(102, 175, 233, 0.6);
 }
 .contact_form {} .form-control:-webkit-input-placeholder {
-    color: red;
-}
+                     color: red;
+                 }
 .form-control:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: red;
 }
 .form-control:-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: red;
 }
 .form-control:-ms-input-placeholder {
@@ -931,7 +934,7 @@ div.carousel-inner .item img {
     resize: none;
 }
 /*---------------------------------------
-   SECTION SUBSCRIBE              
+   SECTION SUBSCRIBE
 -----------------------------------------*/
 
 .subscribe {
@@ -945,27 +948,27 @@ div.carousel-inner .item img {
     background: transparent
 }
 .subscribe .section_title h2{
-	color: #eaeaea;
+    color: #eaeaea;
 }
 .subscribe .section_title p{
-	color: #a4a4a4;
+    color: #a4a4a4;
 }
 .subscribe_form {
     text-align: center;
     padding-top: 30px;
 }
 .subscribe_form .form-group {} .subscribe_form .form-control {
-    background: transparent;
-    border: 1px solid #575b63;
-    border-radius: 0px;
-    height: 45px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    color: #aeaeae;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
+                                   background: transparent;
+                                   border: 1px solid #575b63;
+                                   border-radius: 0px;
+                                   height: 45px;
+                                   border-left: 0px;
+                                   border-right: 0px;
+                                   border-top: 0px;
+                                   color: #aeaeae;
+                                   -webkit-transition: all 1s;
+                                   transition: all 1s;
+                               }
 .subscribe_form .form-control:focus {
     background: transparent;
     border-bottom: 1px solid #f1f1f1;
@@ -1011,7 +1014,7 @@ div.carousel-inner .item img {
     font-size: 20px;
 }
 /*---------------------------------------
-   SECTION FOOTER              
+   SECTION FOOTER
 -----------------------------------------*/
 
 .copyright {
@@ -1067,7 +1070,7 @@ select:-webkit-autofill {
     background: #fff;
     z-index: 50000;
     opacity: 1;
-     -webkit-transition: all 1s;
+    -webkit-transition: all 1s;
     transition: all 1s;
 }
 .spinner2 {
@@ -1090,7 +1093,7 @@ select:-webkit-autofill {
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
     animation: bouncedelay 1.4s infinite ease-in-out;
     /* Prevent first frame from flickering when animation starts */
-    
+
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -1127,18 +1130,28 @@ select:-webkit-autofill {
     margin-bottom: 30px;
 }
 
+.centered2 {
+
+    text-align:center;
+    margin-top: 40px;
+}
+
+
+
+
 
 
 
 
 .kalkulator .input-group {
     width: 125px;
-       
+    z-index: 1;
+
 }
 
 .margin {
-    margin-top: 30px;
-    
+    margin-top: 50px;
+
 }
 
 
@@ -1150,7 +1163,7 @@ select:-webkit-autofill {
 
 
 .dropdown-menu {
-    
+
     z-index: 1000;
 }
 
@@ -1166,37 +1179,68 @@ select:-webkit-autofill {
     margin-right: 20px;
 }
 
-.calc_info {
-    font-size: 20px !important;
+
+
+
+
+.nomargin {
+    height: 52px;
+    line-height: 52px;
+    margin: 0;
+    padding: 0;
 }
 
-.calc_disclaimer {
-    padding-top: 30px;
-    font-size: 17px !important;
-    font-style: italic;
-    padding-bottom: 10px;
+ul {
+    text-transform: none;
+    font-size: 16px;
+    margin-top:30px;
+
 }
 
-.calc_disclaimer_info {
-    padding-bottom: 10px;
-    font-size: 17px !important;
-    font-style: italic;
-    color: #333;
-    font-weight: 300;
-    font-family: 'Raleway', sans-serif !important;
+ul.key {
+    list-style-type: circle;
+    line-height: 30px;
+}
+
+.paragraf {
+
     text-align: center;
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+
 }
 
-.button_width {
-    width: 200px;
+.paragraf2 {
+
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+
 }
 
-.sky-form .checkbox input + i:after {
-    padding-top: 5px;
-    width: 20px !important;
+.naslov_opis {
+
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
 }
 
-.sky-form .checkbox input + i {
-    width: 20px !important;
-    height: 20px !important;
+.pricing-footer a {
+
+}
+
+.pricing-footer a:hover {
+    text-decoration: none;
+    background: #f39c12;
+    border: 1px solid #f39c12;
+    color: #fff
 }
