@@ -38,6 +38,8 @@ gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'cookies_eu'
 gem 'puma'
+gem "bugsnag"
+gem 'google-analytics-rails', '1.1.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

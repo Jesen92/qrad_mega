@@ -13,6 +13,11 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  Bugsnag.configure do |config|
+    config.api_key = ENV['BUGSNAG_KEY']
+  end
+
+  GA.tracker = ENV['GOOGLE_ANALYTICS']
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
