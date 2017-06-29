@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic');
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -31,6 +29,8 @@
  *= require cookies_eu
  *= require price
  */
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic');
 
 
 
