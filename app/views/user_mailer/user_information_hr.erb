@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   <div class="container" style="margin-top: 30px">
 
@@ -16,17 +16,20 @@
 <body>
 <div class="container" style="margin-top: 5px; margin-bottom: 35px">
   <div class="page-header">
-    <h1>Korisnik info - <span style="color: #A9CC2D; ">Veeam Cloud Connect</span></h1>
+    <h1>Korisnik info - <span style="color: #A9CC2D; ">Mobile Device Management </span></h1>
   </div>
-  <div class="container" style="margin-top: 30px">
-    <div class="row" >
-      <div class="col-md-4">
-        <%= image_tag "logomail.png", width:"400px",style: "padding-top: 18px;" %>
+  <div id="header" class=" mb-4">
+    <div class="row">
+      <div class="col-md-6 mt-2">
+        <%= image_tag('MPR.png', style: "width: auto; height: 75px;") %>
+      </div>
+      <div class="col-md-6 mt-2">
+        <h1>MAAS360</h1>
       </div>
     </div>
   </div>
 
-  <h3>Informacije o korisniku koji se registrirao na stranicu </h3><h2><%= link_to "cc.megatrend.com" , "http://cc.megatrend.com/hr" %></h2>
+  <h3>Informacije o korisniku koji se registrirao na stranicu </h3><h2><%= link_to "mdm.megatrend.com" , "http://mdm.megatrend.com/hr" %></h2>
   <br>
   <h3>Informacije o korisniku su: </h3><br>
   <div class="container" >
@@ -98,10 +101,10 @@
   </div>
 
   <hr>
-  <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Veeam Cloud Connect</span> - postanite <span style="color: #A9CC2D; ">„Always On”</span> tvrtka!</h4>
   <br/>
   <div class="row">
     <div class="col-md-8 col-md-2">
+      <span><strong style="font-size: 1.35em;">MDM - </strong><span style="color: #b2d043; font-size: 1.25em;"> MaaS360</span></span>
       <small>Ako ste ovu poruku primili greškom ili vam nije namijenjena, ne koristite ju, ne kopirajte, ne distribuirajte, ne otvarajte privitke, odmah ju obrišite sa svog računalnog sustava i obavijestite pošiljatelja da ste to napravili. Hvala!</small>
     </div>
   </div>

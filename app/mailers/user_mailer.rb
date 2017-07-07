@@ -23,13 +23,6 @@ class UserMailer < ApplicationMailer
   end
 
   def no_veeam_user(user,locale)
-    @user = user
-
-    if locale == "hr"
-      mail(to: 'mdm@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
-    else
-      mail(to: 'mdm@megatrend.com', subject: "Korisnik bez Veeam licence", template_path: 'user_mailer', template_name: 'no_veeam_licence')
-    end
   end
 
   def reset_password(user, generated_password, locale)
