@@ -14,3 +14,4 @@ Rails.application.config.assets.version = '1.0'
  Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg)
  Rails.application.config.assets.precompile += ['responsive.scss']
  Rails.application.config.assets.precompile += ['bootstrap.min.scss']
+ Rails.application.config.assets.precompile += ['Uvjeti_upotrebe_usluge_MaaS360_uskladjeno _s_odvjetnikom_clean.docx']

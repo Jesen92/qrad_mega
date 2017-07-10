@@ -61,3 +61,12 @@
     padding-left: 10px!important;
     font-size: 135%;
 }
+
+.spec_margin {
+    top: -200px;
+}
+
+@media screen and (max-width: 990px) {
+    .spec_margin {
+        top: 0px;
+    } }

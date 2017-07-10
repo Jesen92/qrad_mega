@@ -112,7 +112,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-2 col-sm-offset-2 col-md-10 col-sm-10">
+      <div class="col-md-offset-8 col-sm-offset-8 col-md-4 col-sm-4">
         <div class="home_text">
           <!-- TITLE AND DESC -->
           <p>* IBM MaaS360 proizvod</p>
@@ -319,9 +319,7 @@
                   <li><span style="font-size: 12px;">*iOS/Android/ Windows/macOS</span></li>
                 </ul>
               </div>
-              <footer class="pricing-footer">
-                <a class="select_price" href="https://m2.maas360.com/emc/?" target="_blank">BESPLATNA PROBA</a>
-              </footer>
+
             </li>
 
           </ul>
@@ -348,9 +346,6 @@
 
                 </ul>
               </div>
-              <footer class="pricing-footer">
-                <a class="select_price" href="https://m2.maas360.com/emc/?" target="_blank">BESPLATNA PROBA</a>
-              </footer>
             </li>
 
           </ul>
@@ -376,9 +371,6 @@
                   <li> Gateway for Apps</li>
                 </ul>
               </div>
-              <footer class="pricing-footer">
-                <a class="select_price" href="https://m2.maas360.com/emc/?" target="_blank">BESPLATNA PROBA</a>
-              </footer>
             </li>
 
           </ul>
@@ -405,14 +397,16 @@
                   <li></li>
                 </ul>
               </div>
-              <footer class="pricing-footer">
-                <a class="select_price" href="https://m2.maas360.com/emc/?" target="_blank">BESPLATNA PROBA</a>
-              </footer>
             </li>
 
           </ul>
         </li>
       </ul>
+
+      <footer class="pricing-footer">
+        <a class="select_price" href="https://m2.maas360.com/tryMDM/SK_MEGATREN02_MDM_C" target="_blank">BESPLATNA PROBA</a>
+      </footer>
+
       <p>* Više informacija o funkcionalnostima pronađite na sljedećem linku <br> &nbsp;&nbsp;
         <a href="https://www.ibm.com/in-en/marketplace/mobile-device-management" target="_blank">www.ibm.com/in-en/marketplace/mobile-device-management</a></p>
     </div>
@@ -637,7 +631,7 @@
           </div>
 
         </div>
-        <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+        <div class="col-md-4 right_no_padding wow fadeInLeft spec_margin" data-wow-duration="1s">
           <!-- FEATURE -->
 
           <!--   <div class="price">
@@ -676,7 +670,7 @@
             <!-- FEATURES SECTION TITLE -->
             <div class="section_title wow fadeIn" data-wow-duration="1s" style="padding-top: 50px;">
               <h2>Registrirajte se i zatražite ponudu</h2>
-              <p>Za izradu ponude i slanje zahtjeva za besplatnim testiranjem usluge, molimo da se prijavite/registrirate.</p>
+              <p>Za izradu ponude molimo da se registrirate, odnosno ako ste registrirani prijavite se.</p>
             </div>
 
             <div class="centered margin-btm">
@@ -694,7 +688,13 @@
     <!-- END SIGNIN SIGNUP SECTION -->
 <% end %>
 <!-- END KALKULATOR SECTION -->
-
+<section class="features page" style="padding-bottom: 15px;">
+  <div class="container">
+    <div class="pull-right">
+      <%= link_to '* Preuzmite opće uvjete pružanja usluge MDM', general_conditions_download_services_path %>
+    </div>
+  </div>
+</section>
 <!-- =========================
  START CONTCT FORM AREA
 ============================== -->
@@ -736,7 +736,7 @@
 
             <div class="col-md-8">
               <%= f.input :body ,required: true, label: false, input_html: { id: "message", rows: "25", cols: "10", class: "form-control"}, placeholder: t(".contact_us_body"), :as => :text %>
-              <%= f.button :submit, t(".contact_us_send"), class: "btn btn-default submit-btn" %>
+              <%= f.button :submit, t(".contact_us_send"), class: "btn btn-default submit-btn", id: 'submit_contact_button' %>
             </div>
           </div>
           <div class="row">
@@ -744,7 +744,7 @@
               <% unless flash[:recaptcha_error].nil? %>
                 <div class="alert alert-danger" role="alert"><%= flash[:recaptcha_error] %></div>
               <% end %>
-              <%= recaptcha_tags %>
+              <%= recaptcha_tags callback: 'enableBtn' %>
             </div>
           </div>
         <% end %>
@@ -846,6 +846,12 @@
             </div>
 
 <script>
+    document.getElementById("submit_contact_button").disabled = true;
+
+    function enableBtn(){
+        document.getElementById("submit_contact_button").disabled = false;
+    }
+
   //KALKULATOR SELECT VALUE
   var License=0;
   var Service=0;

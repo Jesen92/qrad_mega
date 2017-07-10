@@ -84,6 +84,14 @@ class ServicesController < ApplicationController
     redirect_to root_path
   end
 
+  def general_conditions_download
+    send_file(
+        "#{Rails.root}/public/assets/Uvjeti_upotrebe_usluge_MaaS360_uskladjeno _s_odvjetnikom_clean.docx",
+        filename: "Uvjeti upotrebe usluge MaaS360.docx",
+        type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    )
+  end
+
   private
 
     def check_service_captcha(recaptcha_param)
