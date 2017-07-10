@@ -481,7 +481,7 @@
     ============================== -->
     <% if current_user %>
     <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
-    <div class="container" style="padding-bottom: 100px;">
+    <div class="container">
       <div class="row margin">
         <% if calc_alert %>
             <div class="container" style="padding-top: 10px;">
@@ -559,7 +559,7 @@
               <h3>1x</h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
               <h3>=</h3> <div style="display: inline-block; margin: 0 5px;">
               <div  class="input-group spinner" data-trigger="spinner" id="spinner">
-                <%= f.input :one_mobile, label: false, wrapper: false,id: 'extraVm',input_html: {value: '0', class: 'form-control text-center'}, data: { rule: 'quantity'} %>
+                <%= f.input :one_mobile, label: false, wrapper: false,id: 'extraVm',input_html: {value: '0', class: 'form-control text-center', onchange: 'setSingle()'}, data: { rule: 'quantity'} %>
 
                 <div class="input-group-addon">
                   <a  onclick="extraVmPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
@@ -591,7 +591,7 @@
                 <h3> &gt;1 </h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
                 <h3>=</h3>  <div style="display: inline-block; margin: 0 5px;">
                 <div class="input-group spinner" data-trigger="spinner" id="spinner2">
-                  <%= f.input :multiple_mobile, label: false, wrapper: false,id: 'extraRam',input_html: {value: '0', class: 'form-control text-center'}, data: { rule: 'quantity'} %>
+                  <%= f.input :multiple_mobile, label: false, wrapper: false,id: 'extraRam',input_html: {value: '0', class: 'form-control text-center', onchange: 'setMultiple()'}, data: { rule: 'quantity'} %>
                   <div class="input-group-addon">
                     <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
                     <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
@@ -619,7 +619,7 @@
 
                 <div style="display: inline-block; margin-left: 20px; ">
                   <div class="dropdown">
-                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: 'izaberi paket', input_html: {style: 'width: 150px; height: 45px;'}%>
+                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: 'izaberi paket', input_html: {style: 'width: 150px; height: 45px;', onchange: 'setPaket()'}, id: 'choosePaket' %>
                   </div>
 
                 </div>
@@ -631,33 +631,40 @@
           </div>
 
         </div>
-        <div class="col-md-4 right_no_padding wow fadeInLeft spec_margin" data-wow-duration="1s">
+        <div class="spec_margin col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
           <!-- FEATURE -->
 
-          <!--   <div class="price">
+          <div class="price">
 
-                 <h3>Odabrali ste <span> :</span></h3>
-                 <h2> <span id="cijena">0</span>,00 &euro;</h2>
-                 <p> <span id="vm">0</span> VM i <span id="space">0</span> GB
+            <!-- FEATURE HEADING AND DESCRIPTION -->
+            <h3>PRIKAZ IZRAČUNA </h3>
+            <!--<h2> <span id="cijena">0</span>,00 &euro;</h2>-->
+            <p class="calc_info"> U izračun je uključeno:
+              <br>
+              <br>
+              <b><span style="font-size: 18px;" id="single">0 </span> </b>korisnika sa jednim uređajem
 
-                 </p>
-
-
-             </div>-->
+              <br>
+              <b><span style="font-size: 18px;" id="multiple">0</span> </b> korisnika sa više uređaja  <br>
+              <b><span style="font-size: 18px;" id="paket">-------</span></b>  paket <br></p>
+            <!-- <p class="calc_disclaimer">
+               Izračun vrijedi za korisnike koji koriste komercijalnu <b>Veeam “Backup & Replication”</b> licencu.
+             </p>-->
+            <!--<p class="calc_disclaimer">
+              Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa.
+            </p>-->
+          </div>
 
           <!-- END SINGLE FEATURE -->
-          <div class="centered2">
-            <div class="centered">
-            <%= f.button :submit, 'Pošalji upit' ,class:'btn home-btn wow fadeInLeft', style: 'padding-left: 31px;' %>
-            </div>
-            <!--<a class="btn home-btn wow fadeInLeft" href="">Pošalji upit</a> -->
+          <div class="centered">
+            <%= f.button :submit, 'POŠALJI UPIT' ,class:'btn home-btn wow fadeInLeft', style: 'padding-left: 31px;' %>
           </div>
         </div>
+
       </div>
     </div>
             <% end %>
     <% end %>
-
   </section>
 <!-- =========================
  KRAJ KALKULATORA
@@ -689,12 +696,13 @@
 <% end %>
 <!-- END KALKULATOR SECTION -->
 <section class="features page" style="padding-bottom: 15px;">
-  <div class="container">
+  <div class="container" style="height: 50px;">
     <div class="pull-right">
       <%= link_to '* Preuzmite opće uvjete pružanja usluge MDM', general_conditions_download_services_path %>
     </div>
   </div>
 </section>
+
 <!-- =========================
  START CONTCT FORM AREA
 ============================== -->
@@ -852,6 +860,37 @@
         document.getElementById("submit_contact_button").disabled = false;
     }
 
+    function setMultiplePlus(){
+        var mult = document.getElementById("users_service_multiple_mobile").value;
+        document.getElementById("multiple").innerHTML = parseInt(mult)+1;
+    }
+
+    function setMultipleMinus(){
+        var mult = document.getElementById("users_service_multiple_mobile").value;
+        if(parseInt(mult)-1 >= 0) document.getElementById("multiple").innerHTML = parseInt(mult)-1;
+    }
+
+    function setSinglePlus(){
+        var sing = document.getElementById("users_service_one_mobile").value;
+        document.getElementById("single").innerHTML = parseInt(sing)+1;
+    }
+
+    function setSingleMinus(){
+        var sing = document.getElementById("users_service_one_mobile").value;
+        if(parseInt(sing)-1 >= 0) document.getElementById("single").innerHTML = parseInt(sing)-1;
+    }
+
+    function setPaket(){
+        var paket = document.getElementById("users_service_package").value;
+
+        if(paket) {
+            document.getElementById("paket").innerHTML = paket;
+        }
+        else {
+            document.getElementById("paket").innerHTML = "-------";
+        }
+    }
+
   //KALKULATOR SELECT VALUE
   var License=0;
   var Service=0;
@@ -864,8 +903,6 @@
   var AddVm=0;
   var TempText = "";
 
-
-
   $(".dropdown-menu li a").click(function(){
     var selText = $(this).text();
     TempText = selText
@@ -876,6 +913,7 @@
     License = $(this).attr("value");
     calculate();
     setVeaamUser();
+      alert("tu");
   });
 
   $("#service li a").click(function(){
@@ -884,12 +922,14 @@
     Vm=parseInt($(this).attr("vm"));
     calculate();
     setVeeamService();
+      alert("tu");
   });
 
   $("#platform li a").click(function(){
     Platform = $(this).attr("value");
     calculate();
     setVeeamServer();
+      alert("tu");
   });
 
   $("#extraVm").click(function(){
@@ -902,9 +942,11 @@
     alert("spinner");
     ExtraGb = $(this).attr("value");
     calculate();
+
   });
 
   function extraVmPlus() {
+      setSinglePlus();
     var result = 0;
     if (document.getElementById("extraVm").disabled == false) {
 
@@ -944,6 +986,7 @@
   }
 
   function extraVmMinus(){
+      setSingleMinus();
     var result =0;
     if (document.getElementById("extraVm").disabled == false) {
       if(parseInt(document.getElementById("extraVm").value) > 0){
@@ -961,6 +1004,7 @@
   }
 
   function extraRamPlus(){
+      setMultiplePlus();
     var result = 0;
     if(document.getElementById("extraRam").disabled == false) {
       if(parseInt(document.getElementById("extraRam").value) < 300 ){
@@ -973,7 +1017,8 @@
       ExtraGb = result * 10;
       AddSpace =result * 100;
       calculate();
-      setExtraStorage()
+      setExtraStorage();
+      setMultiple();
     }
   }
 
@@ -992,6 +1037,7 @@
       AddVm =result;
       //calculate();
       //setExtraVm()
+        setMultiple();
     }
   }
 
@@ -1010,14 +1056,17 @@
       AddSpace =result * 100;
       //calculateNoUser();
       //setExtraStorage()
+        setMultiple();
     }
   }
 
   function extraRamMinus(){
     var result =0;
+      setMultipleMinus();
     if(document.getElementById("extraRam").disabled == false){
       if(parseInt(document.getElementById("extraRam").value) > 0){
         result = parseInt(document.getElementById("extraRam").value) - 1;
+          setMultiple();
       }
       else{
         result=0;
@@ -1026,7 +1075,8 @@
       ExtraGb = result * 10;
       AddSpace =result * 100;
       calculate();
-      setExtraStorage()
+      setExtraStorage();
+
     }
   }
 
@@ -1057,7 +1107,7 @@
     var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);
     if (document.getElementById("cijena") != null) document.getElementById("cijena").innerHTML = result;
     document.getElementById("vm").innerHTML = Vm + AddVm;
-    document.getElementById("space").innerHTML = Space + AddSpace;
+    document.getElementById("space").innerHTML = Space + AddSpace
   }
 
   function calculateNoUser(){
@@ -1090,6 +1140,7 @@
   function setExtraStorage(){
     if (document.getElementById("veeamStorageExtra") != null) document.getElementById("veeamStorageExtra").value = AddSpace;
     document.getElementById("temp_veeamStorageExtra").value = AddSpace;
+    alert("tu");
   }
 
   $(document).ready(function() {
