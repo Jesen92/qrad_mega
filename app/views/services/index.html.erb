@@ -47,10 +47,10 @@
             <!-- NAV -->
               <!-- NAV -->
               <li><a href="#HOME">HOME</a> </li>
-              <li><a href="#ABOUT">O USLUZI </a> </li>
-              <li><a href="#PACKAGE">PAKETI U PONUDI</a></li>
-              <li><a href="#PRICES">PROBA/CIJENE</a> </li>
-              <li><a href="#CONTACT">KONTAKT </a> </li>
+              <li><a href="#ABOUT"><%= t(".about") %></a> </li>
+              <li><a href="#PACKAGE"><%= t(".packages") %></a></li>
+              <li><a href="#PRICES"><%= t(".trial_price") %></a> </li>
+              <li><a href="#CONTACT"><%= t(".contact") %></a> </li>
             <% if user_signed_in? %>
             <li><%= link_to t(".sign_out"), destroy_user_session_path %></li>
             <% else %>
@@ -58,11 +58,9 @@
             <% end %>
             <!-- ukljuci kada dode ENG prijevod -->
             <% if I18n.locale == :hr %>
-            <!--
             <li><%= link_to "EN ", locale: "en" %></li>
             <% else %>
             <li><%= link_to "HR ", locale: "hr" %></li>
-            -->
             <% end %>
           </ul>
         </div>
@@ -94,8 +92,8 @@
         <div class="col-md-8 col-sm-8">
           <div class="home_text">
             <!-- TITLE AND DESC -->
-            <h1>Mobile device managment usluga</h1>
-            <p>Osigurajte svoje mobilne uređaje, aplikacije i sadržaj pomoću sveobuhvatnog rješenja za upravljanje mobilnim uređajima</p>
+            <h1><%= t(".home.title") %></h1>
+            <p><%= t(".home.text") %></p>
 
             <div class="download-btn">
               <!-- BUTTON -->
@@ -115,7 +113,7 @@
       <div class="col-md-offset-8 col-sm-offset-8 col-md-4 col-sm-4">
         <div class="home_text">
           <!-- TITLE AND DESC -->
-          <p>* IBM MaaS360 proizvod</p>
+          <p>* <%= t(".home.footer") %></p>
 
         </div>
       </div>
@@ -140,8 +138,8 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- ABOUT US SECTION TITLE-->
         <div class="section_title">
-          <h2>O usluzi</h2>
-          <p>Mobile Device Management je pouzdano rješenje za upravljanje mobilnim uređajima vašeg poduzeća koje čini rad u mobilnom svijetu jednostavnijim i sigurnijim. Koristite snažan alat za upravljanje mobilnim uređajima sa sveobuhvatnom, integriranom zaštitom kako biste omogućili pristup i korištenje aplikacija, sadržaja, e-pošte i uređaja, bez ugrožavanja korisničkog doživljaja, sigurnosti podataka ili privatnosti.
+          <h2><%= t(".about_section.title") %></h2>
+          <p><%= t(".about_section.texts.about_main") %>
           </p>
         </div>
       </div>
@@ -155,8 +153,8 @@
         <div class="section_title_feature">
           <div class="icon_image_centering"><%= image_tag('iconsIBM/benefits--svg.svg', alt: "MaaS360", style: 'width: 70px;' ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis" > Jednostavno i lako upravljanje vašim mobilnim uređajima</h2>
-          <p class="paragraf" >Svi vaši uređaji su vidljivi na jednom mjestu i njima možete daljinski upravljati</p>
+          <h2 class="naslov_opis" > <%= t(".about_section.first") %></h2>
+          <p class="paragraf" ><%= t(".about_section.texts.first") %></p>
 
         </div>
       </div>
@@ -164,8 +162,8 @@
         <div class="section_title_feature">
           <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (1).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> Brza implementacija aplikacija</h2>
-          <p class="paragraf">Jednostavna distribucija aplikacija pomoći interaktivnog kataloga aplikacija</p>
+          <h2 class="naslov_opis"> <%= t(".about_section.second") %></h2>
+          <p class="paragraf"><%= t(".about_section.texts.second") %></p>
 
         </div>
       </div>
@@ -173,8 +171,8 @@
         <div class="section_title_feature">
           <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (2).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> Dostupnost dokumenta i sadržaja</h2>
-          <p class="paragraf">„Mobilizacija“ dokumenata i sadržaja kako bi ste ostali produktivni s bilo kojeg mjesta i u bilo koje vrijeme, a u sigurnom okruženju</p>
+          <h2 class="naslov_opis"> <%= t(".about_section.third") %></h2>
+          <p class="paragraf"><%= t(".about_section.texts.third") %></p>
 
         </div>
       </div>
@@ -185,8 +183,8 @@
         <div class="section_title_feature">
           <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (3).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> Sigurnost  dokumenta i sadržaja</h2>
-          <p class="paragraf">Omogućuje korisnicima pristup informacijama bez rizika od curenja podataka </p>
+          <h2 class="naslov_opis"> <%= t(".about_section.fourth") %></h2>
+          <p class="paragraf"><%= t(".about_section.texts.fourth") %></p>
 
         </div>
       </div>
@@ -194,8 +192,8 @@
         <div class="section_title_feature">
           <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (4).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> Pristup poslovnim sustavima</h2>
-          <p class="paragraf">Integracija s poslovnim sustavima uz mogućnost korištenja postojeće infrastrukture i spremišta podataka</p>
+          <h2 class="naslov_opis"> <%= t(".about_section.fifth") %></h2>
+          <p class="paragraf"><%= t(".about_section.texts.fifth") %></p>
 
         </div>
       </div>
@@ -206,7 +204,7 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- ABOUT US SECTION TITLE-->
         <div class="section_title" style="padding-top:50px; padding-bottom: 10px;">
-          <h2>Glavne značajke</h2>
+          <h2><%= t(".about_section.key_features.title") %></h2>
           <p>
           </p>
         </div>
@@ -216,11 +214,11 @@
       <div class="col-md-6 col-sm-6">
         <div class="section_title_feature" style="padding-top:0; padding-bottom:20px;">
           <!-- TITLE AND DESC -->
-          <ul class="paragraf2 key"> <li>BYOD/korištenje privatnih mobilnih uređaja za pristup poslovnim podacima </li> <li>
-            Korporativni sadržaj dostupan na mobilnim uređajima</li> <li>
-            Siguran pristup korporativnim sadržajima</li> <li>
+          <ul class="paragraf2 key"> <li><%= t(".about_section.key_features.first") %></li> <li>
+            <%= t(".about_section.key_features.third") %></li> <li>
+            <%= t(".about_section.key_features.fifth") %></li> <li>
 
-            Zaštita i detekcija  uređaja od „malware“, „jailbreak“ i „root“ </li>
+            <%= t(".about_section.key_features.seventh") %></li>
           </ul>
 
         </div>
@@ -229,10 +227,10 @@
       <div class="col-md-6 col-sm-6">
         <div class="section_title_feature" style="padding-top:0; padding-bottom:20px; ">
           <!-- TITLE AND DESC -->
-          <ul class="paragraf2 key"> <li>Trenutan uvid u status uređaja i mogućnost promptnog oduzimanja aktivnosti </li> <li>
-            Upravljanje uređajima „out-of-the-box“
-          </li> <li>Upravljanje svim tipovima PC i Mac uređaja</li> <li>
-            Korištenje pouzdane MDM platforme </li>
+          <ul class="paragraf2 key"> <li><%= t(".about_section.key_features.second") %></li> <li>
+            <%= t(".about_section.key_features.fourth") %>
+          </li> <li><%= t(".about_section.key_features.sixth") %></li> <li>
+            <%= t(".about_section.key_features.eight") %> </li>
           </ul>
 
         </div>
@@ -256,7 +254,7 @@
         <p class="nomargin"><%= t(".section_break_user") %></p>
       </div>
       <div class="col-md-3">
-        <a href="#CALC" class="btn btn-primary btn-action"><%= t(".trial") %></a>
+        <a href="#PRICES" class="btn btn-primary btn-action"><%= t(".trial") %></a>
       </div>
       <% else %>
       <div class="col-md-9">
@@ -285,7 +283,7 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- FEATURES SECTION TITLE -->
         <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2>PAKETI U PONUDI </h2>
+          <h2><%= t(".package.title") %> </h2>
         </div>
         <!-- END FEATURES SECTION TITLE -->
       </div>
@@ -304,7 +302,7 @@
               <header class="pricing-header">
                 <h2>Essentials</h2>
                 <div class="opis">
-                  <p>Upravljanje i osiguravanje korisnika, pametnih telefona, tableta, prijenosna računala i aplikacija</p>
+                  <p><%= t(".package.essentials.first") %></p>
                 </div>
               </header>
               <div class="pricing-body">
@@ -330,12 +328,12 @@
               <header class="pricing-header">
                 <h2>Deluxe</h2>
                 <div class="opis">
-                  <p>Razdvajanje privatnih i poslovnih  podataka (containerization)</p>
+                  <p><%= t(".package.deluxe.first") %></p>
                 </div>
               </header>
               <div class="pricing-body">
                 <ul class="pricing-features">
-                  <li>uključuje sve funkcionalnosti Essential paketa</li>
+                  <li><%= t(".package.deluxe.second") %></li>
                   <li>Secure Mobile Mail</li>
                   <li>Secure Mobile Chat</li>
                   <li> </li>
@@ -356,12 +354,12 @@
               <header class="pricing-header">
                 <h2>Premier</h2>
                 <div class="opis">
-                  <p>Upravljanje sadržajem, sigurni pretraživaći, sigurnost aplikacija i zaštičeni pristup mreži</p>
+                  <p><%= t(".package.premier.first") %></p>
                 </div>
               </header>
               <div class="pricing-body">
                 <ul class="pricing-features">
-                  <li>uključuje sve funkcionalnosti Deluxe paketa</li>
+                  <li><%= t(".package.premier.second") %></li>
                   <li>OS VPN</li>
                   <li>Secure Browser</li>
                   <li> Gateway for Browser</li>
@@ -382,12 +380,12 @@
               <header class="pricing-header">
                 <h2>Enterprise</h2>
                 <div class="opis">
-                  <p>Transformacija poslovanja kompanije unutar sigurnih okvira uz pomoć paketa za zaštitu poduzeća i produktivnost</p>
+                  <p><%= t(".package.enterprise.first") %></p>
                 </div>
               </header>
               <div class="pricing-body">
                 <ul class="pricing-features">
-                  <li>uključuje sve funkcionalnosti Premier  paketa</li>
+                  <li><%= t(".package.enterprise.second") %></li>
                   <li>Mobile Document Editor</li>
                   <li>Mobile Document Sync</li>
                   <li>Mobile Threat Management</li>
@@ -404,10 +402,10 @@
       </ul>
 
       <footer class="pricing-footer">
-        <a class="select_price" href="https://m2.maas360.com/tryMDM/SK_MEGATREN02_MDM_C" target="_blank">BESPLATNA PROBA</a>
+        <a class="select_price" href="https://m2.maas360.com/tryMDM/SK_MEGATREN02_MDM_C" target="_blank"><%= t(".free_trial") %></a>
       </footer>
 
-      <p>* Više informacija o funkcionalnostima pronađite na sljedećem linku <br> &nbsp;&nbsp;
+      <p><%= t(".package.footer") %> <br> &nbsp;&nbsp;
         <a href="https://www.ibm.com/in-en/marketplace/mobile-device-management" target="_blank">www.ibm.com/in-en/marketplace/mobile-device-management</a></p>
     </div>
 
@@ -430,11 +428,11 @@
             <p class="nomargin"><%= t(".section_break_user") %></p>
           </div>
           <div class="col-md-3">
-            <a href="#CALC" class="btn btn-primary btn-action"><%= t(".trial") %></a>
+            <a href="#PRICES" class="btn btn-primary btn-action"><%= t(".trial") %></a>
           </div>
       <% else %>
           <div class="col-md-9">
-            <p class="nomargin"><%= t(".section_break") %>></p>
+            <p class="nomargin"><%= t(".section_break") %></p>
           </div>
           <div class="col-md-3">
             <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
@@ -459,15 +457,15 @@
         <div class="col-md-10 col-md-offset-1">
           <!-- FEATURES SECTION TITLE -->
           <div class="section_title wow fadeIn" data-wow-duration="1s">
-            <h2>Kalkulator </h2>
-            <p>Usluga je namijenjena velikim, srednjim i malim poduzećima. <br>Za veće tvrtke, cijena ovisi o broju uređaja na kojima je usluga akivirana. <br> <br>
-              Moguća je i realizacija kombinacije MDM funkcionalnosti izvan okvira ponuđenih paketa. Cijena tako pilagođenog rješenja dostupna je na projektnoj osnovi na zahtjev!
+            <h2><%= t(".calculator.title") %> </h2>
+            <p><%= t(".calculator.texts.first") %> <br><%= t(".calculator.texts.second") %> <br> <br>
+              <%= t(".calculator.texts.third") %>
             </p>
 
           </div>
           <div class="centered">
 
-            <a class="btn btn-primary btn-action" href="#PACKAGE" role="button">Besplatna proba</a>
+            <a class="btn btn-primary btn-action" href="#PACKAGE" role="button"><%= t(".free_trial") %></a>
 
 
           </div>
@@ -569,7 +567,7 @@
             </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
 
 
-              <div style="margin-top: -10px; font-size: 14px;">* broj korisnika sa jednim uređajem po korisniku</div>
+              <div style="margin-top: -10px; font-size: 14px;"><%= t(".calculator.registered.first") %></div>
             </div>
 
             <!-- END SINGLE FEATURE -->
@@ -601,7 +599,7 @@
 
 
               </div>
-              <div style="margin-top: -10px; font-size: 14px;">* broj korisnika sa više od jednog uređaja po korisniku</div>
+              <div style="margin-top: -10px; font-size: 14px;"><%= t(".calculator.registered.second") %></div>
 
             </div>
 
@@ -615,11 +613,11 @@
             <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
 
               <div class="kalkulator ">
-                <h3 style="font-size: 26px;">Odaberite paket:</h3>
+                <h3 style="font-size: 26px;"><%= t(".calculator.registered.third") %>:</h3>
 
                 <div style="display: inline-block; margin-left: 20px; ">
                   <div class="dropdown">
-                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: 'izaberi paket', input_html: {style: 'width: 150px; height: 45px;', onchange: 'setPaket()'}, id: 'choosePaket' %>
+                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: t(".calculator.registered.third"), input_html: {style: 'width: 150px; height: 45px;', onchange: 'setPaket()'}, id: 'choosePaket' %>
                   </div>
 
                 </div>
@@ -637,16 +635,16 @@
           <div class="price">
 
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3>PRIKAZ IZRAČUNA </h3>
+            <h3><%= t(".calculator.result.text") %> </h3>
             <!--<h2> <span id="cijena">0</span>,00 &euro;</h2>-->
-            <p class="calc_info"> U izračun je uključeno:
+            <p class="calc_info"> <%= t(".calculator.result.text_includes") %>
               <br>
               <br>
-              <b><span style="font-size: 18px;" id="single">0 </span> </b>korisnika sa jednim uređajem
+              <b><span style="font-size: 18px;" id="single">0 </span> </b><%= t(".calculator.result.first") %>
 
               <br>
-              <b><span style="font-size: 18px;" id="multiple">0</span> </b> korisnika sa više uređaja  <br>
-              <b><span style="font-size: 18px;" id="paket">-------</span></b>  paket <br></p>
+              <b><span style="font-size: 18px;" id="multiple">0</span> </b> <%= t(".calculator.result.second") %>  <br>
+              <b><span style="font-size: 18px;" id="paket">-------</span></b>  <%= t(".calculator.result.third") %> <br></p>
             <!-- <p class="calc_disclaimer">
                Izračun vrijedi za korisnike koji koriste komercijalnu <b>Veeam “Backup & Replication”</b> licencu.
              </p>-->
@@ -657,7 +655,7 @@
 
           <!-- END SINGLE FEATURE -->
           <div class="centered">
-            <%= f.button :submit, 'POŠALJI UPIT' ,class:'btn home-btn wow fadeInLeft', style: 'padding-left: 31px;' %>
+            <%= f.button :submit, t(".calculator.result.send") ,class:'btn home-btn wow fadeInLeft' %>
           </div>
         </div>
 
@@ -676,8 +674,8 @@
           <div class="col-md-10 col-md-offset-1">
             <!-- FEATURES SECTION TITLE -->
             <div class="section_title wow fadeIn" data-wow-duration="1s" style="padding-top: 50px;">
-              <h2>Registrirajte se i zatražite ponudu</h2>
-              <p>Za izradu ponude molimo da se registrirate, odnosno ako ste registrirani prijavite se.</p>
+              <h2><%= t(".calculator.unregistered.title") %></h2>
+              <p><%= t(".calculator.unregistered.text") %></p>
             </div>
 
             <div class="centered margin-btm">
@@ -698,7 +696,7 @@
 <section class="features page" style="padding-bottom: 15px;">
   <div class="container" style="height: 50px;">
     <div class="pull-right">
-      <%= link_to '* Preuzmite opće uvjete pružanja usluge MDM', general_conditions_download_services_path %>
+      <%= link_to t(".calculator.download_terms"), general_conditions_download_services_path %>
     </div>
   </div>
 </section>
@@ -713,8 +711,8 @@
         <!-- Start Contact Section Title-->
         <div class="section_title">
           <h2><%= t(".get_in_touch") %></h2>
-          <p>Imate dodatnih pitanja?</br>
-          Kontaktirajte nas i zatražite dodatne informacije.</p>
+          <p><%= t(".contact_text_first") %></br>
+          <%= t(".contact_text_second") %></p>
         </div>
       </div>
     </div>

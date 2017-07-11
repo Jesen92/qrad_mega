@@ -48,7 +48,8 @@
       <tr>
         <th>Naziv paketa</th>
         <th>1 mobitel = 1 korisnik</th>
-        <th>>1 mobitel = 1 korisnik </th>
+        <th>1 mobitel = 1 korisnik
+        <th></th>
       </tr>
       </thead>
       <tbody>
@@ -56,12 +57,17 @@
         <th scope="row"><%= @package_name.blank? ? '-' : @package_name %></th>
         <td align="center"><%= @one_mobile == '0'? '-' : @one_mobile %></td>
         <td align="center"><%= @multiple_mobile == '0' ? '-' : @multiple_mobile %></td>
+        <td></td>
       </tr>
-
+      <tr>
+        <td></td>
+        <td align="center"><%= number_to_currency(@price_one_mobile, unit: 'EUR/mjesečno', separator: ',', format: '%n %u')%></td>
+        <td align="center"><%= number_to_currency(@price_multiple_mobile, unit: 'EUR/mjesečno', separator: ',', format: '%n %u')%></td>
+        <td align="right"><b><%= number_to_currency(@price_one_mobile+@price_multiple_mobile, unit: 'EUR/mjesečno', separator: ',', format: '%n %u') %></b></td>
+      </tr>
       </tbody>
     </table>
     <div class="row mt-3">Zahvaljujemo Vam se na Vašem upitu!</div>
-    <div class="row">U kratkom roku će Vas kontaktirati naš agent sa ponudom kreiranom isključivo prema Vašim potrebama.</div>
     <hr>
   </div>
   <div id="footer" class="row mt-3">

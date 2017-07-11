@@ -8,7 +8,7 @@ class UserMailer < ApplicationMailer
     if locale == "hr"
       mail(to: @user.email, subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'generated_password_hr')
     else
-      mail(to: @user.email, subject: "Account Details")
+      mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'generated_password')
     end
   end
 
@@ -39,10 +39,14 @@ class UserMailer < ApplicationMailer
   def send_calculated_services(user, locale, params)
     #service = Service.find_by(name: params[:service])
 
+    package_price = set_price_for_package(params[:package])
     @user= user.email
     @package_name = params[:package]
     @one_mobile = params[:one_mobile]
     @multiple_mobile = params[:multiple_mobile]
+    @price_one_mobile = @one_mobile.to_i * package_price[:one]
+    @price_multiple_mobile = @multiple_mobile.to_i * package_price[:multiple]
+    #binding.pry
     #@veeam_user = params[:veeam_user]
     #@veeam_user_price = params[:veeam_user].downcase.include?("doesn't") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
 
@@ -70,13 +74,28 @@ class UserMailer < ApplicationMailer
   end
 
   def send_free_trial_request(user, locale)
-    @email = user.email
+    #@email = user.email
 
-    if locale == "hr"
-      mail(to: @email,bcc: 'mdm@megatrend.com', subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
+    #if locale == "hr"
+    #  mail(to: @email,bcc: 'mdm@megatrend.com', subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
       #mail(to: "mdm@megatrend.com", subject:"Cloud Connect - besplatna proba", template_path: 'user_mailer', template_name: 'free_trial_hr')
-    else
-      mail(to: @email,bcc: 'mdm@megatrend.com', subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
+    #else
+    #  mail(to: @email,bcc: 'mdm@megatrend.com', subject:"Cloud Connect - free trial", template_path: 'user_mailer', template_name: 'free_trial')
+    #end
+  end
+
+  private
+
+  def set_price_for_package(package)
+    if package.include? 'Essentials'
+      {:one => 2.89, :multiple => 5.79}
+    elsif package.include? 'Deluxe'
+      {:one => 4.82, :multiple => 9.65}
+    elsif package.include? 'Premier'
+      {:one => 6.03, :multiple => 12.06}
+    elsif package.include? 'Enterprise'
+      {:one => 8.68, :multiple => 17.37}
     end
   end
+
 end
