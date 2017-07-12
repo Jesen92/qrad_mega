@@ -633,12 +633,9 @@
           <!-- FEATURE -->
 
           <div class="price">
-
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3><%= t(".calculator.result.text") %> </h3>
-            <!--<h2> <span id="cijena">0</span>,00 &euro;</h2>-->
+            <h3> <span id="cijena">0,00</span> EUR/mjesečno</h3>
             <p class="calc_info"> <%= t(".calculator.result.text_includes") %>
-              <br>
               <br>
               <b><span style="font-size: 18px;" id="single">0 </span> </b><%= t(".calculator.result.first") %>
 
@@ -852,6 +849,12 @@
             </div>
 
 <script>
+    var suite = "";
+    var single_device = 0;
+    var multiple_devices = 0;
+    var price_single = 0.00;
+    var price_multiple = 0.00;
+
     document.getElementById("submit_contact_button").disabled = true;
 
     function enableBtn(){
@@ -861,21 +864,35 @@
     function setMultiplePlus(){
         var mult = document.getElementById("users_service_multiple_mobile").value;
         document.getElementById("multiple").innerHTML = parseInt(mult)+1;
+        multiple_devices = parseInt(mult)+1;
+        calculateTotalPrice();
     }
 
     function setMultipleMinus(){
         var mult = document.getElementById("users_service_multiple_mobile").value;
-        if(parseInt(mult)-1 >= 0) document.getElementById("multiple").innerHTML = parseInt(mult)-1;
+        if(parseInt(mult)-1 >= 0){
+            multiple_devices = 0;
+            document.getElementById("multiple").innerHTML = parseInt(mult)-1;
+            multiple = parseInt(mult)-1;
+            calculateTotalPrice();
+        }
     }
 
     function setSinglePlus(){
         var sing = document.getElementById("users_service_one_mobile").value;
         document.getElementById("single").innerHTML = parseInt(sing)+1;
+        single_device = parseInt(sing)+1;
+        calculateTotalPrice();
     }
 
     function setSingleMinus(){
         var sing = document.getElementById("users_service_one_mobile").value;
-        if(parseInt(sing)-1 >= 0) document.getElementById("single").innerHTML = parseInt(sing)-1;
+        if(parseInt(sing)-1 >= 0){
+            document.getElementById("single").innerHTML = parseInt(sing)-1;
+            single_device = parseInt(sing)-1;
+            calculateTotalPrice();
+        }
+
     }
 
     function setPaket(){
@@ -883,10 +900,39 @@
 
         if(paket) {
             document.getElementById("paket").innerHTML = paket;
+            suite = paket;
         }
         else {
             document.getElementById("paket").innerHTML = "-------";
+            suite = "";
         }
+        setPriceByPackage();
+    }
+
+    function setPriceByPackage(){
+      if( suite.indexOf("Essentials") != -1){
+        price_single = 2.89;
+        price_multiple = 5.79;
+      }else if(suite.indexOf("Deluxe") != -1){
+        price_single = 4.82;
+        price_multiple = 9.65;
+      }else if(suite.indexOf("Premier") != -1){
+        price_single = 6.03;
+        price_multiple = 12.06;
+      }else if(suite.indexOf("Enterprise") != -1){
+        price_single = 8.68;
+        price_multiple = 17.37;
+      }else{
+        price_single = 0.00;
+        price_multiple = 0.00;
+      }
+      calculateTotalPrice();
+    }
+
+    function calculateTotalPrice(){
+      var total_price = 0.00;
+      total_price = (price_single.toFixed(2)*single_device)+(price_multiple.toFixed(2)*multiple_devices);
+      document.getElementById("cijena").innerHTML = total_price.toFixed(2);
     }
 
   //KALKULATOR SELECT VALUE
