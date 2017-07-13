@@ -27,15 +27,15 @@ en:
       error: "Registration failed: e-mail already exists!"
     services:
       recaptcha_error: "Captcha validation needed!"
-      spam_indicator: "Vaš e-mail je obilježen kao spam!"
+      spam_indicator: "Your e-mail has been indicated as spam!"
       contact_us: "Thank you for contacting us!"
-      calculator: "Your calculation has been sent! We will contact you with more information!!"
+      calculator: "Your calculation has been sent! We will contact you with additional information!!"
       calc_error: "All required fields must be seleceted before sending an inquiry!"
       free_trial_error: "Your request for free trial has already been sent! You can send max. one request for free trial."
       free_trial: "Your request for free trial has been submitted!"
   model:
     user:
-      reset_password: "Your password was not reset! You can reset it max. 1 per day!"
+      reset_password: "Your password was not reset! You can reset your password max. once per day!"
       new_password: "A new password has been sent to your e-mail!"
       email_doesnt_exist: "Enrolled e-mail does not exist!"
   layouts:
@@ -45,8 +45,8 @@ en:
       welcome_text: "Hi"
   services:
     index:
-      section_break: "Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku"
-      section_break_user: "Izradite najbolju konfiguraciju servisa za vašu tvrtku ili besplatno isprobajte uslugu"
+      section_break: "Register and create the best service configuration for your business"
+      section_break_user: "Create the best service configuration for your business or try the service free of charge"
       trial: "TRIAL/PRICE"
       home:
         title: "MOBILE DEVICE MANAGMENT SERVICE"
@@ -56,6 +56,7 @@ en:
       login: "LOGIN"
       calculator:
         result:
+          currency: "EUR/monthly"
           text: "CALCULATION OVERVIEW "
           text_includes: "Calculations include: "
           first: "no. of users with one device/user"
@@ -207,7 +208,7 @@ en:
     passwords:
       new:
         email: "user@example.com"
-        reset: "Enter a e-mail you want your new password to be delivered"
+        reset: "Enter a e-mail you want your new password to be delivered to"
         reset_password_button: "Reset my password"
         back: "Back"
     sessions:

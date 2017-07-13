@@ -13,7 +13,7 @@ hr:
       free_trial: "Vaš upit za besplatnom probom je poslan!"
   model:
     user:
-      reset_password: "Lozinka nije resetirana! Možete max. jednom dnevno resetirati password!"
+      reset_password: "Lozinka nije resetirana! Možete max. jednom dnevno resetirati lozinku!"
       new_password: "Poslana vam je nova lozinka"
       email_doesnt_exist: "Upisani e-mail ne postoji!"
   layouts:
@@ -34,6 +34,7 @@ hr:
       login: "PRIJAVI SE"
       calculator:
         result:
+          currency: "EUR/mjesečno"
           text: "PRIKAZ IZRAČUNA "
           text_includes: "U izračun je uključeno: "
           first: "korisnika sa jednim uređajem"

@@ -9,6 +9,10 @@ Bundler.require(*Rails.groups)
 module CloudConnect
   class Application < Rails::Application
     config.active_job.queue_adapter = :delayed_job
+
+    I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
+    I18n.available_locales = [:en, :hr]
+    I18n.default_locale = :hr
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

@@ -307,7 +307,7 @@
               </header>
               <div class="pricing-body">
                 <ul class="pricing-features">
-                  <li style="margin-bottom: 11px;">Mobile Device Management* </li>
+                  <li style="<%= "margin-bottom: 11px;" if I18n.locale == :hr %>">Mobile Device Management* </li>
                   <li>Mobile App Management*</li>
                   <li>Patch and Update Management</li>
                   <li>Identity Management</li>
@@ -634,7 +634,7 @@
 
           <div class="price">
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3> <span id="cijena">0,00</span> EUR/mjesečno</h3>
+            <h3> <span id="cijena">0,00</span> <%= t(".calculator.result.currency") %></h3>
             <p class="calc_info"> <%= t(".calculator.result.text_includes") %>
               <br>
               <b><span style="font-size: 18px;" id="single">0 </span> </b><%= t(".calculator.result.first") %>
@@ -652,7 +652,10 @@
 
           <!-- END SINGLE FEATURE -->
           <div class="centered">
-            <%= f.button :submit, t(".calculator.result.send") ,class:'btn home-btn wow fadeInLeft' %>
+            <%= f.button :submit, t(".calculator.result.send") ,class:'btn home-btn wow fadeInLeft', style: I18n.locale == :hr ? "margin-left: 8px;" : "margin-left: 5px;" %>
+          </div>
+          <div class="pull-right">
+            <%= link_to t(".calculator.download_terms"), general_conditions_download_services_path %>
           </div>
         </div>
 
@@ -660,6 +663,7 @@
     </div>
             <% end %>
     <% end %>
+
   </section>
 <!-- =========================
  KRAJ KALKULATORA
@@ -688,7 +692,7 @@
 
     </section>
     <!-- END SIGNIN SIGNUP SECTION -->
-<% end %>
+
 <!-- END KALKULATOR SECTION -->
 <section class="features page" style="padding-bottom: 15px;">
   <div class="container" style="height: 50px;">
@@ -697,7 +701,7 @@
     </div>
   </div>
 </section>
-
+<% end %>
 <!-- =========================
  START CONTCT FORM AREA
 ============================== -->
@@ -871,9 +875,8 @@
     function setMultipleMinus(){
         var mult = document.getElementById("users_service_multiple_mobile").value;
         if(parseInt(mult)-1 >= 0){
-            multiple_devices = 0;
             document.getElementById("multiple").innerHTML = parseInt(mult)-1;
-            multiple = parseInt(mult)-1;
+            multiple_devices = parseInt(mult)-1;
             calculateTotalPrice();
         }
     }

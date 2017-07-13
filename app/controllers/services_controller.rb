@@ -14,9 +14,9 @@ class ServicesController < ApplicationController
       if params[:users_service][:package].blank? || params[:users_service][:one_mobile].blank? && params[:users_service][:multiple_mobile].blank?
         flash[:calc_alert] = I18n.t("controllers.services.calc_error")
       else
-        UserMailer.send_calculated_services(current_user, I18n.locale.to_s, params[:users_service]).deliver_now
+        UserMailer.send_calculated_services(current_user, params[:locale], params[:users_service]).deliver_now
         flash[:notice] = I18n.t("controllers.services.calculator")
-        return redirect_to root_path
+        return redirect_to :back
       end
     else
       flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
@@ -40,7 +40,7 @@ class ServicesController < ApplicationController
     end
 
     if @subscriber.nil? && @user.nil? || !@subscriber.nil? && !@subscriber.spam_indicator? || !@user.nil? && !@user.spam_indicator?
-      UserMailer.send_contact_us(I18n.locale.to_s, params[:email_form][:name], params[:email_form][:email],
+      UserMailer.send_contact_us(params[:locale], params[:email_form][:name], params[:email_form][:email],
                                  params[:email_form][:subject], params[:email_form][:body]).deliver_now
 
       flash[:notice] = I18n.t("controllers.services.contact_us")
@@ -60,7 +60,7 @@ class ServicesController < ApplicationController
         flash[:calc_alert] = I18n.t("controllers.services.calc_error")
       else
         @subscriber.save if Subscriber.find_by(email: @subscriber.email).nil? && User.find_by(email: @subscriber.email).nil?
-        UserMailer.send_calculated_services(@subscriber, I18n.locale.to_s, params[:subscriber]).deliver_now
+        UserMailer.send_calculated_services(@subscriber, params[:locale], params[:subscriber]).deliver_now
         flash[:notice] = I18n.t("controllers.services.calculator")
         return redirect_to root_path
       end
@@ -75,7 +75,7 @@ class ServicesController < ApplicationController
     if current_user.free_trial_requested
       flash[:alert] = I18n.t("controllers.services.free_trial_error")
     else
-      UserMailer.send_free_trial_request(current_user, I18n.locale.to_s).deliver_now
+      UserMailer.send_free_trial_request(current_user, params[:locale]).deliver_now
       flash[:notice] = I18n.t("controllers.services.free_trial")
       current_user.free_trial_requested = true
       current_user.save(validate: false)
