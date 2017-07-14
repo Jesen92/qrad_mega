@@ -479,7 +479,7 @@
     ============================== -->
     <% if current_user %>
     <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
-    <div class="container">
+    <div class="container" id="CALCULATOR_FLASH">
       <div class="row margin">
         <% if calc_alert %>
             <div class="container" style="padding-top: 10px;">
@@ -557,12 +557,8 @@
               <h3>1x</h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
               <h3>=</h3> <div style="display: inline-block; margin: 0 5px;">
               <div  class="input-group spinner" data-trigger="spinner" id="spinner">
-                <%= f.input :one_mobile, label: false, wrapper: false,id: 'extraVm',input_html: {value: '0', class: 'form-control text-center', onchange: 'setSingle()'}, data: { rule: 'quantity'} %>
+                <%= f.input :one_mobile, label: false, wrapper: false,id: 'extraVm',input_html: {min: '0', value: session[:single_mobile_session] ? session[:single_mobile_session] : '0', class: 'form-control text-center', onchange: 'setSingle()'}, data: { rule: 'quantity'} %>
 
-                <div class="input-group-addon">
-                  <a  onclick="extraVmPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
-                  <a onclick="extraVmMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
-                </div>
               </div>
             </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
 
@@ -589,11 +585,8 @@
                 <h3> &gt;1 </h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
                 <h3>=</h3>  <div style="display: inline-block; margin: 0 5px;">
                 <div class="input-group spinner" data-trigger="spinner" id="spinner2">
-                  <%= f.input :multiple_mobile, label: false, wrapper: false,id: 'extraRam',input_html: {value: '0', class: 'form-control text-center', onchange: 'setMultiple()'}, data: { rule: 'quantity'} %>
-                  <div class="input-group-addon">
-                    <a  onclick="extraRamPlus()" href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
-                    <a onclick="extraRamMinus()" href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
-                  </div>
+                  <%= f.input :multiple_mobile, label: false, wrapper: false,id: 'extraRam',input_html: {min: '0', value: session[:multiple_mobile_session] ? session[:multiple_mobile_session] : '0', class: 'form-control text-center', onchange: 'setMultiple()'}, data: { rule: 'quantity'} %>
+
                 </div>  </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
 
 
@@ -617,7 +610,8 @@
 
                 <div style="display: inline-block; margin-left: 20px; ">
                   <div class="dropdown">
-                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: t(".calculator.registered.third"), input_html: {style: 'width: 150px; height: 45px;', onchange: 'setPaket()'}, id: 'choosePaket' %>
+                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: t(".calculator.registered.third"),
+                              selected: session[:package_session] ? session[:package_session] : t(".calculator.registered.third"), input_html: {style: 'width: 150px; height: 45px;', onchange: 'setPaket()'}, id: 'choosePaket' %>
                   </div>
 
                 </div>
@@ -634,7 +628,7 @@
 
           <div class="price">
             <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3> <span id="cijena">0,00</span> <%= t(".calculator.result.currency") %></h3>
+            <h3> <span id="cijena">0.00</span> <%= t(".calculator.result.currency") %></h3>
             <p class="calc_info"> <%= t(".calculator.result.text_includes") %>
               <br>
               <b><span style="font-size: 18px;" id="single">0 </span> </b><%= t(".calculator.result.first") %>
@@ -853,6 +847,25 @@
             </div>
 
 <script>
+
+    $('body').on('keydown', 'input, select, textarea', function(e) {
+        var self = $(this)
+            , form = self.parents('form:eq(0)')
+            , focusable
+            , next
+            ;
+        if (e.keyCode == 13) {
+            focusable = form.find('input,select').filter(':visible');
+            next = focusable.eq(focusable.index(this)+1);
+            if (next.length) {
+                next.focus();
+            } else {
+                form.submit();
+            }
+            return false;
+        }
+    });
+
     var suite = "";
     var single_device = 0;
     var multiple_devices = 0;
@@ -861,8 +874,26 @@
 
     document.getElementById("submit_contact_button").disabled = true;
 
+    window.onload = setMultiple();
+    window.onload = setSingle();
+    window.onload = setPaket();
+
     function enableBtn(){
         document.getElementById("submit_contact_button").disabled = false;
+    }
+
+    function setMultiple(){
+        var mult = document.getElementById("users_service_multiple_mobile").value;
+        document.getElementById("multiple").innerHTML = parseInt(mult);
+        multiple_devices = parseInt(mult);
+        calculateTotalPrice();
+    }
+
+    function setSingle(){
+        var sing = document.getElementById("users_service_one_mobile").value;
+        document.getElementById("single").innerHTML = parseInt(sing);
+        single_device = parseInt(sing);
+        calculateTotalPrice();
     }
 
     function setMultiplePlus(){
@@ -991,204 +1022,6 @@
     calculate();
 
   });
-
-  function extraVmPlus() {
-      setSinglePlus();
-    var result = 0;
-    if (document.getElementById("extraVm").disabled == false) {
-
-      if (parseInt(document.getElementById("extraVm").value) < 300) {
-        result = parseInt(document.getElementById("extraVm").value) + 1;
-      }
-      else {
-        result = 30;
-        AddVm = 30;
-      }
-
-      ExtraVm = result * 20;
-      AddVm = result;
-      calculate();
-      setExtraVm()
-    }
-  }
-
-  function extraVmPlusNoUser() {
-    var result = 0;
-    if (document.getElementById("extraVmNoUser").disabled == false) {
-
-      if (parseInt(document.getElementById("extraVmNoUser").value) < 300) {
-        result = parseInt(document.getElementById("extraVmNoUser").value) + 1;
-        document.getElementById("extraVmNoUser").value = result;
-      }
-      else {
-        result = 30;
-        AddVm = 30;
-      }
-
-      ExtraVm = result * 20;
-      AddVm = result;
-      //calculate();
-      //setExtraVm()
-    }
-  }
-
-  function extraVmMinus(){
-      setSingleMinus();
-    var result =0;
-    if (document.getElementById("extraVm").disabled == false) {
-      if(parseInt(document.getElementById("extraVm").value) > 0){
-        result = parseInt(document.getElementById("extraVm").value) - 1;
-      }
-      else{
-        result=0;
-        AddVm=0;
-      }
-      ExtraVm = result * 20;
-      AddVm =result;
-      calculate();
-      setExtraVm()
-    }
-  }
-
-  function extraRamPlus(){
-      setMultiplePlus();
-    var result = 0;
-    if(document.getElementById("extraRam").disabled == false) {
-      if(parseInt(document.getElementById("extraRam").value) < 300 ){
-        result = parseInt(document.getElementById("extraRam").value) + 1;
-      }
-      else{
-        result=30;
-        AddSpace=30*100;
-      }
-      ExtraGb = result * 10;
-      AddSpace =result * 100;
-      calculate();
-      setExtraStorage();
-      setMultiple();
-    }
-  }
-
-  function extraVmMinusNoUser(){
-    var result =0;
-    if (document.getElementById("extraVmNoUser").disabled == false) {
-      if(parseInt(document.getElementById("extraVmNoUser").value) > 0){
-        result = parseInt(document.getElementById("extraVmNoUser").value) - 1;
-          document.getElementById("extraVmNoUser").value = result;
-      }
-      else{
-        result=0;
-        AddVm=0;
-      }
-      ExtraVm = result * 20;
-      AddVm =result;
-      //calculate();
-      //setExtraVm()
-        setMultiple();
-    }
-  }
-
-  function extraRamPlusNoUser(){
-    var result = 0;
-    if(document.getElementById("extraRamNoUser").disabled == false) {
-      if(parseInt(document.getElementById("extraRamNoUser").value) < 300 ){
-        result = parseInt(document.getElementById("extraRamNoUser").value) + 1;
-          document.getElementById("extraRamNoUser").value = result;
-      }
-      else{
-        result=30;
-        AddSpace=30*100;
-      }
-      ExtraGb = result * 10;
-      AddSpace =result * 100;
-      //calculateNoUser();
-      //setExtraStorage()
-        setMultiple();
-    }
-  }
-
-  function extraRamMinus(){
-    var result =0;
-      setMultipleMinus();
-    if(document.getElementById("extraRam").disabled == false){
-      if(parseInt(document.getElementById("extraRam").value) > 0){
-        result = parseInt(document.getElementById("extraRam").value) - 1;
-          setMultiple();
-      }
-      else{
-        result=0;
-        AddSpace=0;
-      }
-      ExtraGb = result * 10;
-      AddSpace =result * 100;
-      calculate();
-      setExtraStorage();
-
-    }
-  }
-
-  function extraRamMinusNoUser(){
-    var result =0;
-    if(document.getElementById("extraRamNoUser").disabled == false){
-      if(parseInt(document.getElementById("extraRamNoUser").value) > 0){
-        result = parseInt(document.getElementById("extraRamNoUser").value) - 1;
-          document.getElementById("extraRamNoUser").value = result;
-      }
-      else{
-        result=0;
-        AddSpace=0;
-      }
-      ExtraGb = result * 10;
-      AddSpace =result * 100;
-      //calculate();
-      //setExtraStorage()
-    }
-  }
-
-  function enableSpinners(){
-    document.getElementById("extraVm").disabled = false;
-    document.getElementById("extraRam").disabled = false;
-  }
-
-  function calculate (){
-    var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);
-    if (document.getElementById("cijena") != null) document.getElementById("cijena").innerHTML = result;
-    document.getElementById("vm").innerHTML = Vm + AddVm;
-    document.getElementById("space").innerHTML = Space + AddSpace
-  }
-
-  function calculateNoUser(){
-      var result = parseInt(License) + parseInt(Service) + parseInt(Platform) + parseInt(ExtraVm) + parseInt(ExtraGb);
-      if (document.getElementById("cijena") != null) document.getElementById("cijena").innerHTML = result;
-      document.getElementById("vm").innerHTML = Vm + AddVm;
-      document.getElementById("space").innerHTML = Space + AddSpace;
-  }
-
-  function setVeaamUser(){
-    if (document.getElementById("veeamUser") != null) document.getElementById("veeamUser").value = TempText.toString();
-    document.getElementById("temp_veeamUser").value = TempText.toString();
-  }
-
-  function setVeeamService(){
-    if (document.getElementById("veeamService") != null) document.getElementById("veeamService").value = TempText.toString();
-    document.getElementById("temp_veeamService").value = TempText.toString();
-  }
-
-  function setVeeamServer(){
-    if (document.getElementById("veeamServer") != null) document.getElementById("veeamServer").value = TempText.toString();
-    document.getElementById("temp_veeamServer").value = TempText.toString();
-  }
-
-  function setExtraVm(){
-    if (document.getElementById("veeamVmExtra") != null) document.getElementById("veeamVmExtra").value = AddVm;
-    document.getElementById("temp_veeamVmExtra").value = AddVm;
-  }
-
-  function setExtraStorage(){
-    if (document.getElementById("veeamStorageExtra") != null) document.getElementById("veeamStorageExtra").value = AddSpace;
-    document.getElementById("temp_veeamStorageExtra").value = AddSpace;
-    alert("tu");
-  }
 
   $(document).ready(function() {
 

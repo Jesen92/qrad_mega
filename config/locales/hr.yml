@@ -52,7 +52,7 @@ hr:
           text: "Za izradu ponude molimo da se registrirate, odnosno ako ste registrirani prijavite se."
         texts:
           first: "Usluga je namijenjena velikim, srednjim i malim poduzećima."
-          second: "Za veće tvrtke, cijena ovisi o broju uređaja na kojima je usluga akivirana."
+          second: "Cijena ovisi o broju uređaja na kojima je usluga akivirana."
           third: "Moguća je i realizacija kombinacije MDM funkcionalnosti izvan okvira ponuđenih paketa. Cijena tako pilagođenog rješenja dostupna je na projektnoj osnovi na zahtjev!"
       about_section:
         title: "O USLUZI"
@@ -64,9 +64,9 @@ hr:
         texts:
           about_main: "Mobile Device Management je pouzdano rješenje za upravljanje mobilnim uređajima vašeg poduzeća koje čini rad u mobilnom svijetu jednostavnijim i sigurnijim. Koristite snažan alat za upravljanje mobilnim uređajima sa sveobuhvatnom, integriranom zaštitom kako biste omogućili pristup i korištenje aplikacija, sadržaja, e-pošte i uređaja, bez ugrožavanja korisničkog doživljaja, sigurnosti podataka ili privatnosti."
           first: "Svi vaši uređaji su vidljivi na jednom mjestu i njima možete daljinski upravljati"
-          second: "Jednostavna distribucija aplikacija pomoći interaktivnog kataloga aplikacija"
+          second: "Jednostavna distribucija aplikacija pomoću interaktivnog kataloga aplikacija"
           third: "„Mobilizacija“ dokumenata i sadržaja kako bi ste ostali produktivni s bilo kojeg mjesta i u bilo koje vrijeme, a u sigurnom okruženju"
-          fourth: "Omogućuje korisnicima pristup informacijama bez rizika od curenja podataka"
+          fourth: "Omogućuje korisnicima pristup informacijama bez rizika od gubitka podataka"
           fifth: "Integracija s poslovnim sustavima uz mogućnost korištenja postojeće infrastrukture i spremišta podataka"
         key_features:
           title: "GLAVNE ZNAČAJKE"

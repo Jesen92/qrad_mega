@@ -15,14 +15,17 @@ class ServicesController < ApplicationController
         flash[:calc_alert] = I18n.t("controllers.services.calc_error")
       else
         UserMailer.send_calculated_services(current_user, params[:locale], params[:users_service]).deliver_now
-        flash[:notice] = I18n.t("controllers.services.calculator")
-        return redirect_to :back
+        flash[:calc_success] = I18n.t("controllers.services.calculator")
+        #return redirect_to :back
       end
     else
-      flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
+      flash[:alert] = I18n.t("controllers.services.spam_indicator")
     end
 
-    redirect_to services_index_path(anchor: 'CALC')
+    session[:multiple_mobile_session] = params[:users_service][:multiple_mobile]
+    session[:single_mobile_session] = params[:users_service][:one_mobile]
+    session[:package_session] = params[:users_service][:package]
+    redirect_to services_index_path(anchor: 'CALCULATOR_FLASH')
   end
 
   def contact_us

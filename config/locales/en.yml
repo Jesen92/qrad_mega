@@ -74,8 +74,8 @@ en:
           text: "To create an offer please register, or if you are registered please log in."
         texts:
           first: "The service is available for large, medium and small businesses."
-          second: "For larger companies, the price depends on the number of devices on which the service is activated."
-          third: "It is also possible to realize a combination of MDM functionality outside the scope of the offered packages. The price of this customized solution is available on a project-on-demand basis!"
+          second: "Prices depend on the number of devices on which the service is activated."
+          third: "It is also possible to realize a combination of MDM functionality outside the scope of the offered packages. Prices of this customized solutions are available on a project-on-demand basis!"
       about_section:
         title: "OVERVIEW"
         first: "Easily manage your devices"
@@ -141,7 +141,7 @@ en:
       subheading: "Subheading"
       about: "OVERVIEW "
       packages: "SUITES "
-      trial_price: "TRIAL/PRICE "
+      trial_price: "TRIAL/PRICES "
       contact: "CONTACT "
       contact_text_first: "Do you have any additional questions?"
       contact_text_second: "Contact us and ask for more information."

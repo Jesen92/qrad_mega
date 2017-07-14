@@ -61,9 +61,9 @@
       </tr>
       <tr>
         <td></td>
-        <td align="center"><%= number_to_currency(@price_one_mobile, unit: 'EUR/mjesečno', separator: ',', format: '%n %u')%></td>
-        <td align="center"><%= number_to_currency(@price_multiple_mobile, unit: 'EUR/mjesečno', separator: ',', format: '%n %u')%></td>
-        <td align="right"><b><%= number_to_currency(@price_one_mobile+@price_multiple_mobile, unit: 'EUR/mjesečno', separator: ',', format: '%n %u') %></b></td>
+        <td align="center"><%= number_to_currency(@price_one_mobile, unit: 'EUR/mjesečno', delimiter: '.', separator: ',', format: '%n %u')%></td>
+        <td align="center"><%= number_to_currency(@price_multiple_mobile, unit: 'EUR/mjesečno', delimiter: '.', separator: ',', format: '%n %u')%></td>
+        <td align="right"><b><%= number_to_currency(@price_one_mobile+@price_multiple_mobile, unit: 'EUR/mjesečno', delimiter: '.', separator: ',', format: '%n %u') %></b></td>
       </tr>
       </tbody>
     </table>
