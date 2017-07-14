@@ -40,21 +40,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="en.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="en.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="77" column="136" lean-forward="false" selection-start-line="77" selection-start-column="127" selection-end-line="77" selection-end-column="136" />
+            <state relative-caret-position="351">
+              <caret line="80" column="43" lean-forward="true" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hr.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hr.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/locales/hr.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+            <state relative-caret-position="348">
+              <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1021,12 +1021,12 @@
       <workItem from="1499845104723" duration="7629000" />
       <workItem from="1499857032334" duration="3142000" />
       <workItem from="1499932970233" duration="4141000" />
-      <workItem from="1500026574463" duration="4612000" />
+      <workItem from="1500026574463" duration="4863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312290000" />
+    <option name="totallyTimeSpent" value="312541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1483,18 +1483,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/hr.yml">
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+        <state relative-caret-position="351">
+          <caret line="80" column="43" lean-forward="true" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+    <entry file="file://$PROJECT_DIR$/config/locales/hr.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="77" column="136" lean-forward="false" selection-start-line="77" selection-start-column="127" selection-end-line="77" selection-end-column="136" />
+        <state relative-caret-position="348">
+          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
           <folding />
         </state>
       </provider>
