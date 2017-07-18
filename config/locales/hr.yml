@@ -27,8 +27,8 @@ hr:
       section_break_user: "Izradite najbolju konfiguraciju servisa za vašu tvrtku ili besplatno isprobajte uslugu"
       trial: "PROBA/CIJENE"
       home:
-        title: "MOBILE DEVICE MANAGMENT USLUGA"
-        text: "Osigurajte svoje mobilne uređaje, aplikacije i sadržaj pomoću sveobuhvatnog rješenja za upravljanje mobilnim uređajima"
+        title: "QRADAR ON CLOUD"
+        text: "Odaberite pravo sigunosno rješenje i osigurajte veću vidljivost u neregularne ativnosti"
         footer: "IBM MaaS360 proizvod"
       register: "REGISTRIRAJ SE"
       login: "PRIJAVI SE"
@@ -41,17 +41,18 @@ hr:
           second: "korisnika sa više uređaja"
           third: "paket"
           send: "POŠALJI IZRAČUN"
-        title: "KALKULATOR"
-        download_terms: "* Preuzmite opće uvjete pružanja usluge MDM"
+        title: "QRADAR ON CLOUD"
+        download_terms: "* Preuzmite opće uvjete pružanja usluge QRadar"
         registered:
           first: "* broj korisnika sa jednim uređajem po korisniku"
           second: "* broj korisnika sa više od jednog uređaja po korisniku"
           third: "Odaberite paket"
         unregistered:
-          title: "REGISTRIRAJTE SE I ZATRAŽITE PONUDU"
-          text: "Za izradu ponude molimo da se registrirate, odnosno ako ste registrirani prijavite se."
+          title: "ZAHTJEV ZA PROBOM"
+          text: "Za slanje zahtjeva za testiranjem usluge i procjenu naknade korištenja molimo da se registrirate. Ako ste registrirani, dovoljno je da se prijavite."
         texts:
-          first: "Usluga je namijenjena velikim, srednjim i malim poduzećima."
+          first: "QRadar on Cloud je mrežna inteligencija koja vam može pomoći u otkrivanju napada na mrežu, tako da možete poduzeti korake prije nego što dođe do znatnih šteta ili počnete odmah reagirati na sve kritične gubitke podataka.
+                  Kao usluga temeljena na oblaku, vi i vaš tim biti ćete usredotočeni na pregled nepravilnosti, a ne na nabavljanje i implementaciju tehnoloških komponenti. Možete početi koristiti IBM QRadar na Cloudu tako što plaćate mjesečnu naknadu i prilagodite performanse kako biste zadovoljili svoje potrebe."
           second: "Cijena ovisi o broju uređaja na kojima je usluga aktivirana."
           third: "Moguća je i realizacija kombinacije MDM funkcionalnosti izvan okvira ponuđenih paketa. Cijena tako prilagođenog rješenja dostupna je na projektnoj osnovi na zahtjev!"
       about_section:
@@ -62,12 +63,13 @@ hr:
         fourth: "Sigurnost dokumenata i sadržaja"
         fifth: "Pristup poslovnim sustavima"
         texts:
-          about_main: "Mobile Device Management je pouzdano rješenje za upravljanje mobilnim uređajima vašeg poduzeća koje čini rad u mobilnom svijetu jednostavnijim i sigurnijim. Koristite snažan alat za upravljanje mobilnim uređajima sa sveobuhvatnom, integriranom zaštitom kako biste omogućili pristup i korištenje aplikacija, sadržaja, e-pošte i uređaja, bez ugrožavanja korisničkog doživljaja, sigurnosti podataka ili privatnosti."
-          first: "Svi vaši uređaji su vidljivi na jednom mjestu i njima možete daljinski upravljati"
-          second: "Jednostavna distribucija aplikacija pomoću interaktivnog kataloga aplikacija"
-          third: "„Mobilizacija“ dokumenata i sadržaja kako bi ste ostali produktivni s bilo kojeg mjesta i u bilo koje vrijeme, a u sigurnom okruženju"
-          fourth: "Omogućuje korisnicima pristup informacijama bez rizika od gubitka podataka"
-          fifth: "Integracija s poslovnim sustavima uz mogućnost korištenja postojeće infrastrukture i spremišta podataka"
+          about_main: "QRadar on Cloud pruža napredno rješenje sigurnosne inteligencije IBM Clouda temeljeno na proizvodu IBM Security QRadar SIEM. Klijentu omogućuje prikupljanje, povezivanje i pohranjivanje događaja generiranih u lokalnoj i cloud okolini te upravljanje sigurnošću i prijetnjama kakvo bi im omogućio proizvod QRadar SIEM postavljen na lokaciji. Rješenje uključuje i nadgledanje infrastrukture 24 sata na dan, 7 dana u tjednu i primjenjivanje najnovijih razina softvera i kritičnih zakrpa kada one postanu dostupne."
+          first: "Nadziranje QRadar on Cloud infrastrukture 24 x 7"
+          second: "Osiguravanje vidljivosti u realnom vremenu"
+          third: "Mogućnost procesiranja do 80.000 EPS-a"
+          fourth: "Mogućnost kreiranja cca 1500 predefiniranih izvješća od regulatorne usklađenosti do upravljanja izloženošću"
+          fifth: "Fleksibilnost – mogućnost prikupljanja EPS-a i FPM-a za 500+ aplikacija i uređaja"
+          footer: "Usluga je namijenjena velikim i srednjim poduzećima, te obveznicima EU NIS direktive (Directive on security of network and information systems). Usluga je dostupna i on-site."
         key_features:
           title: "GLAVNE ZNAČAJKE"
           first: "BYOD/korištenje privatnih mobilnih uređaja za pristup poslovnim podacima"
@@ -125,7 +127,7 @@ hr:
       sign_out: "ODJAVI SE "
       sign_up: "REGISTRIRAJ SE"
       tour: "O USLUZI "
-      start_trial: "BESPLATNA PROBA"
+      start_trial: "PROBA"
       trial_: "BESPLATNA PROBA"
       register_now: "REGISTRIRAJ SE"
       inquiry: "POŠALJI IZRAČUN"
@@ -249,7 +251,10 @@ hr:
         postal: "Poštanski broj"
         signup: "Registriraj se"
         back: "Nazad"
-        veeam_user_html: "Koristim komercijalnu <b>Veeam Backup & Replication</b> licencu"
+        veeam_user_html: "Zainteresiran sam za probu, cijenu ili oboje"
+        yes_indicator: "Da"
+        no_indicator: "Ne"
+        comment: "Komentar"
     shared:
       links:
         signup: "Registriraj se"

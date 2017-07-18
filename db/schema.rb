@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170629074910) do
+ActiveRecord::Schema.define(version: 20170718135759) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(version: 20170629074910) do
     t.boolean  "free_trial_requested"
     t.boolean  "veeam_user"
     t.boolean  "spam_indicator"
+    t.text     "comment"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

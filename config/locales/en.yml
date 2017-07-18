@@ -63,17 +63,17 @@ en:
           second: "no. of users with two or more devices/user"
           third: "suite"
           send: "SEND CALCULATION"
-        title: "CALCULATOR"
-        download_terms: "* Download the MDM General Terms and Conditions"
+        title: "QRADAR ON CLOUD"
+        download_terms: "* Download the QRadar General Terms and Conditions"
         registered:
           first: "* no. of users with one device/user"
           second: "* no. of users with two or more devices/user"
           third: "Select a suite"
         unregistered:
-          title: "REGISTER AND ASK FOR THE OFFER"
-          text: "To create an offer please register, or if you are registered please log in."
+          title: "TRIAL"
+          text: "To submit a service test request and service quotation please register. If you are already registered, please sign up."
         texts:
-          first: "The service is available for large, medium and small businesses."
+          first: "IBM QRadar on Cloud is a network security intelligence and analytics offering that can help you detect cybersecurity attacks and network breaches so that you can take action before any considerable damage is done or begin to immediately respond to any critical data losses. As a cloud-based service, you and your team will be focused on reviewing anomalous conditions and patching the most important asset vulnerabilities rather than acquiring and deploying technology components. You can begin using IBM QRadar on Cloud by paying a monthly fee and adjust the performance up or down to meet your needs."
           second: "Prices depend on the number of devices on which the service is activated."
           third: "It is also possible to realize a combination of MDM functionality outside the scope of the offered packages. Prices of this customized solutions are available on a project-on-demand basis!"
       about_section:
@@ -84,12 +84,13 @@ en:
         fourth: "Keep apps and data secret"
         fifth: "Connect to business systems"
         texts:
-          about_main: "IBM MaaS360 is a trusted enterprise mobility management solution that makes working in a mobile world more simple and safe. Use powerful mobile device management with comprehensive, integrated protection to enable applications, content, email and devices, without compromising the user experience, data security or privacy."
-          first: "See all your devices in one place and remotely manage right over-the-air."
-          second: "Promote, distribute and update approved apps using an interactive catalog."
-          third: "Mobilize content and files to stay productive at anytime and from anywhere."
-          fourth: "Help users get the information they need, without the risk of data leaks."
-          fifth: "Integrate with enterprise systems so you can use existing infrastructure and data repositories."
+          about_main: "The IBM QRadar on Cloud offering delivers an advanced security intelligence solution from the IBM Cloud based on the IBM Security QRadar SIEM product. It allows Clients to collect, correlate, and store events generated from both on premise and cloud environments; and perform security and threat management as they would do with a QRadar SIEM product deployed on premise. As part of the offering, IBM also provides infrastructure monitoring on a 24x7 basis and applies the latest  software level or critical patches whenever they are available."
+          first: "QRadar infrastructure is monitored 24 x 7 by trusted IBM professionals."
+          second: "IBM QRadar provides real-time visibility into your network."
+          third: "Possibility to process up to 80.000 EPS."
+          fourth: "Possibility to create more than 1.500 predefined report types, from regulaory compliance to vulnerability management."
+          fifth: "Flexibility – possibility to collect EPS and FPM for 500+ apps and devices."
+          footer: "The service is available for large and medium-sized companies, as well as for EU NIC Directive  parties (Directive on security of network and information systems). Interested in on-site service availability, please contact us "
         key_features:
           title: "KEY FEATURES"
           first: "Embrace BYOD with MDM"
@@ -102,7 +103,7 @@ en:
           eight: "Use a trusted MDM platform"
       package:
         title: "SUITES"
-        trial_button: "FREE TRIAL"
+        trial_button: "TRIAL"
         footer: "* More info available on "
         essentials:
           first: "Manage and secure users, smartphones, tablets, laptops and apps, enabled by cognitive insights with Watson"
@@ -149,8 +150,8 @@ en:
       sign_out: "LOGOUT "
       sign_up: "REGISTER "
       tour: "ABOUT SERVICE "
-      start_trial: "FREE TRIAL "
-      trial_: "FREE TRIAL"
+      start_trial: "TRIAL "
+      trial_: "TRIAL"
       register_now: "REGISTER NOW"
       inquiry: "SEND CALCULATION"
       get_in_touch: "CONTACT US"
@@ -233,7 +234,10 @@ en:
         postal: "Postal no."
         signup: "Register"
         back: "Back"
-        veeam_user_html: "Koristim komercijalnu <b>Veeam Backup & Replication</b> licencu"
+        veeam_user_html: "I am interested in trial, price or both"
+        yes_indicator: "Yes"
+        no_indicator: "No"
+        comment: "Comment"
     shared:
       links:
         signup: "Register"

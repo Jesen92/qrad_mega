@@ -48,7 +48,6 @@
               <!-- NAV -->
               <li><a href="#HOME">HOME</a> </li>
               <li><a href="#ABOUT"><%= t(".about") %></a> </li>
-              <li><a href="#PACKAGE"><%= t(".packages") %></a></li>
               <li><a href="#PRICES"><%= t(".trial_price") %></a> </li>
               <li><a href="#CONTACT"><%= t(".contact") %></a> </li>
             <% if user_signed_in? %>
@@ -97,28 +96,19 @@
 
             <div class="download-btn">
               <!-- BUTTON -->
-              <a class="btn home-btn wow fadeInLeft" href="#PACKAGE"><%= t(".start_trial") %></a>
+              <a class="btn home-btn wow fadeInLeft" href="#PRICES"><%= t(".start_trial") %></a>
               <a class="tuor btn wow fadeInRight" href="#ABOUT"><%= t(".tour") %><i class="fa fa-angle-down"></i></a>
             </div>
           </div>
         </div>
         <div class="col-md-3 col-md-offset-1 col-sm-4">
           <div class="home-iphone">
-            <%= image_tag("maaslogo_type.png", :alt => "MaaS360") %>
+            <%= image_tag("qradarlogo2.png", :alt => "MaaS360") %>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-offset-8 col-sm-offset-8 col-md-4 col-sm-4">
-        <div class="home_text">
-          <!-- TITLE AND DESC -->
-          <p>* <%= t(".home.footer") %></p>
 
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
@@ -151,27 +141,24 @@
     <div class="row">
       <div class="col-md-4 col-sm-4">
         <div class="section_title_feature">
-          <div class="icon_image_centering"><%= image_tag('iconsIBM/benefits--svg.svg', alt: "MaaS360", style: 'width: 70px;' ) %></div>
+          <div class="icon_image_centering"><%= image_tag('iconsIBM/oblak_oko.svg', alt: "MaaS360", style: 'width: 70px;' ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis" > <%= t(".about_section.first") %></h2>
           <p class="paragraf" ><%= t(".about_section.texts.first") %></p>
 
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
         <div class="section_title_feature">
-          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (1).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/oblak.svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> <%= t(".about_section.second") %></h2>
           <p class="paragraf"><%= t(".about_section.texts.second") %></p>
 
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
         <div class="section_title_feature">
-          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (2).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/log.svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> <%= t(".about_section.third") %></h2>
           <p class="paragraf"><%= t(".about_section.texts.third") %></p>
 
         </div>
@@ -181,18 +168,16 @@
     <div class="row">
       <div class="col-md-offset-2 col-sm-offset-2 col-md-4 col-sm-4">
         <div class="section_title_feature">
-          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (3).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/dokument.svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> <%= t(".about_section.fourth") %></h2>
           <p class="paragraf"><%= t(".about_section.texts.fourth") %></p>
 
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
         <div class="section_title_feature">
-          <div class="icon_image_centering "><%= image_tag("iconsIBM/benefits--svg (4).svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
+          <div class="icon_image_centering "><%= image_tag("iconsIBM/server.svg", alt:"MaaS360", style:"width: 70px;" ) %></div>
           <!-- TITLE AND DESC -->
-          <h2 class="naslov_opis"> <%= t(".about_section.fifth") %></h2>
           <p class="paragraf"><%= t(".about_section.texts.fifth") %></p>
 
         </div>
@@ -204,37 +189,21 @@
       <div class="col-md-10 col-md-offset-1">
         <!-- ABOUT US SECTION TITLE-->
         <div class="section_title" style="padding-top:50px; padding-bottom: 10px;">
-          <h2><%= t(".about_section.key_features.title") %></h2>
-          <p>
-          </p>
-        </div>
-
-
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <div class="section_title_feature" style="padding-top:0; padding-bottom:20px;">
-          <!-- TITLE AND DESC -->
-          <ul class="paragraf2 key"> <li><%= t(".about_section.key_features.first") %></li> <li>
-            <%= t(".about_section.key_features.third") %></li> <li>
-            <%= t(".about_section.key_features.fifth") %></li> <li>
-
-            <%= t(".about_section.key_features.seventh") %></li>
-          </ul>
+          <h2></h2>
+          <p><%= t(".about_section.texts.footer") %></p>
 
         </div>
-      </div>
+        <div class="centered_kontakt">
 
-      <div class="col-md-6 col-sm-6">
-        <div class="section_title_feature" style="padding-top:0; padding-bottom:20px; ">
-          <!-- TITLE AND DESC -->
-          <ul class="paragraf2 key"> <li><%= t(".about_section.key_features.second") %></li> <li>
-            <%= t(".about_section.key_features.fourth") %>
-          </li> <li><%= t(".about_section.key_features.sixth") %></li> <li>
-            <%= t(".about_section.key_features.eight") %> </li>
-          </ul>
+          <a class="btn btn-primary btn-action" href="#CONTACT" role="button"><%= t(".contact") %></a> <!--TODO: LINK NA KONTAKT FORMU-->
+
 
         </div>
+
       </div>
+
+
+
 
     </div>
   </div>
@@ -242,180 +211,6 @@
 
 </section>
 <!-- End About Us -->
-
-<!-- =========================
- START CALL TO ACTION
-============================== -->
-<div class="call_to_action">
-  <div class="container">
-    <div class="row wow fadeInLeftBig" data-wow-duration="1s">
-      <% if user_signed_in? %>
-      <div class="col-md-9">
-        <p class="nomargin"><%= t(".section_break_user") %></p>
-      </div>
-      <div class="col-md-3">
-        <a href="#PRICES" class="btn btn-primary btn-action"><%= t(".trial") %></a>
-      </div>
-      <% else %>
-      <div class="col-md-9">
-        <p class="nomargin"><%= t(".section_break") %></p>
-      </div>
-      <div class="col-md-3">
-        <%= link_to t(".register_now"), new_user_registration_path, class: "btn btn-primary btn-action" %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-<!-- END CALL TO ACTION -->
-
-
-
-
-
-<!-- =========================
- START FEATURES
-============================== -->
-<section id="PACKAGE" class="features page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <!-- FEATURES SECTION TITLE -->
-        <div class="section_title wow fadeIn" data-wow-duration="1s">
-          <h2><%= t(".package.title") %> </h2>
-        </div>
-        <!-- END FEATURES SECTION TITLE -->
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container">
-
-    <div class="pricing-container">
-
-      <ul class="pricing-list bounce-invert">
-        <li>
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2>Essentials</h2>
-                <div class="opis">
-                  <p><%= t(".package.essentials.first") %></p>
-                </div>
-              </header>
-              <div class="pricing-body">
-                <ul class="pricing-features">
-                  <li style="<%= "margin-bottom: 11px;" if I18n.locale == :hr %>">Mobile Device Management* </li>
-                  <li>Mobile App Management*</li>
-                  <li>Patch and Update Management</li>
-                  <li>Identity Management</li>
-                  <li>Advisor</li>
-                  <li>Container App</li>
-                  <li>Expense Management</li>
-                  <li><span style="font-size: 12px;">*iOS/Android/ Windows/macOS</span></li>
-                </ul>
-              </div>
-
-            </li>
-
-          </ul>
-        </li>
-        <li>
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2>Deluxe</h2>
-                <div class="opis">
-                  <p><%= t(".package.deluxe.first") %></p>
-                </div>
-              </header>
-              <div class="pricing-body">
-                <ul class="pricing-features">
-                  <li><%= t(".package.deluxe.second") %></li>
-                  <li>Secure Mobile Mail</li>
-                  <li>Secure Mobile Chat</li>
-                  <li> </li>
-                  <li></li>
-                  <li> </li>
-                  <li> </li>
-                  <li> </li>
-
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-        </li>
-        <li>
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2>Premier</h2>
-                <div class="opis">
-                  <p><%= t(".package.premier.first") %></p>
-                </div>
-              </header>
-              <div class="pricing-body">
-                <ul class="pricing-features">
-                  <li><%= t(".package.premier.second") %></li>
-                  <li>OS VPN</li>
-                  <li>Secure Browser</li>
-                  <li> Gateway for Browser</li>
-                  <li>Content Management</li>
-                  <li> Gateway for Documents</li>
-                  <li> Application Security</li>
-                  <li> Gateway for Apps</li>
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-        </li>
-
-        <li>
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2>Enterprise</h2>
-                <div class="opis">
-                  <p><%= t(".package.enterprise.first") %></p>
-                </div>
-              </header>
-              <div class="pricing-body">
-                <ul class="pricing-features">
-                  <li><%= t(".package.enterprise.second") %></li>
-                  <li>Mobile Document Editor</li>
-                  <li>Mobile Document Sync</li>
-                  <li>Mobile Threat Management</li>
-                  <li></li>
-                  <li> </li>
-                  <li> </li>
-                  <li></li>
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-        </li>
-      </ul>
-
-      <footer class="pricing-footer">
-        <a class="select_price" href="https://m2.maas360.com/tryMDM/SK_MEGATREN02_MDM_C" target="_blank"><%= t(".free_trial") %></a>
-      </footer>
-
-      <p><%= t(".package.footer") %> <br> &nbsp;&nbsp;
-        <a href="https://www.ibm.com/in-en/marketplace/mobile-device-management" target="_blank">www.ibm.com/in-en/marketplace/mobile-device-management</a></p>
-    </div>
-
-
-  </div>
-
-</section>
-<!-- END FEATURES SECTION -->
-
-
 
 <!-- =========================
  START CALL TO ACTION
@@ -458,205 +253,13 @@
           <!-- FEATURES SECTION TITLE -->
           <div class="section_title wow fadeIn" data-wow-duration="1s">
             <h2><%= t(".calculator.title") %> </h2>
-            <p><%= t(".calculator.texts.first") %> <br><%= t(".calculator.texts.second") %> <br> <br>
-              <%= t(".calculator.texts.third") %>
-            </p>
-
-          </div>
-          <div class="centered">
-
-            <a class="btn btn-primary btn-action" href="#PACKAGE" role="button"><%= t(".free_trial") %></a>
-
+            <p><%= t(".calculator.texts.first") %></p>
 
           </div>
           <!-- END FEATURES SECTION TITLE -->
         </div>
       </div>
     </div>
-
-    <!-- =========================
-     ovo se prikazuje ako je korisnik logiran
-    ============================== -->
-    <% if current_user %>
-    <%= simple_form_for(:users_service, :url => calculator_services_path, :method => :post) do |f| %>
-    <div class="container" id="CALCULATOR_FLASH">
-      <div class="row margin">
-        <% if calc_alert %>
-            <div class="container" style="padding-top: 10px;">
-              <div class="alert alert-danger" role="alert"><%= calc_alert %></div>
-            </div>
-        <% elsif calc_success %>
-            <div class="container" style="padding-top: 10px;">
-              <div class="alert alert-success" role="alert" style="background-color: #f39c12; color: white"><%= calc_success %></div>
-            </div>
-        <% end %>
-
-        <div class="col-md-8">
-          <!--  <div class="row">
-                <div class="col-md-4 right_no_padding wow fadeInLeft " data-wow-duration="1s">
-
-                    <div class="kalkulator ">
-                        <h3>Veam license<span> :</span></h3>
-                        <div class="dropdown">
-                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
-                                User Type <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" id="license" >
-                                <li><a value="0">Veeam user</a></li>
-                                <li><a value="40">non Veeam user</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-
-
-                    <div class="kalkulator ">
-                        <h3>Service<span> :</span></h3>
-                        <div class="dropdown ">
-                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" >
-                                Service Type <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" id="service" >
-                                <li><a space="500" vm="5" value="120">BUaaS</a></li>
-                                <li><a space="1000" vm="5" value="250">DRaaS</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-
-
-                    <div class="kalkulator ">
-                        <h3>PLATFORM<span> :</span></h3>
-                        <div class="dropdown ">
-                            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-                                Platform <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" id="platform">
-                                <li><a value="0">VMware</a></li>
-                                <li><a value="0">HyperV</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-          -->  <div class="row">
-
-          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
-
-            <div class="kalkulator ">
-              <h3>1x</h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
-              <h3>=</h3> <div style="display: inline-block; margin: 0 5px;">
-              <div  class="input-group spinner" data-trigger="spinner" id="spinner">
-                <%= f.input :one_mobile, label: false, wrapper: false,id: 'extraVm',input_html: {min: '0', value: session[:single_mobile_session] ? session[:single_mobile_session] : '0', class: 'form-control text-center', onchange: 'setSingle()'}, data: { rule: 'quantity'} %>
-
-              </div>
-            </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
-
-
-              <div style="margin-top: -10px; font-size: 14px;"><%= t(".calculator.registered.first") %></div>
-            </div>
-
-            <!-- END SINGLE FEATURE -->
-
-          </div>
-
-        </div>
-        </div>
-        <div class="col-md-8">
-          <div class="row">
-
-
-
-
-            <div style="z-index:1;" class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-
-
-              <div class="kalkulator ">
-                <h3> &gt;1 </h3><%= image_tag('smartphone.svg', class: 'phone_user_icons', alt: 'user') %>
-                <h3>=</h3>  <div style="display: inline-block; margin: 0 5px;">
-                <div class="input-group spinner" data-trigger="spinner" id="spinner2">
-                  <%= f.input :multiple_mobile, label: false, wrapper: false,id: 'extraRam',input_html: {min: '0', value: session[:multiple_mobile_session] ? session[:multiple_mobile_session] : '0', class: 'form-control text-center', onchange: 'setMultiple()'}, data: { rule: 'quantity'} %>
-
-                </div>  </div><%= image_tag('user.svg', class: 'phone_user_icons', alt: 'user') %>
-
-
-
-              </div>
-              <div style="margin-top: -10px; font-size: 14px;"><%= t(".calculator.registered.second") %></div>
-
-            </div>
-
-
-
-          </div>
-        </div>
-
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 right_no_padding wow fadeInLeft " data-wow-duration="1s">
-
-              <div class="kalkulator ">
-                <h3 style="font-size: 26px;"><%= t(".calculator.registered.third") %>:</h3>
-
-                <div style="display: inline-block; margin-left: 20px; ">
-                  <div class="dropdown">
-                  <%= f.input :package, collection: ["Essentials", "Deluxe", "Premier", "Enterprise"], label: false,include_blank: false, include_hidden: false , prompt: t(".calculator.registered.third"),
-                              selected: session[:package_session] ? session[:package_session] : t(".calculator.registered.third"), input_html: {style: 'width: 150px; height: 45px;', onchange: 'setPaket()'}, id: 'choosePaket' %>
-                  </div>
-
-                </div>
-              </div>
-
-
-            </div>
-
-          </div>
-
-        </div>
-        <div class="spec_margin col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
-          <!-- FEATURE -->
-
-          <div class="price">
-            <!-- FEATURE HEADING AND DESCRIPTION -->
-            <h3> <span id="cijena">0.00</span> <%= t(".calculator.result.currency") %></h3>
-            <p class="calc_info"> <%= t(".calculator.result.text_includes") %>
-              <br>
-              <b><span style="font-size: 18px;" id="single">0 </span> </b><%= t(".calculator.result.first") %>
-
-              <br>
-              <b><span style="font-size: 18px;" id="multiple">0</span> </b> <%= t(".calculator.result.second") %>  <br>
-              <b><span style="font-size: 18px;" id="paket">-------</span></b>  <%= t(".calculator.result.third") %> <br></p>
-            <!-- <p class="calc_disclaimer">
-               Izračun vrijedi za korisnike koji koriste komercijalnu <b>Veeam “Backup & Replication”</b> licencu.
-             </p>-->
-            <!--<p class="calc_disclaimer">
-              Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa.
-            </p>-->
-          </div>
-
-          <!-- END SINGLE FEATURE -->
-          <div class="centered">
-            <%= f.button :submit, t(".calculator.result.send") ,class:'btn home-btn wow fadeInLeft', style: I18n.locale == :hr ? "margin-left: 8px;" : "margin-left: 5px;" %>
-          </div>
-          <div class="pull-right">
-            <%= link_to t(".calculator.download_terms"), general_conditions_download_services_path %>
-          </div>
-        </div>
-
-      </div>
-    </div>
-            <% end %>
-    <% end %>
 
   </section>
 <!-- =========================
@@ -688,6 +291,7 @@
     <!-- END SIGNIN SIGNUP SECTION -->
 
 <!-- END KALKULATOR SECTION -->
+<% end %>
 <section class="features page" style="padding-bottom: 15px;">
   <div class="container" style="height: 50px;">
     <div class="pull-right">
@@ -695,7 +299,6 @@
     </div>
   </div>
 </section>
-<% end %>
 <!-- =========================
  START CONTCT FORM AREA
 ============================== -->

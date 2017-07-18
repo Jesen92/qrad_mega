@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'Megatrend MDM NO REPLY <mdm@mdmweb.megatrend.com>'
+  default from: 'Megatrend QRadar NO REPLY <qradar@qradarweb.megatrend.com>'
 
   def generated_password(user, generated_password, locale)
     @user = user
@@ -16,13 +16,20 @@ class UserMailer < ApplicationMailer
     @user = user
 
     if locale == "hr"
-      mail(to: 'mdm@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
+      mail(to: 'qradar@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
     else
-      mail(to: 'mdm@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
+      mail(to: 'qradar@megatrend.com', subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'user_information_hr')
     end
   end
 
-  def no_veeam_user(user,locale)
+  def ask_for_price(user,locale)
+    @user = user
+
+    if locale == "hr"
+      mail(to: 'qradar@megatrend.com', subject: "Korisnik zainteresiran za probu, cijenu ili oboje", template_path: 'user_mailer', template_name: 'no_veeam_licence')
+    else
+      mail(to: 'qradar@megatrend.com', subject: "Korisnik zainteresiran za probu, cijenu ili oboje", template_path: 'user_mailer', template_name: 'no_veeam_licence')
+    end
   end
 
   def reset_password(user, generated_password, locale)
@@ -51,10 +58,10 @@ class UserMailer < ApplicationMailer
     #@veeam_user_price = params[:veeam_user].downcase.include?("doesn't") ||  params[:veeam_user].downcase.include?("ne") ? 40 : 0 #TODO ispravi include jer se promijenio prijevod dodaj - include("ne")
 
     if locale == "hr"
-      mail(to: user.email,bcc: 'mdm@megatrend.com', subject: "MDM - Megatrend ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
+      mail(to: user.email,bcc: 'qradar@megatrend.com', subject: "MDM - Megatrend ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
       #mail(to: "mdm@megatrend.com", subject: "Cloud Connect - Veeam ponuda", template_path: 'user_mailer', template_name: 'calculator_hr')
     else
-      mail(to: user.email,bcc: 'mdm@megatrend.com', subject: "MDM - Megatrend offer", template_path: 'user_mailer', template_name: 'calculator')
+      mail(to: user.email,bcc: 'qradar@megatrend.com', subject: "MDM - Megatrend offer", template_path: 'user_mailer', template_name: 'calculator')
     end
   end
 

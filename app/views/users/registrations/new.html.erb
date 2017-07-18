@@ -11,7 +11,7 @@
           <div class="logo text-center">
             <!-- LOGO -->
             <%= image_tag("logo.png", width: "300") %>
-            <%= image_tag("maaslogo_type.png", :alt => "maas360", width: "180", style: "padding-left: 10px") %>
+            <%= image_tag("qradarlogo2.png", :alt => "maas360", width: "180", style: "padding-left: 10px") %>
           </div>
         </div>
       </div>
@@ -75,7 +75,6 @@
 
                 <fieldset>
 
-
                   <div class="row">
                     <section class="col col-4">
                       <label class="select">
@@ -102,6 +101,23 @@
                       <%= f.input :address, placeholder: t(".address"), label: false, required: true %>
                     </label>
                   </section>
+
+                  <div class="row">
+                    <section class="col col-12">
+                      <%= f.label :veeam_user do%>
+                        <div style="padding-right: 20px; font-size: 120%;">
+                            <%= t(".veeam_user_html") %>
+                          </div>
+                      <% end %>
+                      <%= f.collection_radio_buttons :veeam_user,[[true, t(".yes_indicator")], [false, t(".no_indicator")]], :first, :last, input_html: {required: true}, item_wrapper_tag: "radio_wrapper_tag",item_wrapper_class: "radio_button_wrapper", :checked => :false %>
+                    </section>
+                  </div>
+
+                  <div class="row">
+                    <section class="col col-12">
+                        <%= f.input :comment, placeholder: t(".comment"), label: false, input_html: {class: 'form-control', style: 'min-width: 500%; min-height: 100px;'} %>
+                    </section>
+                  </div>
 
                   <div class="row">
                   <section class="col col-12">
