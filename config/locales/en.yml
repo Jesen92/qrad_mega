@@ -49,7 +49,7 @@ en:
       section_break_user: "Create the best service configuration for your business or try the service free of charge"
       trial: "TRIAL/PRICE"
       home:
-        title: "MOBILE DEVICE MANAGMENT SERVICE"
+        title: "QRADAR ON CLOUD"
         text: "Enable and secure all your mobile devices, apps and content with a comprehensive enterprise mobility management solution."
         footer: "IBM MaaS360 product"
       register: "REGISTER"
@@ -71,7 +71,7 @@ en:
           third: "Select a suite"
         unregistered:
           title: "TRIAL"
-          text: "To submit a service test request and service quotation please register. If you are already registered, please sign up."
+          text: "To submit a service test request and service quotation request, please register. If you are already registered, please log in."
         texts:
           first: "IBM QRadar on Cloud is a network security intelligence and analytics offering that can help you detect cybersecurity attacks and network breaches so that you can take action before any considerable damage is done or begin to immediately respond to any critical data losses. As a cloud-based service, you and your team will be focused on reviewing anomalous conditions and patching the most important asset vulnerabilities rather than acquiring and deploying technology components. You can begin using IBM QRadar on Cloud by paying a monthly fee and adjust the performance up or down to meet your needs."
           second: "Prices depend on the number of devices on which the service is activated."
@@ -90,7 +90,7 @@ en:
           third: "Possibility to process up to 80.000 EPS."
           fourth: "Possibility to create more than 1.500 predefined report types, from regulaory compliance to vulnerability management."
           fifth: "Flexibility – possibility to collect EPS and FPM for 500+ apps and devices."
-          footer: "The service is available for large and medium-sized companies, as well as for EU NIC Directive  parties (Directive on security of network and information systems). Interested in on-site service availability, please contact us "
+          footer: "The service is available for large and medium-sized companies, as well as for EU NIC Directive  parties (Directive on security of network and information systems).  Interested in on-site service availability? Please, contact us."
         key_features:
           title: "KEY FEATURES"
           first: "Embrace BYOD with MDM"
@@ -149,7 +149,7 @@ en:
       sign_in: "LOGIN "
       sign_out: "LOGOUT "
       sign_up: "REGISTER "
-      tour: "ABOUT SERVICE "
+      tour: "SERVICE OVERVIEW "
       start_trial: "TRIAL "
       trial_: "TRIAL"
       register_now: "REGISTER NOW"
