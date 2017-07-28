@@ -88,11 +88,19 @@ class ServicesController < ApplicationController
   end
 
   def general_conditions_download
-    send_file(
-        "#{Rails.root}/public/assets/QRadar_uvjeti_upotrebe_usluge.pdf",
-        filename: "QRadar uvjeti korištenja usluge.pdf",
-        type: "application/pdf"
-    )
+    if I18n.locale == :hr
+      send_file(
+          "#{Rails.root}/public/assets/OUK_QRadar_web_hr.pdf",
+          filename: "QRadar uvjeti korištenja usluge.pdf",
+          type: "application/pdf"
+      )
+    else
+      send_file(
+          "#{Rails.root}/public/assets/OUK_QRadar_web_en.pdf",
+          filename: "QRadar General Terms and Conditions.pdf",
+          type: "application/pdf"
+      )
+    end
   end
 
   private
