@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.action_mailer.asset_host = "http://mdmweb.herokuapp.com"
+  config.action_mailer.asset_host = "http://qradarmega.herokuapp.com"
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       :port           => ENV['MAILGUN_SMTP_PORT'],
