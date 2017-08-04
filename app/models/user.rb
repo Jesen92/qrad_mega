@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
 
     #puts "Veeam user: "+attr[:veeam_user].to_s
-    UserMailer.ask_for_price(user, I18n.locale.to_s).deliver_now if attr[:veeam_user] == "true"
+    UserMailer.ask_for_price(user, I18n.locale.to_s).deliver_now if attr[:veeam_user] == "true" || attr[:offer_interest] == "true"
 
     #Informacije o user-u slane na megatrend mail
     UserMailer.user_information(user, I18n.locale.to_s).deliver_now

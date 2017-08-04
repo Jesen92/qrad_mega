@@ -89,10 +89,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def sign_up_params
-    params.require(:user).permit(:first_name, :last_name, :email, :phone, :country, :city, :address, :company, :cin, :postal_code, :veeam_user, :comment)
+    params.require(:user).permit(:first_name, :last_name, :email, :phone, :country, :city, :address, :company, :cin, :postal_code, :veeam_user, :comment, :offer_interest)
   end
 
   def account_update_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :phone, :country, :city, :address, :company, :cin, :current_password, :veeam_user, :comment)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :phone, :country, :city, :address, :company, :cin, :current_password, :veeam_user, :comment, :offer_interest)
   end
 end

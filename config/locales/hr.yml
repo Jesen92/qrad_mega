@@ -251,10 +251,12 @@ hr:
         postal: "Poštanski broj"
         signup: "Registriraj se"
         back: "Nazad"
-        veeam_user_html: "Zainteresiran sam za probu, cijenu ili oboje"
+        veeam_user_html: "Zainteresiran sam za:"
         yes_indicator: "Da"
         no_indicator: "Ne"
         comment: "Komentar"
+        trial: "Probu"
+        offer: "Ponudu"
     shared:
       links:
         signup: "Registriraj se"

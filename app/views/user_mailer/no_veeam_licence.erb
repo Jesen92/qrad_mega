@@ -9,7 +9,10 @@
 </head>
 <body>
 <div class="container">
-<h3>Korisnik <%= @user.email %> se registrirao na stranicu QRadar te je zainteresiran za probu, cijenu ili oboje</h3>
+<h3>Korisnik <%= @user.email %> se registrirao na stranicu QRadar te je zainteresiran za :</h3>
+  <p>Probu: <b><%= @user.veeam_user ? 'Da' : 'Ne' %></b></p>
+  <p>Ponudu: <b><%= @user.offer_interest ? 'Da' : 'Ne' %></b></p>
+
 <p>Ime i prezime: <b><%= @user.first_name+" "+@user.last_name %></b></p>
 <p>Broj mobitela/telefona: <b><%= @user.phone %></b></p>
 <p>Država: <b><%= @user.country %></b></p>

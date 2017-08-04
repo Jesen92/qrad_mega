@@ -7,7 +7,7 @@ Rails.application.configure do
       :address        => ENV['MAILGUN_SMTP_SERVER'],
       :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
       :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-      :domain         => 'https://mdmweb.herokuapp.com/', #eg: 'yourappname.herokuapp.com'
+      :domain         => 'https://qradarmega.herokuapp.com/', #eg: 'yourappname.herokuapp.com'
       :authentication => :plain,
   }
   # Code is not reloaded between requests.

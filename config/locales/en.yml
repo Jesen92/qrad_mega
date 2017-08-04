@@ -234,10 +234,12 @@ en:
         postal: "Postal no."
         signup: "Register"
         back: "Back"
-        veeam_user_html: "I am interested in trial, price or both"
+        veeam_user_html: "I am interested in:"
         yes_indicator: "Yes"
         no_indicator: "No"
         comment: "Comment"
+        trial: "Trial"
+        offer: "Offer"
     shared:
       links:
         signup: "Register"
