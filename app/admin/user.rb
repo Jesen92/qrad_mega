@@ -21,7 +21,6 @@ ActiveAdmin.register User do
     column :current_sign_in_at
     column :sign_in_count
     column :created_at
-    column :veeam_user
     column :admin
     column :spam_indicator
     actions
@@ -48,7 +47,8 @@ ActiveAdmin.register User do
       f.input :phone
       f.input :free_trial_requested, label: "Poslan upit za probom"
       f.input :admin
-      f.input :veeam_user
+      f.input :veeam_user, label: 'Proba'
+      f.input :offer_interest, label: 'Ponuda'
       f.input :spam_indicator
     end
     f.actions
