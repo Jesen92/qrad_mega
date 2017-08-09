@@ -45,7 +45,6 @@ ActiveAdmin.register User do
       f.input :company
       f.input :cin, label: "Company identification number / OIB"
       f.input :phone
-      f.input :free_trial_requested, label: "Poslan upit za probom"
       f.input :admin
       f.input :veeam_user, label: 'Proba zatražena'
       f.input :offer_interest, label: 'Ponuda zatražena'
