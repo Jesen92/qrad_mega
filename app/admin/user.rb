@@ -80,7 +80,6 @@ ActiveAdmin.register User do
       row :phone
       row :admin
       row :postal_code
-      row :free_trial_requested
       row('Proba zatražena') { |b| status_tag b.veeam_user }
       row('Ponuda zatražena') { |b| status_tag b.offer_interest }
       row :spam_indicator
