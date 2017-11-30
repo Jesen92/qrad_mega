@@ -318,7 +318,7 @@ a {
 }
 
 .pricing-header h2 {
-    border-bottom:1px solid #F39C13;
+    border-bottom:1px solid #00a8ad;
     padding: 0.9em 0.9em 0.6em;
     font-weight: 400;
     margin-bottom: 30px;
@@ -337,7 +337,7 @@ a {
 }
 
 .exclusive .pricing-header {
-    color: #F39C13;
+    color: #00a8ad;
     background-color: transparent;
 }
 
@@ -504,9 +504,9 @@ a {
     display: inline-block;
     height: auto;
     padding: 1em 0em;
-    color: #F39C13;
+    color: #00a8ad;
     border-radius: 8px;
-    border: 2px solid #F39C13;
+    border: 2px solid #00a8ad;
     font-size: 1.4rem;
     text-indent: 0;
     text-transform: uppercase;
@@ -517,25 +517,25 @@ a {
 }
 
 .no-touch .select:hover {
-    background-color: #F39C13;
+    background-color: #00a8ad;
     color: #ffffff;
 }
 
 .exclusive .select {
-    background-color: #F39C13;
+    background-color: #00a8ad;
     color: #ffffff;
 }
 
 .no-touch .exclusive .select:hover {
-    background-color: #F39C13;
+    background-color: #00a8ad;
 }
 
 .secondary-theme .exclusive .select {
-    background-color: #F39C13;
+    background-color: #00a8ad;
 }
 
 .no-touch .secondary-theme .exclusive .select:hover {
-    background-color: #F39C13;
+    background-color: #00a8ad;
 }
 
 .has-margins .select {
