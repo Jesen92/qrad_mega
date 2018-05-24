@@ -17,6 +17,7 @@ class ServicesController < ApplicationController
         UserMailer.send_calculated_services(current_user, params[:locale], params[:users_service]).deliver_now
         flash[:calc_success] = I18n.t("controllers.services.calculator")
         #return redirect_to :back
+        #komentar dodan
       end
     else
       flash[:alert] = I18n.t("controllers.services.spam_indicator")
